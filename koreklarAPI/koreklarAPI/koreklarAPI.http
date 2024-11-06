@@ -1,0 +1,6 @@
+@koreklarAPI_HostAddress = http://localhost:5264
+
+GET {{koreklarAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
