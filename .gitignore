@@ -398,3 +398,7 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+KoreklarMVC/.vs/KoreklarMVC/v17/.suo
+KoreklarMVC/.vs/KoreklarMVC/v17/DocumentLayout.json
+KoreklarMVC/KoreklarMVC/obj/Debug/net8.0/KoreklarMVC.AssemblyInfo.cs
+KoreklarMVC/KoreklarMVC/obj/Debug/net8.0/KoreklarMVC.AssemblyInfoInputs.cache
