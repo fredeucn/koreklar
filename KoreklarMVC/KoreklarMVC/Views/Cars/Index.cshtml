@@ -1,4 +1,6 @@
-﻿@{
+﻿
+
+@{
     ViewData["Title"] = "Vores biler";
 }
 
@@ -8,8 +10,18 @@
     <h3>
         Vælg bil
     </h3>
-    <form>
-        <input type="text" name="query" placeholder="Søg efter bil..." required class="rounded-pill p-2"/>
+    <form class="rounded-pill p-2 border-2 border-dark border">
+        <input type="text" name="query" placeholder="Søg efter bil..." required class="border-0"/>
     </form>
+</div>
 
+<div class="container mt-5">
+    <div class="row">
+        @foreach (var car in ViewData["cars"] as List<Car>) {
+            <div class="col-sm">
+                @car.getName()
+            </div>
+        }
+
+    </div>
 </div>
