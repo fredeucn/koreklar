@@ -22,7 +22,9 @@
         @foreach (var car in ViewData["cars"] as List<Car>) {
 
             <div class="col-sm style="width: 100px; height: 200px;">
-                <img src="@car.image" style="display: block; height: 250px; width: 300px" />
+                <a asp-action="CarDetails" asp-route-id="@car.Id" asp-controller="Cars">
+                    <img src="@car.image" style="display: block; height: 250px; width: 300px" />
+                </a>
             </div>
         }
 

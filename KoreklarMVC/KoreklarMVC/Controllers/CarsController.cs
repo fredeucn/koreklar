@@ -8,5 +8,13 @@ namespace KoreklarMVC.Controllers {
             ViewData["cars"] = cars.getAllCars();
             return View();
         }
+
+        public IActionResult CarDetails(int? id) {
+            ShowCars cars = new ShowCars();
+
+            var car = cars.getAllCars().FirstOrDefault(c => c.Id == id);
+            
+            return View(car);
+        }
     }
 }

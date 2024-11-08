@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Administrator\Desktop\UCN\3. Semester projekt\Koreklar\KoreklarMVC\KoreklarMVC
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Administrator/Desktop/UCN/3. Semester projekt/Koreklar/KoreklarMVC/KoreklarMVC/Views/Cars/CarDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xDYXJEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Administrator/Desktop/UCN/3. Semester projekt/Koreklar/KoreklarMVC/KoreklarMVC/Views/Cars/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
