@@ -19,7 +19,7 @@ namespace KoreklarMVC.ServiceLayer {
                 Brand = "Toyota",
                 Model = "Corolla",
                 Type = "Sedan",
-                image = "corolla_image.jpg"
+                image = "/Images/car.jpg"
             };
 
             Car car2 = new Car {
@@ -37,7 +37,7 @@ namespace KoreklarMVC.ServiceLayer {
                 Brand = "Jeep",
                 Model = "Wrangler",
                 Type = "SUV",
-                image = "wrangler_image.jpg"
+                image = "/Images/car.jpg"
             };
 
             Car car3 = new Car {
@@ -55,7 +55,7 @@ namespace KoreklarMVC.ServiceLayer {
                 Brand = "Tesla",
                 Model = "Model S",
                 Type = "Sedan",
-                image = "model_s_image.jpg"
+                image = "/Images/car.jpg"
             };
 
             cars.Add(car1);
