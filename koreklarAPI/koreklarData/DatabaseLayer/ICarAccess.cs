@@ -9,6 +9,6 @@ namespace koreklarData.DatabaseLayer
 {
     public interface ICarAccess
     {
-        Car? GetCar(string vin);
+        Car? GetCarByVin(string vin);
     }
 }

@@ -1,7 +1,9 @@
 ﻿using Models.Models;
 using Microsoft.Extensions.Configuration;
+using Dapper;
 using System.Data.SqlClient;
 using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 
 [assembly: InternalsVisibleTo("koreklarAPI")]
 
@@ -26,10 +28,10 @@ namespace koreklarData.DatabaseLayer
         {
             // From configuration data get name of conn-string - and then fetch the conn-string
             //? useConnectionString = inConfiguration["ConnectionStringToUse"];
-            ConnectionString = "data Source=localhost\\SQLEXPRESS;Initial; Catalog=Cars; integrated security=true;Encrypt=False;";
-
-
+            ConnectionString = "data Source=localhost\\SQLEXPRESS; Initial Catalog=cars; integrated security=true; Encrypt=False;";
         }
+
+        /*
         public Car? GetCar(string Vin)
         {
 
@@ -66,14 +68,28 @@ namespace koreklarData.DatabaseLayer
             }
             return foundCar;
         }
+        */
 
+        public Car GetCarByVin(string vin)
+        {
+            Car foundCar = null;
+
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+                foundCar = connection.QueryFirst<Car>("SELECT * FROM cars WHERE vin = @Vin", new { Vin = vin });
+            }
+
+            return foundCar;
+        }
+
+        /*
         private List<Car> GetCarObjects(SqlDataReader lineReader)
         {
             List<Car> foundCars = new List<Car>();
             Car tempCar;
 
             int tempId; int tempYear; int tempKilometersDriven; int tempTopSpeed;
-            double tempPrice; string tempBrand; string tempModel; string tempType;
+            double tempPrice; decimal priceToConvert; string tempBrand; string tempModel; string tempType;
             string tempImage; string tempCondition; string tempDescription;
             string tempVin; string tempColor; string tempFuelType;
 
@@ -83,7 +99,8 @@ namespace koreklarData.DatabaseLayer
                 tempYear = lineReader.GetInt32(lineReader.GetOrdinal("year"));
                 tempKilometersDriven = lineReader.GetInt32(lineReader.GetOrdinal("kilometers_driven"));
                 tempTopSpeed = lineReader.GetInt32(lineReader.GetOrdinal("top_speed"));
-                tempPrice = lineReader.GetDouble(lineReader.GetOrdinal("price"));
+                priceToConvert = lineReader.GetDecimal(lineReader.GetOrdinal("price"));
+                tempPrice = Convert.ToDouble(priceToConvert);
                 tempBrand = lineReader.GetString(lineReader.GetOrdinal("brand"));
                 tempModel = lineReader.GetString(lineReader.GetOrdinal("model"));
                 tempType = lineReader.GetString(lineReader.GetOrdinal("type"));
@@ -104,5 +121,6 @@ namespace koreklarData.DatabaseLayer
             }
             return foundCars;
         }
+        */
     }
 }
