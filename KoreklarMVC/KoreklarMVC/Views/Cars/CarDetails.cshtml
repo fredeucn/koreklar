@@ -1,7 +1,40 @@
 ﻿@model KoreklarMVC.Models.Car
 
-<div>
-    <h2>@Model.Model @Model.Brand @Model.Year</h2>
-</div>
+<div class="d-flex gap-5 justify-content-between">
+    <div>
+        <h2>@Model.Model @Model.Brand @Model.Year</h2>
+        <img src="@Model.image" style="display: block; height: 300px; width: 500px; object-fit: cover" />
+        <div class="d-flex gap-2">
+            <div>
+               <p>@Model.KilometersDriven km</p>
+               <p>@Model.Color</p>
+                <p>@Model.TopSpeed km/t</p>
+                <p>@Model.FuelType</p>
+            </div>
+            <div>
+                <p>Stand: @Model.Condition</p>
+                <p>Nummerplade: @Model.LicensePlate</p>
+                <p>@Model.Description</p>
+                
+            </div>
+        </div>
+    </div>
+    <form class="d-flex flex-column">
+        <h2>Vælg abonnement</h2>
+        <div>
+            <h4>
+                1 månede / 200 kr.
+            </h4>
+            <h4>
+                3 måneder / 500 kr.
+            </h4>
+            <h4>
+                6 måneder / 800 kr.
+            </h4>
+        </div>
+        <button>
+            Opret abonnement
+        </button>
+    </form>
 
-<a asp-action="Index">Back to List</a>
+</div>
