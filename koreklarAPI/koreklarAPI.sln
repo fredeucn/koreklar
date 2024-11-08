@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "koreklarAPI", "koreklarAPI\koreklarAPI.csproj", "{05AA8E95-6127-4282-8BE0-4C7ACB028A63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "koreklarAPI", "koreklarAPI\koreklarAPI.csproj", "{05AA8E95-6127-4282-8BE0-4C7ACB028A63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APITests", "APITests\APITests.csproj", "{3C7F7A12-684C-48F6-AA5E-81B3D4CF075A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "koreklarData", "koreklarData\koreklarData.csproj", "{E43E28D3-16AD-453B-B691-9DD3594A0B09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{7FE75118-701F-40E5-87A2-DBC6FD34CBFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{05AA8E95-6127-4282-8BE0-4C7ACB028A63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05AA8E95-6127-4282-8BE0-4C7ACB028A63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05AA8E95-6127-4282-8BE0-4C7ACB028A63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C7F7A12-684C-48F6-AA5E-81B3D4CF075A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C7F7A12-684C-48F6-AA5E-81B3D4CF075A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C7F7A12-684C-48F6-AA5E-81B3D4CF075A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C7F7A12-684C-48F6-AA5E-81B3D4CF075A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E43E28D3-16AD-453B-B691-9DD3594A0B09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E43E28D3-16AD-453B-B691-9DD3594A0B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E43E28D3-16AD-453B-B691-9DD3594A0B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E43E28D3-16AD-453B-B691-9DD3594A0B09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FE75118-701F-40E5-87A2-DBC6FD34CBFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FE75118-701F-40E5-87A2-DBC6FD34CBFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FE75118-701F-40E5-87A2-DBC6FD34CBFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FE75118-701F-40E5-87A2-DBC6FD34CBFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
