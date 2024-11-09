@@ -42,8 +42,7 @@
               "RelativeToolTip": "KoreklarMVC\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T09:15:19.086Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T09:15:19.086Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "KoreklarMVC\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T08:52:52.485Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T08:52:52.485Z"
             },
             {
               "$type": "Document",
@@ -66,7 +64,7 @@
               "RelativeDocumentMoniker": "KoreklarMVC\\Views\\Cars\\CarDetails.cshtml",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\UCN\\3. Semester projekt\\Koreklar\\KoreklarMVC\\KoreklarMVC\\Views\\Cars\\CarDetails.cshtml",
               "RelativeToolTip": "KoreklarMVC\\Views\\Cars\\CarDetails.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-08T08:46:49.386Z",
               "EditorCaption": ""
@@ -81,8 +79,7 @@
               "RelativeToolTip": "KoreklarMVC\\Controllers\\CarsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T08:28:47.858Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T08:28:47.858Z"
             },
             {
               "$type": "Document",
@@ -94,8 +91,7 @@
               "RelativeToolTip": "KoreklarMVC\\Views\\Cars\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-07T09:42:44.687Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-07T09:42:44.687Z"
             }
           ]
         }
