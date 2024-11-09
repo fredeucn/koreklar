@@ -15,15 +15,15 @@ namespace APITests
 
             Car testCar = new Car(2019, 15000, 220, 25000.00, "Toyota", "Yaris", "LT", "image_url_1.jpg", "Excellent", "Sporty red sedan with low mileage and excellent condition.", "1HGCM82633A123456", "Red", "Petrol");
 
-            Car? resultCarDto = carAccess.GetCar("1HGCM82633A123456");
+            Car? resultCarDto = carAccess.GetCarByVin("1HGCM82633A123456");
 
-            Car resultCar = new Car(resultCarDto.Year, resultCarDto.KilometersDriven, resultCarDto.TopSpeed,
+            Car resultCar = new Car(resultCarDto.Year, resultCarDto.Kilometers_Driven, resultCarDto.Top_Speed,
                                     resultCarDto.Price, resultCarDto.Brand, resultCarDto.Model, resultCarDto.Type, 
                                     resultCarDto.Image, resultCarDto.Condition, resultCarDto.Description,
                                     resultCarDto.Vin, resultCarDto.Color, resultCarDto.FuelType
                 );
 
-            Assert.AreEqual(resultCarDto, testCar);
+            Assert.AreEqual(resultCar, testCar);
         }
 
         [TestMethod]

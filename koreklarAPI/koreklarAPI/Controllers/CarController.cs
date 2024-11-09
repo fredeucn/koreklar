@@ -2,11 +2,13 @@
 using koreklarData.DatabaseLayer;
 using koreklarAPI.Dtos;
 using Models.Models;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace koreklarAPI.Controllers
 {
-    public class CarController
+    public class CarController : ControllerBase
     {
+
         private readonly ICarAccess _carAccess;
         // Constructor with Dependency Injection
         public CarController(ICarAccess carAccess)
@@ -19,20 +21,20 @@ namespace koreklarAPI.Controllers
         {
             ActionResult<Car> foundReturn;
             // Get data and convert
-            Car? publicCar = _carAccess.GetCar(vin);
+            Car? publicCar = _carAccess.GetCarByVin(vin);
             // Evaluate
             if (publicCar != null)
             {
                if (publicCar.Year > 0)
                 {
-                    foundReturn = new StatusCodeResult(200);
+                    foundReturn = Ok(publicCar);
                 } else {
-                    foundReturn = new StatusCodeResult(500);
+                    foundReturn = StatusCode(500, "Car data is invalid.");
                 }
             }
             else
             {
-                foundReturn = new StatusCodeResult(500);    // Internal server error
+                foundReturn = NotFound("Car not found.");    // Internal server error
             }
             // Return result
             return foundReturn;
