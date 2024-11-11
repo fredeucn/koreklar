@@ -5,15 +5,11 @@ using System.Data.SqlClient;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 
-[assembly: InternalsVisibleTo("koreklarAPI")]
 
 namespace koreklarData.DatabaseLayer
 {
     public class DbCarAccess : ICarAccess
     {
-        private enum SortParameter { none }
-        private readonly SortParameter defaultSortParameter;
-
         public string? ConnectionString { get; set; }
 
         public DbCarAccess()
