@@ -82,6 +82,23 @@ namespace koreklarData.DatabaseLayer
             return foundCar;
         }
 
+        public List<Car> GetCars()
+        {
+            List<Car> foundCars = new List<Car>();
+
+
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+                using (SqlMapper.GridReader reader = connection.QueryMultiple("SELECT * FROM cars"))
+                {
+                    List<Car> cars = reader.Read<Car>().ToList();
+                    foundCars.AddRange(cars); 
+                }
+            }
+
+            return foundCars;
+        }
+
         /*
         private List<Car> GetCarObjects(SqlDataReader lineReader)
         {

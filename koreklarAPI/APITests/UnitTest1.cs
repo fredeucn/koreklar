@@ -27,9 +27,18 @@ namespace APITests
         }
 
         [TestMethod]
-        public void TestPutCar()
+        public void TestCarList()
         {
+            ICarAccess carAccess = new DbCarAccess();
 
+            Car testCar = new Car(2019, 15000, 220, 25000.00, "Toyota", "Yaris", "LT", "image_url_1.jpg", "Excellent", "Sporty red sedan with low mileage and excellent condition.", "1HGCM82633A123456", "Red", "Petrol");
+
+            int targetListLength = 10;
+
+            List<Car> resultList = carAccess.GetCars();
+
+            Assert.AreEqual(resultList.Count, targetListLength);
+            Assert.AreEqual(resultList[0], testCar);
         }
     }
 }
