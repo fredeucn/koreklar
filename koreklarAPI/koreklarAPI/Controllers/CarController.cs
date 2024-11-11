@@ -40,5 +40,30 @@ namespace koreklarAPI.Controllers
             return foundReturn;
         }
 
+        [HttpGet, Route("cars")]
+        public ActionResult<List<Car>> Get() // Ændres til ReadCarDTO i refactoring
+        {
+            ActionResult<List<Car>> foundReturn;
+            // Get data and convert
+            List<Car> publicCars = _carAccess.GetCars();
+            // Evaluate
+            if (publicCars != null)
+            {
+                if (publicCars[0].Year > 0)
+                {
+                    foundReturn = Ok(publicCars);
+                }
+                else
+                {
+                    foundReturn = StatusCode(500, "Car data is invalid.");
+                }
+            }
+            else
+            {
+                foundReturn = NotFound("Car not found.");    // Internal server error
+            }
+            // Return result
+            return foundReturn;
+        }
     }
 }
