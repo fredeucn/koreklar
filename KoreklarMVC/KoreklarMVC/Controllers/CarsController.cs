@@ -16,5 +16,11 @@ namespace KoreklarMVC.Controllers {
             
             return View(car);
         }
+
+
+        public IActionResult Create() {
+            
+            return View();
+        }
     }
 }
