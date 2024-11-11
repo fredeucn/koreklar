@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "koreklarFORMS", "koreklarFORMS.csproj", "{2F06756A-31A3-457A-9647-E06EA1503150}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F06756A-31A3-457A-9647-E06EA1503150}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F06756A-31A3-457A-9647-E06EA1503150}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F06756A-31A3-457A-9647-E06EA1503150}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F06756A-31A3-457A-9647-E06EA1503150}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5FAE780D-C157-494F-AFF8-7BCBD5368948}
+	EndGlobalSection
+EndGlobal
