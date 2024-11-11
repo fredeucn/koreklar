@@ -1,66 +1,63 @@
 ﻿using KoreklarMVC.Models;
+using System.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using static System.Net.WebRequestMethods;
+using Newtonsoft.Json;
 
 namespace KoreklarMVC.ServiceLayer {
-    public class CarsService {
-        public List<Car> getAllCars() {
+    public class CarsService : ICarService {
+
+        readonly IServiceConnection _lineServiceConnection;
+        readonly string? _serviceBaseUrl = "https://localhost:7228/api/cars";
+
+        public CarsService()
+        {
+            _lineServiceConnection = new ServiceConnection(_serviceBaseUrl);
+        }
+        public async Task<List<Car>> getAllCars() {
             List<Car> cars = new List<Car>();
-            Car car1 = new Car {
-                Id = 1,
-                Description = "A compact and fuel-efficient city car",
-                Color = "Red",
-                Year = 2019,
-                FuelType = "Petrol",
-                KilometersDriven = 15000,
-                TopSpeed = 180,
-                Condition = "Used",
-                Vin = "1HGCM82633A123456",
-                Price = 15000.00,
-                LicensePlate = "AB123CD",
-                Brand = "Toyota",
-                Model = "Corolla",
-                Type = "Sedan",
-                image = "/Images/car.jpg"
-            };
 
-            Car car2 = new Car {
-                Id = 2,
-                Description = "A powerful SUV with off-road capabilities",
-                Color = "Black",
-                Year = 2022,
-                FuelType = "Diesel",
-                KilometersDriven = 5000,
-                TopSpeed = 200,
-                Condition = "New",
-                Vin = "5YJ3E1EA5JF123456",
-                Price = 45000.00,
-                LicensePlate = "XY456ZW",
-                Brand = "Jeep",
-                Model = "Wrangler",
-                Type = "SUV",
-                image = "/Images/car.jpg"
-            };
+            _lineServiceConnection.UseUrl = _lineServiceConnection.BaseUrl;
 
-            Car car3 = new Car {
-                Id = 3,
-                Description = "A luxury electric vehicle with cutting-edge features",
-                Color = "White",
-                Year = 2021,
-                FuelType = "Electric",
-                KilometersDriven = 10000,
-                TopSpeed = 250,
-                Condition = "Certified Pre-Owned",
-                Vin = "3MW5R1J05K8A123456",
-                Price = 60000.00,
-                LicensePlate = "EV789GH",
-                Brand = "Tesla",
-                Model = "Model S",
-                Type = "Sedan",
-                image = "/Images/car.jpg"
-            };
-
-            cars.Add(car1);
-            cars.Add(car2);
-            cars.Add(car3);
+            if (_lineServiceConnection != null)
+            {
+                try
+                {
+                    var serviceResponse = await _lineServiceConnection.CallServiceGet();
+                    bool wasResponse = (serviceResponse != null);
+                    if (wasResponse && serviceResponse.IsSuccessStatusCode)
+                    {
+                        var content = await serviceResponse.Content.ReadAsStringAsync();
+                       /* if (hasValidId)
+                        {
+                            Car? foundCar = JsonConvert.DeserializeObject<Car>(content);
+                            if (foundCar != null)
+                            {
+                                cars = new List<Car>() { foundCar };
+                            }
+                        }*/
+                        
+                        
+                         cars = JsonConvert.DeserializeObject<List<Car>>(content);
+                        
+                    }
+                    else
+                    {
+                        if (wasResponse && serviceResponse.StatusCode == System.Net.HttpStatusCode.NotFound)
+                        {
+                            cars = new List<Car>();
+                        }
+                        else
+                        {
+                            cars = null;
+                        }
+                    }
+                }
+                catch
+                {
+                    cars = null;
+                }
+            }
 
             return cars;
         }

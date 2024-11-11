@@ -3,10 +3,12 @@ using KoreklarMVC.ServiceLayer;
 
 namespace KoreklarMVC.BusinessLogicLayer {
     public class ShowCars {
-        public List<Car> getAllCars() {
+        public async Task<List<Car>> getAllCars() {
             CarsService carsService = new CarsService();
 
-            return carsService.getAllCars();
+            List<Car> cars = await carsService.getAllCars();
+
+            return cars;
         }
 
     }

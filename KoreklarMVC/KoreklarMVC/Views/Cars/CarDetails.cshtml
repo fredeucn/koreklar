@@ -3,17 +3,16 @@
 <div class="d-flex gap-5 justify-content-between mt-5">
     <div>
         <h2>@Model.Model @Model.Brand @Model.Year</h2>
-        <img src="@Model.image" style="display: block; height: 300px; width: 900px; object-fit: cover; margin: 5px 0" />
+        <img src="@Model.Image" style="display: block; height: 300px; width: 900px; object-fit: cover; margin: 5px 0" />
         <div class="d-flex gap-2 justify-content-between mt-3">
             <div style="font-size: 22px">
-               <p style="border-bottom: 2px solid black; width: 100%;">@Model.KilometersDriven km</p>
+               <p style="border-bottom: 2px solid black; width: 100%;">@Model.Kilometers_Driven km</p>
                 <p style="border-bottom: 2px solid black; width: 100%;">@Model.Color</p>
-                <p style="border-bottom: 2px solid black; width: 100%;">@Model.TopSpeed km/t</p>
+                <p style="border-bottom: 2px solid black; width: 100%;">@Model.Top_Speed km/t</p>
                 <p style="border-bottom: 2px solid black; width: 100%;">@Model.FuelType</p>
             </div>
             <div style="font-size: 22px">
                 <p style="border-bottom: 2px solid black; width: 100%;">Stand: @Model.Condition</p>
-                <p style="border-bottom: 2px solid black; width: 100%;">Nummerplade: @Model.LicensePlate</p>
                 <p style="border-bottom: 2px solid black; width: 100%;">@Model.Description</p>
                 
             </div>

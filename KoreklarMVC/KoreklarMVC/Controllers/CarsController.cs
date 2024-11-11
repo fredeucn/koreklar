@@ -9,14 +9,14 @@ namespace KoreklarMVC.Controllers {
             return View();
         }
 
-        public IActionResult CarDetails(int? id) {
+        /*public IActionResult CarDetails(int? id) {
             ShowCars cars = new ShowCars();
 
             var car = cars.getAllCars().FirstOrDefault(c => c.Id == id);
             
             return View(car);
         }
-
+        */
 
         public IActionResult Create() {
             

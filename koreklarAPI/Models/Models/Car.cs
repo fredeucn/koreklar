@@ -17,6 +17,7 @@ namespace Models.Models
         public string Vin { get; set; }
         public string Color { get; set; }
         public string FuelType { get; set; }
+        //public string LicensePlate { get; set; }
 
         public Car() { 
 
@@ -43,7 +44,8 @@ namespace Models.Models
             this.Description = Description;
             this.Vin = Vin; 
             this.Color = Color;
-            this.FuelType = FuelType; 
+            this.FuelType = FuelType;
+            //this.LicensePlate = LicensePlate;
         }
 
         public override bool Equals(object? obj)
@@ -62,7 +64,9 @@ namespace Models.Models
                    Description == other.Description &&
                    Vin == other.Vin &&
                    Color == other.Color &&
-                   FuelType == other.FuelType;
+                   FuelType == other.FuelType
+                   ;
+
         }
     }
 }

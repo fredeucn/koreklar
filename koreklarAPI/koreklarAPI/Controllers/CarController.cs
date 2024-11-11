@@ -40,7 +40,7 @@ namespace koreklarAPI.Controllers
             return foundReturn;
         }
 
-        [HttpGet, Route("cars")]
+        [HttpGet, Route("api/cars")]
         public ActionResult<List<Car>> Get() // Ændres til ReadCarDTO i refactoring
         {
             ActionResult<List<Car>> foundReturn;
