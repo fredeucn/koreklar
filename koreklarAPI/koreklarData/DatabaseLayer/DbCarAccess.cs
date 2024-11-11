@@ -16,18 +16,8 @@ namespace koreklarData.DatabaseLayer
 
         public string? ConnectionString { get; set; }
 
-        //public DbCarAccess(IConfiguration inConfiguration)
-        //{
-            // From configuration data get name of conn-string - and then fetch the conn-string
-            //string? useConnectionString = inConfiguration["ConnectionStringToUse"];
-            //ConnectionString = useConnectionString is not null ? inConfiguration.GetConnectionString(useConnectionString) : null;
-            // Ensure some sorting
-            //defaultSortParameter = SortParameter.none;
-        //
         public DbCarAccess()
         {
-            // From configuration data get name of conn-string - and then fetch the conn-string
-            //? useConnectionString = inConfiguration["ConnectionStringToUse"];
             ConnectionString = "data Source=localhost\\SQLEXPRESS; Initial Catalog=cars; integrated security=true; Encrypt=False;";
         }
 
