@@ -30,7 +30,7 @@ namespace Models.Models
 
         public Car(int Year, int KilometersDriven, int TopSpeed, double Price,  
                      string Image, string Condition, string Description, string Vin, 
-                    string Color, string FuelType)
+                    string Color, string FuelType, string Brand, string Model, String Type)
         {
             this.Year = Year;
             this.Kilometers_Driven = KilometersDriven;
@@ -42,6 +42,9 @@ namespace Models.Models
             this.Vin = Vin; 
             this.Color = Color;
             this.FuelType = FuelType;
+            this.Brand = Brand;
+            this.Model = Model;
+            this.Type = Type;
             //this.LicensePlate = LicensePlate;
         }
 
