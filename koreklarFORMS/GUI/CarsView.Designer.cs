@@ -39,10 +39,19 @@
             lblSelectCar = new Label();
             txtSearch = new TextBox();
             flowLayoutPanel1 = new FlowLayoutPanel();
+            customCarListView1 = new GUI.CustomCarListView();
+            customCarListView2 = new GUI.CustomCarListView();
+            customCarListView3 = new GUI.CustomCarListView();
+            customCarListView4 = new GUI.CustomCarListView();
+            customCarListView5 = new GUI.CustomCarListView();
+            customCarListView6 = new GUI.CustomCarListView();
+            customCarListView7 = new GUI.CustomCarListView();
+            customCarListView8 = new GUI.CustomCarListView();
             layoutMain.SuspendLayout();
             panelTopBar.SuspendLayout();
             layoutTopBar.SuspendLayout();
             topBarFlowButtons.SuspendLayout();
+            flowLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // layoutMain
@@ -62,7 +71,7 @@
             layoutMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
             layoutMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
             layoutMain.RowStyles.Add(new RowStyle());
-            layoutMain.Size = new Size(762, 502);
+            layoutMain.Size = new Size(776, 766);
             layoutMain.TabIndex = 2;
             // 
             // panelTopBar
@@ -73,7 +82,7 @@
             panelTopBar.Dock = DockStyle.Fill;
             panelTopBar.Location = new Point(23, 23);
             panelTopBar.Name = "panelTopBar";
-            panelTopBar.Size = new Size(716, 44);
+            panelTopBar.Size = new Size(730, 44);
             panelTopBar.TabIndex = 6;
             // 
             // layoutTopBar
@@ -88,7 +97,7 @@
             layoutTopBar.Name = "layoutTopBar";
             layoutTopBar.RowCount = 1;
             layoutTopBar.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            layoutTopBar.Size = new Size(714, 42);
+            layoutTopBar.Size = new Size(728, 42);
             layoutTopBar.TabIndex = 5;
             // 
             // topBarFlowButtons
@@ -100,13 +109,13 @@
             topBarFlowButtons.FlowDirection = FlowDirection.RightToLeft;
             topBarFlowButtons.Location = new Point(39, 3);
             topBarFlowButtons.Name = "topBarFlowButtons";
-            topBarFlowButtons.Size = new Size(672, 36);
+            topBarFlowButtons.Size = new Size(686, 36);
             topBarFlowButtons.TabIndex = 1;
             // 
             // btnLogin
             // 
             btnLogin.Font = new Font("Segoe UI", 12F);
-            btnLogin.Location = new Point(594, 3);
+            btnLogin.Location = new Point(608, 3);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(75, 30);
             btnLogin.TabIndex = 4;
@@ -116,7 +125,7 @@
             // btnBiler
             // 
             btnBiler.Font = new Font("Segoe UI", 12F);
-            btnBiler.Location = new Point(513, 3);
+            btnBiler.Location = new Point(527, 3);
             btnBiler.Name = "btnBiler";
             btnBiler.Size = new Size(75, 30);
             btnBiler.TabIndex = 1;
@@ -126,7 +135,7 @@
             // btnContact
             // 
             btnContact.Font = new Font("Segoe UI", 12F);
-            btnContact.Location = new Point(432, 3);
+            btnContact.Location = new Point(446, 3);
             btnContact.Name = "btnContact";
             btnContact.Size = new Size(75, 30);
             btnContact.TabIndex = 3;
@@ -150,7 +159,7 @@
             lblSelectCar.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblSelectCar.Location = new Point(23, 95);
             lblSelectCar.Name = "lblSelectCar";
-            lblSelectCar.Size = new Size(427, 25);
+            lblSelectCar.Size = new Size(435, 25);
             lblSelectCar.TabIndex = 6;
             lblSelectCar.Text = "Vælg Bil";
             lblSelectCar.TextAlign = ContentAlignment.BottomLeft;
@@ -158,10 +167,11 @@
             // txtSearch
             // 
             txtSearch.Dock = DockStyle.Bottom;
-            txtSearch.Location = new Point(456, 94);
+            txtSearch.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtSearch.Location = new Point(464, 88);
             txtSearch.Name = "txtSearch";
             txtSearch.PlaceholderText = "Søg efter bil...";
-            txtSearch.Size = new Size(283, 23);
+            txtSearch.Size = new Size(289, 29);
             txtSearch.TabIndex = 7;
             // 
             // flowLayoutPanel1
@@ -170,17 +180,89 @@
             flowLayoutPanel1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             flowLayoutPanel1.BorderStyle = BorderStyle.FixedSingle;
             layoutMain.SetColumnSpan(flowLayoutPanel1, 2);
+            flowLayoutPanel1.Controls.Add(customCarListView1);
+            flowLayoutPanel1.Controls.Add(customCarListView2);
+            flowLayoutPanel1.Controls.Add(customCarListView3);
+            flowLayoutPanel1.Controls.Add(customCarListView4);
+            flowLayoutPanel1.Controls.Add(customCarListView5);
+            flowLayoutPanel1.Controls.Add(customCarListView6);
+            flowLayoutPanel1.Controls.Add(customCarListView7);
+            flowLayoutPanel1.Controls.Add(customCarListView8);
             flowLayoutPanel1.Dock = DockStyle.Fill;
             flowLayoutPanel1.Location = new Point(23, 123);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(716, 356);
+            flowLayoutPanel1.Size = new Size(730, 620);
             flowLayoutPanel1.TabIndex = 8;
+            // 
+            // customCarListView1
+            // 
+            customCarListView1.Location = new Point(5, 5);
+            customCarListView1.Margin = new Padding(5);
+            customCarListView1.Name = "customCarListView1";
+            customCarListView1.Size = new Size(160, 210);
+            customCarListView1.TabIndex = 0;
+            // 
+            // customCarListView2
+            // 
+            customCarListView2.Location = new Point(175, 5);
+            customCarListView2.Margin = new Padding(5);
+            customCarListView2.Name = "customCarListView2";
+            customCarListView2.Size = new Size(160, 210);
+            customCarListView2.TabIndex = 1;
+            // 
+            // customCarListView3
+            // 
+            customCarListView3.Location = new Point(345, 5);
+            customCarListView3.Margin = new Padding(5);
+            customCarListView3.Name = "customCarListView3";
+            customCarListView3.Size = new Size(160, 210);
+            customCarListView3.TabIndex = 2;
+            // 
+            // customCarListView4
+            // 
+            customCarListView4.Location = new Point(515, 5);
+            customCarListView4.Margin = new Padding(5);
+            customCarListView4.Name = "customCarListView4";
+            customCarListView4.Size = new Size(160, 210);
+            customCarListView4.TabIndex = 3;
+            // 
+            // customCarListView5
+            // 
+            customCarListView5.Location = new Point(5, 225);
+            customCarListView5.Margin = new Padding(5);
+            customCarListView5.Name = "customCarListView5";
+            customCarListView5.Size = new Size(160, 210);
+            customCarListView5.TabIndex = 4;
+            // 
+            // customCarListView6
+            // 
+            customCarListView6.Location = new Point(175, 225);
+            customCarListView6.Margin = new Padding(5);
+            customCarListView6.Name = "customCarListView6";
+            customCarListView6.Size = new Size(160, 210);
+            customCarListView6.TabIndex = 5;
+            // 
+            // customCarListView7
+            // 
+            customCarListView7.Location = new Point(345, 225);
+            customCarListView7.Margin = new Padding(5);
+            customCarListView7.Name = "customCarListView7";
+            customCarListView7.Size = new Size(160, 210);
+            customCarListView7.TabIndex = 6;
+            // 
+            // customCarListView8
+            // 
+            customCarListView8.Location = new Point(515, 225);
+            customCarListView8.Margin = new Padding(5);
+            customCarListView8.Name = "customCarListView8";
+            customCarListView8.Size = new Size(160, 210);
+            customCarListView8.TabIndex = 7;
             // 
             // CarsView
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(762, 502);
+            ClientSize = new Size(776, 766);
             Controls.Add(layoutMain);
             MinimumSize = new Size(600, 400);
             Name = "CarsView";
@@ -191,6 +273,7 @@
             panelTopBar.ResumeLayout(false);
             layoutTopBar.ResumeLayout(false);
             topBarFlowButtons.ResumeLayout(false);
+            flowLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -206,5 +289,13 @@
         private TextBox txtSearch;
         private Panel panelTopBar;
         private FlowLayoutPanel flowLayoutPanel1;
+        private GUI.CustomCarListView customCarListView1;
+        private GUI.CustomCarListView customCarListView2;
+        private GUI.CustomCarListView customCarListView3;
+        private GUI.CustomCarListView customCarListView4;
+        private GUI.CustomCarListView customCarListView5;
+        private GUI.CustomCarListView customCarListView6;
+        private GUI.CustomCarListView customCarListView7;
+        private GUI.CustomCarListView customCarListView8;
     }
 }
