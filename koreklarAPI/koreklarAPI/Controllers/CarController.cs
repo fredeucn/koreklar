@@ -65,5 +65,16 @@ namespace koreklarAPI.Controllers
             // Return result
             return foundReturn;
         }
+
+        [HttpPost, Route("api/car")]
+        public void Create(int year, string color, string fuelType, int kilometersDriven, int topSpeed, double price, string image, string condition, string description, string vin) // Ændres til ReadCarDTO i refactoring
+       {
+
+            Car newCar = new Car(year, kilometersDriven, topSpeed, price,  image, condition, description, vin,  color, fuelType);
+            _carAccess.CreateCar(newCar);
+
+
+ 
+        }
     }
 }

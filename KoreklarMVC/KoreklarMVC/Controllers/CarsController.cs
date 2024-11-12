@@ -5,7 +5,7 @@ namespace KoreklarMVC.Controllers {
     public class CarsController : Controller {
         public IActionResult Index() {
             ShowCars cars = new ShowCars();
-            ViewData["cars"] = cars.getAllCars();
+            ViewData["cars"] = cars.GetAllCars();
             return View();
         }
 

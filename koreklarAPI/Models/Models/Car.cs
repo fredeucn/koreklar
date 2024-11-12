@@ -28,17 +28,14 @@ namespace Models.Models
             this.Description = Description;
         }
 
-        public Car(int Year, int KilometersDriven, int TopSpeed, double Price, string Brand, 
-                    string Model, string Type, string Image, string Condition, string Description, string Vin, 
+        public Car(int Year, int KilometersDriven, int TopSpeed, double Price,  
+                     string Image, string Condition, string Description, string Vin, 
                     string Color, string FuelType)
         {
             this.Year = Year;
             this.Kilometers_Driven = KilometersDriven;
             this.Top_Speed = TopSpeed;
             this.Price = Price;
-            this.Brand = Brand;
-            this.Model = Model;
-            this.Type = Type;
             this.Image = Image;
             this.Condition = Condition;
             this.Description = Description;
