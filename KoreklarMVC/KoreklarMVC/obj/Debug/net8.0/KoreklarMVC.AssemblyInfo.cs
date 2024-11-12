@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KoreklarMVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3aa72ff497b67d9cc958a7446396103203491812")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82da1c825fac90d875e6683aa8406ee88b593a24")]
 [assembly: System.Reflection.AssemblyProductAttribute("KoreklarMVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KoreklarMVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

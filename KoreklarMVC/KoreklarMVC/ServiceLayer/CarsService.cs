@@ -17,6 +17,15 @@ namespace KoreklarMVC.ServiceLayer {
         public async Task<List<Car>> getAllCars() {
             List<Car> cars = new List<Car>();
 
+            var handler = new HttpClientHandler
+            {
+                ServerCertificateCustomValidationCallback = (message, cert, chain, sslErrors) => true
+            };
+            var httpClient = new HttpClient(handler)
+            {
+                Timeout = TimeSpan.FromSeconds(60)
+            };
+
             _lineServiceConnection.UseUrl = _lineServiceConnection.BaseUrl;
 
             if (_lineServiceConnection != null)
@@ -28,17 +37,19 @@ namespace KoreklarMVC.ServiceLayer {
                     if (wasResponse && serviceResponse.IsSuccessStatusCode)
                     {
                         var content = await serviceResponse.Content.ReadAsStringAsync();
-                       /* if (hasValidId)
+                        
+                        if (!string.IsNullOrEmpty(content))
                         {
-                            Car? foundCar = JsonConvert.DeserializeObject<Car>(content);
+                            cars = JsonConvert.DeserializeObject<List<Car>>(content) ?? new List<Car>();
+                            /*Car? foundCar = JsonConvert.DeserializeObject<Car>(content);
                             if (foundCar != null)
                             {
-                                cars = new List<Car>() { foundCar };
-                            }
-                        }*/
-                        
-                        
-                         cars = JsonConvert.DeserializeObject<List<Car>>(content);
+                                cars.Add(foundCar);
+                            }*/
+
+
+                        }
+                         
                         
                     }
                     else
@@ -49,13 +60,18 @@ namespace KoreklarMVC.ServiceLayer {
                         }
                         else
                         {
-                            cars = null;
+                            cars = new List<Car>();
                         }
                     }
                 }
-                catch
+                catch (HttpRequestException ex)
                 {
-                    cars = null;
+                    Console.WriteLine($"HTTP Request error: {ex.Message}");
+                    if (ex.InnerException != null)
+                    {
+                        Console.WriteLine($"Inner Exception: {ex.InnerException.Message}");
+                    }
+                    cars = new List<Car>(); // Empty list on exception
                 }
             }
 
