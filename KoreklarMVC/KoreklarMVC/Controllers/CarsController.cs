@@ -1,11 +1,21 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using KoreklarMVC.Models;
 using KoreklarMVC.BusinessLogicLayer;
 
 namespace KoreklarMVC.Controllers {
     public class CarsController : Controller {
-        public IActionResult Index() {
+        public async Task<IActionResult> Index() {
             ShowCars cars = new ShowCars();
-            ViewData["cars"] = cars.GetAllCars();
+            List<Car> carsList = await cars.getAllCars();
+
+            if (carsList != null)
+            {
+                ViewData["cars"] = carsList;
+            } else
+            {
+                ViewData["cars"] = new List<Car>();
+            }
+
             return View();
         }
 
