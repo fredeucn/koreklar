@@ -11,5 +11,7 @@ namespace koreklarData.DatabaseLayer
     {
         Car? GetCarByVin(string vin);
         List<Car> GetCars();
+
+        void CreateCar(Car newCar);
     }
 }

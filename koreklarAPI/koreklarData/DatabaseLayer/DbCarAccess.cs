@@ -14,7 +14,7 @@ namespace koreklarData.DatabaseLayer
 
         public DbCarAccess()
         {
-            ConnectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Cars;Integrated Security=True;Encrypt=False";
+            ConnectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Koreklar;Integrated Security=True;Encrypt=False";
         }
 
         /*
@@ -125,5 +125,28 @@ namespace koreklarData.DatabaseLayer
             return foundCars;
         }
         */
+
+        public void CreateCar(Car newCar) {
+
+               Random idGenerator = new Random();
+            using (SqlConnection connection = new SqlConnection(ConnectionString)) {
+            string query = "INSERT INTO cars (year, kilometers_driven, top_speed, price, image, condition, description, vin, color, fueltype, id) " +
+               "VALUES (@Year, @KilometersDriven, @TopSpeed, @Price, @Image, @Condition, @Description, @Vin, @Color, @FuelType, @id)";
+                connection.Execute(query, new {
+                    Year = newCar.Year,
+                    KilometersDriven = newCar.Kilometers_Driven,
+                    TopSpeed = newCar.Top_Speed,
+                    Price = newCar.Price,
+                    Image = newCar.Image,
+                    Condition = newCar.Condition,
+                    Description = newCar.Description,
+                    Vin = newCar.Vin,
+                    Color = newCar.Color,
+                    FuelType = newCar.FuelType,
+                    id = idGenerator.Next(1, 100000)
+                });
+            }
+
+        }
     }
 }

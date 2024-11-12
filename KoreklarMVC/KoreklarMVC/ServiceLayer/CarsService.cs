@@ -14,7 +14,7 @@ namespace KoreklarMVC.ServiceLayer {
         {
             _lineServiceConnection = new ServiceConnection(_serviceBaseUrl);
         }
-        public async Task<List<Car>> getAllCars() {
+        public async Task<List<Car>> GetAllCars() {
             List<Car> cars = new List<Car>();
 
             var handler = new HttpClientHandler

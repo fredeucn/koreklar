@@ -4,6 +4,6 @@ namespace KoreklarMVC.ServiceLayer
 {
     public interface ICarService
     {
-        Task<List<Car>?> getAllCars();
+        Task<List<Car>?> GetAllCars();
     }
 }
