@@ -130,8 +130,8 @@ namespace koreklarData.DatabaseLayer
 
                Random idGenerator = new Random();
             using (SqlConnection connection = new SqlConnection(ConnectionString)) {
-            string query = "INSERT INTO cars (year, kilometers_driven, top_speed, price, image, condition, description, vin, color, fueltype, id) " +
-               "VALUES (@Year, @KilometersDriven, @TopSpeed, @Price, @Image, @Condition, @Description, @Vin, @Color, @FuelType, @id)";
+            string query = "INSERT INTO cars (year, kilometers_driven, top_speed, price, image, condition, description, vin, color, fueltype, brand, model, type) " +
+               "VALUES (@Year, @KilometersDriven, @TopSpeed, @Price, @Image, @Condition, @Description, @Vin, @Color, @FuelType, @Brand, @Model, @Type)";
                 connection.Execute(query, new {
                     Year = newCar.Year,
                     KilometersDriven = newCar.Kilometers_Driven,
@@ -143,7 +143,10 @@ namespace koreklarData.DatabaseLayer
                     Vin = newCar.Vin,
                     Color = newCar.Color,
                     FuelType = newCar.FuelType,
-                    id = idGenerator.Next(1, 100000)
+                    Brand = newCar.Brand,
+                    Model = newCar.Model,
+                    Type = newCar.Type
+
                 });
             }
 

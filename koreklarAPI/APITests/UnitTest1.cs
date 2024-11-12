@@ -47,7 +47,7 @@ namespace APITests
             
             Car testCar = new Car(2029, 15000, 220, 25000.00, "Toyotas", "Yariss", "LTs", "image_url_1.jpg", "Excellent", "Sporty red sedan with low mileage and excellent condition.", "1HGCM82633A123457", "Red", "Petrol");
             
-            carAccess.createCar(testCar);
+            carAccess.CreateCar(testCar);
 
             Car? resultCarDto = carAccess.GetCarByVin("1HGCM82633A123457");
 

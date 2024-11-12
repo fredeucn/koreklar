@@ -67,10 +67,10 @@ namespace koreklarAPI.Controllers
         }
 
         [HttpPost, Route("api/car")]
-        public void Create(int year, string color, string fuelType, int kilometersDriven, int topSpeed, double price, string image, string condition, string description, string vin) // Ændres til ReadCarDTO i refactoring
+        public void Create(int year, string color, string fuelType, int kilometersDriven, int topSpeed, double price, string image, string condition, string description, string vin, string model, string brand, string type) // Ændres til ReadCarDTO i refactoring
        {
 
-            Car newCar = new Car(year, kilometersDriven, topSpeed, price,  image, condition, description, vin,  color, fuelType);
+            Car newCar = new Car(year, kilometersDriven, topSpeed, price,  image, condition, description, vin,  color, fuelType, model, brand, type);
             _carAccess.CreateCar(newCar);
 
 
