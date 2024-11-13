@@ -5,7 +5,7 @@ using KoreklarMVC.BusinessLogicLayer;
 namespace KoreklarMVC.Controllers {
     public class CarsController : Controller {
         public async Task<IActionResult> Index() {
-            ShowCars cars = new ShowCars();
+            CarLogic cars = new CarLogic();
             List<Car> carsList = await cars.GetAllCars();
 
             if (carsList != null)

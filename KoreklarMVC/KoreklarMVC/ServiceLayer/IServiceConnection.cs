@@ -8,7 +8,7 @@
         public string? UseUrl { get; set; }
 
         Task<HttpResponseMessage?> CallServiceGet();
-        Task<HttpResponseMessage?> CallServicePost(StringContent postJson);
+        void CallServicePost(StringContent postJson);
         Task<HttpResponseMessage?> CallServicePut(StringContent postJson);
         Task<HttpResponseMessage?> CallServiceDelete();
 

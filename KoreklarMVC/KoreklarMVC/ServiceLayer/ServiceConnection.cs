@@ -23,9 +23,13 @@
             return hrm;
         }
 
-        Task<HttpResponseMessage?> IServiceConnection.CallServicePost(StringContent postJson)
+        async void IServiceConnection.CallServicePost(StringContent postJson)
         {
-            throw new NotImplementedException();
+            
+            if (UseUrl != null) {
+                await HttpEnabler.PostAsync(UseUrl + "/create", postJson);
+            }
+            
         }
 
         Task<HttpResponseMessage?> IServiceConnection.CallServicePut(StringContent postJson)
