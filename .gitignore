@@ -9,8 +9,6 @@
 *.user
 *.userosscache
 *.sln.docstates
-*.v2
-*.cache
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -400,25 +398,11 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
-KoreklarMVC/.vs/KoreklarMVC/v17/.suo
-KoreklarMVC/.vs/KoreklarMVC/v17/DocumentLayout.json
-KoreklarMVC/KoreklarMVC/obj/Debug/net8.0/KoreklarMVC.AssemblyInfo.cs
-KoreklarMVC/KoreklarMVC/obj/Debug/net8.0/KoreklarMVC.AssemblyInfoInputs.cache
-KoreklarAPI/.vs/KoreklarAPI/v17/.suo
-KoreklarAPI/KoreklarAPI/obj/Debug/net8.0/KoreklarAPI.AssemblyInfo.cs
-KoreklarAPI/KoreklarAPI/obj/Debug/net8.0/KoreklarAPI.AssemblyInfoInputs.cache
-KoreklarAPI/KoreklarAPI/obj/Debug/net8.0/KoreklarAPI.csproj.AssemblyReference.cache
-koreklarAPI/.vs/koreklarAPI/DesignTimeBuild/.dtbcache.v2
-koreklarAPI/.vs/koreklarAPI/v17/.futdcache.v2
-koreklarAPI/.vs/koreklarAPI/v17/.suo
-koreklarAPI/.vs/koreklarAPI/v17/DocumentLayout.backup.json
-koreklarAPI/.vs/koreklarAPI/v17/DocumentLayout.json
-koreklarAPI/koreklarAPI/obj/Debug/net8.0/koreklarAPI.AssemblyInfo.cs
-koreklarAPI/koreklarAPI/obj/Debug/net8.0/koreklarAPI.AssemblyInfoInputs.cache
-koreklarAPI/koreklarAPI/obj/Debug/net8.0/koreklarAPI.assets.cache
-koreklarAPI/koreklarAPI/obj/Debug/net8.0/koreklarAPI.csproj.AssemblyReference.cache
-koreklarAPI/koreklarAPI/obj/Debug/net8.0/koreklarAPI.GeneratedMSBuildEditorConfig.editorconfig
-koreklarAPI/koreklarAPI/obj/koreklarAPI.csproj.nuget.dgspec.json
-koreklarAPI/koreklarAPI/obj/koreklarAPI.csproj.nuget.g.props
-koreklarAPI/koreklarAPI/obj/project.assets.json
-koreklarAPI/koreklarAPI/obj/project.nuget.cache
+*/KoreklarMVC/.vs/KoreklarMVC/v17/.suo
+*/KoreklarMVC/.vs/KoreklarMVC/v17/DocumentLayout.json
+*/KoreklarMVC/KoreklarMVC/obj/Debug/net8.0/KoreklarMVC.AssemblyInfo.cs
+*/KoreklarMVC/KoreklarMVC/obj/Debug/net8.0/KoreklarMVC.AssemblyInfoInputs.cache
+*/KoreklarAPI/.vs/KoreklarAPI/v17/.suo
+*/KoreklarAPI/KoreklarAPI/obj/Debug/net8.0/KoreklarAPI.AssemblyInfo.cs
+*/KoreklarAPI/KoreklarAPI/obj/Debug/net8.0/KoreklarAPI.AssemblyInfoInputs.cache
+*/KoreklarAPI/KoreklarAPI/obj/Debug/net8.0/KoreklarAPI.csproj.AssemblyReference.cache
