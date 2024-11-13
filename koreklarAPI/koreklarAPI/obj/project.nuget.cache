@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "TUrSyKjtoUw=",
   "success": true,
   "projectFilePath": "C:\\Users\\lille\\Desktop\\Datamatiker\\Køreklar\\koreklar\\koreklarAPI\\koreklarAPI\\koreklarAPI.csproj",
+=======
+  "dgSpecHash": "CiR1roj5EyY=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\koreklarAPI\\koreklarAPI.csproj",
+>>>>>>> Stashed changes
   "expectedPackageFiles": [
     "C:\\Users\\lille\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\lille\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

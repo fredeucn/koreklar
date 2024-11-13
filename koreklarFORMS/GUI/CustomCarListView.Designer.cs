@@ -28,27 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
+            picCar = new PictureBox();
             lblCarName = new Label();
             lblPrice = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picCar).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // picCar
             // 
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(160, 160);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            picCar.Location = new Point(0, 0);
+            picCar.Margin = new Padding(4, 5, 4, 5);
+            picCar.Name = "picCar";
+            picCar.Size = new Size(229, 267);
+            picCar.TabIndex = 0;
+            picCar.TabStop = false;
             // 
             // lblCarName
             // 
             lblCarName.AutoSize = true;
             lblCarName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblCarName.Location = new Point(0, 163);
+            lblCarName.Location = new Point(0, 272);
+            lblCarName.Margin = new Padding(4, 0, 4, 0);
             lblCarName.Name = "lblCarName";
-            lblCarName.Size = new Size(93, 21);
+            lblCarName.Size = new Size(139, 32);
             lblCarName.TabIndex = 1;
             lblCarName.Text = "lblCarName";
             // 
@@ -56,30 +58,32 @@
             // 
             lblPrice.AutoSize = true;
             lblPrice.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblPrice.Location = new Point(0, 184);
+            lblPrice.Location = new Point(0, 307);
+            lblPrice.Margin = new Padding(4, 0, 4, 0);
             lblPrice.Name = "lblPrice";
-            lblPrice.Size = new Size(61, 21);
+            lblPrice.Size = new Size(91, 32);
             lblPrice.TabIndex = 2;
             lblPrice.Text = "lblPrice";
             // 
             // CustomCarListView
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(lblPrice);
             Controls.Add(lblCarName);
-            Controls.Add(pictureBox1);
-            Margin = new Padding(5);
+            Controls.Add(picCar);
+            Margin = new Padding(7, 8, 7, 8);
             Name = "CustomCarListView";
-            Size = new Size(160, 210);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            Size = new Size(229, 350);
+            Load += CustomCarListView_Load;
+            ((System.ComponentModel.ISupportInitialize)picCar).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
+        private PictureBox picCar;
         private Label lblCarName;
         private Label lblPrice;
     }
