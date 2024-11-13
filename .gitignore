@@ -409,4 +409,5 @@ KoreklarAPI/KoreklarAPI/obj/Debug/net8.0/KoreklarAPI.csproj.AssemblyReference.ca
 *.v2
 *.suo
 *.DoucmentLayout.json
-
+*.DoucmentLayout.backup.json
+*.infolnputs.cache
