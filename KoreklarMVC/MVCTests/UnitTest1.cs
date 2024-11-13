@@ -15,7 +15,7 @@ namespace MVCTests
 
             int targetListLength = 10;
 
-            List<Car> resultList = await showCars.getAllCars();
+            List<Car> resultList = await showCars.GetAllCars();
 
             Assert.AreEqual(resultList.Count, targetListLength);
             Assert.AreEqual(resultList[0], testCar);
