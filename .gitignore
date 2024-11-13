@@ -398,11 +398,11 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
-*/KoreklarMVC/.vs/KoreklarMVC/v17/.suo
-*/KoreklarMVC/.vs/KoreklarMVC/v17/DocumentLayout.json
-*/KoreklarMVC/KoreklarMVC/obj/Debug/net8.0/KoreklarMVC.AssemblyInfo.cs
-*/KoreklarMVC/KoreklarMVC/obj/Debug/net8.0/KoreklarMVC.AssemblyInfoInputs.cache
-*/KoreklarAPI/.vs/KoreklarAPI/v17/.suo
-*/KoreklarAPI/KoreklarAPI/obj/Debug/net8.0/KoreklarAPI.AssemblyInfo.cs
-*/KoreklarAPI/KoreklarAPI/obj/Debug/net8.0/KoreklarAPI.AssemblyInfoInputs.cache
-*/KoreklarAPI/KoreklarAPI/obj/Debug/net8.0/KoreklarAPI.csproj.AssemblyReference.cache
+KoreklarMVC/.vs/KoreklarMVC/v17/.suo
+KoreklarMVC/.vs/KoreklarMVC/v17/DocumentLayout.json
+KoreklarMVC/KoreklarMVC/obj/Debug/net8.0/KoreklarMVC.AssemblyInfo.cs
+KoreklarMVC/KoreklarMVC/obj/Debug/net8.0/KoreklarMVC.AssemblyInfoInputs.cache
+KoreklarAPI/.vs/KoreklarAPI/v17/.suo
+KoreklarAPI/KoreklarAPI/obj/Debug/net8.0/KoreklarAPI.AssemblyInfo.cs
+KoreklarAPI/KoreklarAPI/obj/Debug/net8.0/KoreklarAPI.AssemblyInfoInputs.cache
+KoreklarAPI/KoreklarAPI/obj/Debug/net8.0/KoreklarAPI.csproj.AssemblyReference.cache
