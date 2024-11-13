@@ -7,7 +7,7 @@ namespace MVCTests
     public class UnitTest1
     {
         [TestMethod]
-        public async void TestCarList()
+        public async Task TestCarList()
         {
             ShowCars showCars = new ShowCars();
 
