@@ -6,7 +6,7 @@ namespace KoreklarMVC.Controllers {
     public class CarsController : Controller {
         public async Task<IActionResult> Index() {
             ShowCars cars = new ShowCars();
-            List<Car> carsList = await cars.getAllCars();
+            List<Car> carsList = await cars.GetAllCars();
 
             if (carsList != null)
             {
