@@ -402,7 +402,12 @@ KoreklarMVC/.vs/KoreklarMVC/v17/.suo
 KoreklarMVC/.vs/KoreklarMVC/v17/DocumentLayout.json
 KoreklarMVC/KoreklarMVC/obj/Debug/net8.0/KoreklarMVC.AssemblyInfo.cs
 KoreklarMVC/KoreklarMVC/obj/Debug/net8.0/KoreklarMVC.AssemblyInfoInputs.cache
+
 KoreklarAPI/.vs/KoreklarAPI/v17/.suo
+KoreklarAPI/.vs/KoreklarAPI/v17/.futdcahce.v2
+KoreklarAPI/.vs/KoreklarAPI/DesignTimeBuild/.dtbcache.v2
 KoreklarAPI/.vs/KoreklarAPI/v17/DocumentLayout.json
 KoreklarAPI/KoreklarAPI/obj/Debug/net8.0/KoreklarAPI.AssemblyInfo.cs
 KoreklarAPI/KoreklarAPI/obj/Debug/net8.0/KoreklarAPI.AssemblyInfoInputs.cache
+KoreklarAPI/KoreklarAPI/obj/Debug/net8.0/KoreklarAPI.csproj.AssemblyReference.cache
+koreklarAPI/koreklarAPI/obj/Debug/net8.0/koreklarAPI.GeneratedMSBuildEditorConfig.editorconfig
