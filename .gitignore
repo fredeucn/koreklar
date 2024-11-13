@@ -406,8 +406,12 @@ KoreklarAPI/.vs/KoreklarAPI/v17/.suo
 KoreklarAPI/KoreklarAPI/obj/Debug/net8.0/KoreklarAPI.AssemblyInfo.cs
 KoreklarAPI/KoreklarAPI/obj/Debug/net8.0/KoreklarAPI.AssemblyInfoInputs.cache
 KoreklarAPI/KoreklarAPI/obj/Debug/net8.0/KoreklarAPI.csproj.AssemblyReference.cache
-*.v2
-*.suo
-*.DoucmentLayout.json
-*.DoucmentLayout.backup.json
-*.infolnputs.cache
+dtbcache.v2
+futdcache.v2
+v17/.suo
+DocumentLayout.backup.json
+DocumentLayout.json
+koreklarAPI.Assemblyinfo.cs
+koreklarAPI.AssemblyinfoInputs.cache
+koreklarAPI.assets.cache
+
