@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "koreklarFORMS", "koreklarFORMS.csproj", "{2F06756A-31A3-457A-9647-E06EA1503150}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "koreklarFORMS", "koreklarFORMS.csproj", "{2F06756A-31A3-457A-9647-E06EA1503150}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "..\koreklarAPI\Models\Models.csproj", "{EC5A1B2E-0D01-4DCC-B793-54788F3940B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{2F06756A-31A3-457A-9647-E06EA1503150}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F06756A-31A3-457A-9647-E06EA1503150}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F06756A-31A3-457A-9647-E06EA1503150}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC5A1B2E-0D01-4DCC-B793-54788F3940B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC5A1B2E-0D01-4DCC-B793-54788F3940B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC5A1B2E-0D01-4DCC-B793-54788F3940B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC5A1B2E-0D01-4DCC-B793-54788F3940B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

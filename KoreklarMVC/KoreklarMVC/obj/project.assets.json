@@ -61,11 +61,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< Updated upstream
       "projectUniqueName": "C:\\Users\\lille\\Desktop\\Datamatiker\\Køreklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\KoreklarMVC.csproj",
       "projectName": "KoreklarMVC",
       "projectPath": "C:\\Users\\lille\\Desktop\\Datamatiker\\Køreklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\KoreklarMVC.csproj",
       "packagesPath": "C:\\Users\\lille\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\lille\\Desktop\\Datamatiker\\Køreklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\KoreklarMVC\\KoreklarMVC\\KoreklarMVC.csproj",
+      "projectName": "KoreklarMVC",
+      "projectPath": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\KoreklarMVC\\KoreklarMVC\\KoreklarMVC.csproj",
+      "packagesPath": "C:\\Users\\Kaspe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\KoreklarMVC\\KoreklarMVC\\obj\\",
+>>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
