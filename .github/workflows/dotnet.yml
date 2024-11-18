@@ -22,7 +22,7 @@ jobs:
 
     # Restore Dependencies
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore koreklarAPI/koreklarAPI.sln
 
     # Install Additional Dependencies
     - name: Install dependencies
