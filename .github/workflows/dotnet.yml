@@ -37,4 +37,4 @@ jobs:
 
     # Test the Solution
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test koreklarAPI/koreklarAPI.sln --no-build --verbosity normal
