@@ -33,7 +33,7 @@ jobs:
 
     # Build the Solution
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build koreklarAPI/koreklarAPI.sln --no-restore
 
     # Test the Solution
     - name: Test
