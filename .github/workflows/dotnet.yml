@@ -28,9 +28,8 @@ jobs:
     # Install Additional Dependencies
     - name: Install dependencies
       run: |
-        dotnet add koreklarAPI/koreklarAPI package Newtonsoft.Json --version 12.0.1 
-        dotnet add koreklarAPI/koreklarAPI package Dapper --version 2.0.123 
-        dotnet add koreklarAPI/koreklarAPI package System.Data.SqlClient --version 4.8.5
+        dotnet add koreklarAPI/koreklarAPI package Dapper --version 2.1.35
+        dotnet add koreklarAPI/koreklarAPI package System.Data.SqlClient --version 4.8.6
 
     # Build the Solution
     - name: Build
