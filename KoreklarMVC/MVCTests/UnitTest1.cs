@@ -32,5 +32,10 @@ namespace MVCTests
 
             Assert.AreEqual(resultList[0].Vin, testCar.Vin);
         }
+        [TestMethod]
+        public void TestMVCInputs()
+        {
+
+        }
     }
 }

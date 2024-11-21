@@ -12,7 +12,7 @@
         Vælg bil
     </h3>
     <form border-dark">
-        <div style="border: 2px solid black; border-radius: 10px;">
+        <div>
             <input type="text" name="query" placeholder="Søg efter bil..." class="border-0"/>
         </div>
     </form>
@@ -26,6 +26,9 @@
                 <a asp-action="CarDetails" asp-route-vin="@car.Vin" asp-controller="Cars">
                     <img src="@car.Image" style="display: block; height: 250px; width: 300px" />
                 </a>
+                <p>
+                    @car.getName()
+                </p>
             </div>
         }
 

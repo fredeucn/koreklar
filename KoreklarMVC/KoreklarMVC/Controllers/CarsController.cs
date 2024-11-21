@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using KoreklarMVC.Models;
 using KoreklarMVC.BusinessLogicLayer;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace KoreklarMVC.Controllers {
     public class CarsController : Controller {
@@ -41,9 +42,18 @@ namespace KoreklarMVC.Controllers {
         }
 
 
-        public IActionResult Create() {
-            
-            return View();
+        public IActionResult Create(Car car) {
+            CarLogic cars = new CarLogic();
+
+            if (ModelState.IsValid)
+            {
+                cars.createCar(car);
+
+                return RedirectToAction("Index");
+            }
+
+
+            return View(car);
         }
     }
 }

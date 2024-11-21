@@ -125,10 +125,10 @@ namespace koreklarData.DatabaseLayer
             return foundCars;
         }
         */
-
+        
         public void CreateCar(Car newCar) {
 
-               Random idGenerator = new Random();
+            
             using (SqlConnection connection = new SqlConnection(ConnectionString)) {
             string query = "INSERT INTO cars (year, kilometers_driven, top_speed, price, image, condition, description, vin, color, fueltype, brand, model, type) " +
                "VALUES (@Year, @KilometersDriven, @TopSpeed, @Price, @Image, @Condition, @Description, @Vin, @Color, @FuelType, @Brand, @Model, @Type)";
