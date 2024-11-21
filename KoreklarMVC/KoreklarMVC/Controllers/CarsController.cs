@@ -19,14 +19,27 @@ namespace KoreklarMVC.Controllers {
             return View();
         }
 
-        /*public IActionResult CarDetails(int? id) {
-            ShowCars cars = new ShowCars();
+        [Route("cars/CarDetails/{vin}")]
+        public async Task<IActionResult> CarDetails(string? vin) {
+            if (string.IsNullOrEmpty(vin))
+            {
+                return BadRequest("VIN is required");
+            }
 
-            var car = cars.getAllCars().FirstOrDefault(c => c.Id == id);
-            
+            CarLogic cars = new CarLogic();
+
+            List<Car> carsList = await cars.GetAllCars();
+
+            Car? car = carsList.FirstOrDefault(c => c.Vin?.Equals(vin, StringComparison.OrdinalIgnoreCase) == true);
+
+            if (car == null)
+            {
+                return NotFound("Car not found");
+            }
+
             return View(car);
         }
-        */
+
 
         public IActionResult Create() {
             

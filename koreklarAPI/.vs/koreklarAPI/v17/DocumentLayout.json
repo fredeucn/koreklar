@@ -1,25 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\koreklarAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E43E28D3-16AD-453B-B691-9DD3594A0B09}|koreklarData\\koreklarData.csproj|c:\\users\\kaspe\\desktop\\se skarpt\\koreklar\\koreklarapi\\koreklardata\\databaselayer\\dbcaraccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E43E28D3-16AD-453B-B691-9DD3594A0B09}|koreklarData\\koreklarData.csproj|solutionrelative:koreklardata\\databaselayer\\dbcaraccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05AA8E95-6127-4282-8BE0-4C7ACB028A63}|koreklarAPI\\koreklarAPI.csproj|c:\\users\\kaspe\\desktop\\se skarpt\\koreklar\\koreklarapi\\koreklarapi\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05AA8E95-6127-4282-8BE0-4C7ACB028A63}|koreklarAPI\\koreklarAPI.csproj|solutionrelative:koreklarapi\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05AA8E95-6127-4282-8BE0-4C7ACB028A63}|koreklarAPI\\koreklarAPI.csproj|c:\\users\\kaspe\\desktop\\se skarpt\\koreklar\\koreklarapi\\koreklarapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{05AA8E95-6127-4282-8BE0-4C7ACB028A63}|koreklarAPI\\koreklarAPI.csproj|c:\\users\\lille\\desktop\\datamatiker\\k\u00F8reklar\\koreklar\\koreklarapi\\koreklarapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{05AA8E95-6127-4282-8BE0-4C7ACB028A63}|koreklarAPI\\koreklarAPI.csproj|solutionrelative:koreklarapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C7F7A12-684C-48F6-AA5E-81B3D4CF075A}|APITests\\APITests.csproj|c:\\users\\kaspe\\desktop\\se skarpt\\koreklar\\koreklarapi\\apitests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C7F7A12-684C-48F6-AA5E-81B3D4CF075A}|APITests\\APITests.csproj|solutionrelative:apitests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E43E28D3-16AD-453B-B691-9DD3594A0B09}|koreklarData\\koreklarData.csproj|c:\\users\\lille\\desktop\\datamatiker\\k\u00F8reklar\\koreklar\\koreklarapi\\koreklardata\\databaselayer\\dbcaraccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E43E28D3-16AD-453B-B691-9DD3594A0B09}|koreklarData\\koreklarData.csproj|solutionrelative:koreklardata\\databaselayer\\dbcaraccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FE75118-701F-40E5-87A2-DBC6FD34CBFE}|Models\\Models.csproj|c:\\users\\kaspe\\desktop\\se skarpt\\koreklar\\koreklarapi\\models\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FE75118-701F-40E5-87A2-DBC6FD34CBFE}|Models\\Models.csproj|c:\\users\\lille\\desktop\\datamatiker\\k\u00F8reklar\\koreklar\\koreklarapi\\models\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FE75118-701F-40E5-87A2-DBC6FD34CBFE}|Models\\Models.csproj|solutionrelative:models\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,10 +26,6 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
@@ -46,64 +34,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Car.cs",
-              "DocumentMoniker": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\Models\\Models\\Car.cs",
+              "DocumentMoniker": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\koreklarAPI\\Models\\Models\\Car.cs",
               "RelativeDocumentMoniker": "Models\\Models\\Car.cs",
-              "ToolTip": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\Models\\Models\\Car.cs",
+              "ToolTip": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\koreklarAPI\\Models\\Models\\Car.cs",
               "RelativeToolTip": "Models\\Models\\Car.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAABQwBAAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAqwBAAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T11:11:29.421Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DbCarAccess.cs",
-              "DocumentMoniker": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\koreklarData\\DatabaseLayer\\DbCarAccess.cs",
-              "RelativeDocumentMoniker": "koreklarData\\DatabaseLayer\\DbCarAccess.cs",
-              "ToolTip": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\koreklarData\\DatabaseLayer\\DbCarAccess.cs",
-              "RelativeToolTip": "koreklarData\\DatabaseLayer\\DbCarAccess.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T10:01:41.439Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CarController.cs",
-              "DocumentMoniker": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\koreklarAPI\\Controllers\\CarController.cs",
-              "RelativeDocumentMoniker": "koreklarAPI\\Controllers\\CarController.cs",
-              "ToolTip": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\koreklarAPI\\Controllers\\CarController.cs",
-              "RelativeToolTip": "koreklarAPI\\Controllers\\CarController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T09:44:05.431Z",
+              "WhenOpened": "2024-11-11T11:11:29.421Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\APITests\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "APITests\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\APITests\\UnitTest1.cs",
-              "RelativeToolTip": "APITests\\UnitTest1.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAIBJwA0AAAA1AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "DbCarAccess.cs",
+              "DocumentMoniker": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\koreklarAPI\\koreklarData\\DatabaseLayer\\DbCarAccess.cs",
+              "RelativeDocumentMoniker": "koreklarData\\DatabaseLayer\\DbCarAccess.cs",
+              "ToolTip": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\koreklarAPI\\koreklarData\\DatabaseLayer\\DbCarAccess.cs",
+              "RelativeToolTip": "koreklarData\\DatabaseLayer\\DbCarAccess.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T09:07:50.14Z"
+              "WhenOpened": "2024-11-07T10:01:41.439Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\koreklarAPI\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\koreklarAPI\\koreklarAPI\\Program.cs",
               "RelativeDocumentMoniker": "koreklarAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\koreklarAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\koreklarAPI\\koreklarAPI\\Program.cs",
               "RelativeToolTip": "koreklarAPI\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T08:48:29.825Z"
+              "WhenOpened": "2024-11-07T08:48:29.825Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,16 +1,17 @@
 {
   "version": 2,
-<<<<<<< Updated upstream
   "dgSpecHash": "IzTGLFOMv20=",
   "success": true,
   "projectFilePath": "C:\\Users\\lille\\Desktop\\Datamatiker\\Køreklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\KoreklarMVC.csproj",
-=======
-  "dgSpecHash": "nZhdBcF+EqI=",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\KoreklarMVC\\KoreklarMVC\\KoreklarMVC.csproj",
->>>>>>> Stashed changes
   "expectedPackageFiles": [
     "C:\\Users\\lille\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\lille\\Desktop\\Datamatiker\\Køreklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
