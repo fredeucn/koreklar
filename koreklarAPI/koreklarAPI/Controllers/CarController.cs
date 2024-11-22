@@ -66,7 +66,7 @@ namespace koreklarAPI.Controllers
             return foundReturn;
         }
 
-        [HttpPost, Route("api/car")]
+        [HttpPost, Route("api/cars")]
         public void Create([FromBody] Car car) // Ændres til ReadCarDTO i refactoring
        {
             _carAccess.CreateCar(car);

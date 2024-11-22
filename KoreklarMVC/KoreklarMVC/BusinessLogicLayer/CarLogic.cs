@@ -15,6 +15,7 @@ namespace KoreklarMVC.BusinessLogicLayer {
             CarsService carsService = new CarsService();
 
             carsService.CreateCar(newCar);
+            Console.WriteLine("CarLogic Check");
         }
 
     }

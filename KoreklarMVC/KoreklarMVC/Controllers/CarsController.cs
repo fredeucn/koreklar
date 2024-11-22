@@ -2,6 +2,7 @@
 using KoreklarMVC.Models;
 using KoreklarMVC.BusinessLogicLayer;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Net.Http.Headers;
 
 namespace KoreklarMVC.Controllers {
     public class CarsController : Controller {
@@ -41,19 +42,59 @@ namespace KoreklarMVC.Controllers {
             return View(car);
         }
 
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
 
-        public IActionResult Create(Car car) {
+        [HttpPost]
+        public async Task<IActionResult> Create(Car car) {
             CarLogic cars = new CarLogic();
 
-            if (ModelState.IsValid)
+            string baseUrl = "https://localhost:7228/api/cars";
+
+            using (HttpClient client = new HttpClient())
             {
-                cars.createCar(car);
+                client.BaseAddress = new Uri(baseUrl);
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                return RedirectToAction("Index");
+                // Send the car object as a POST request to the API
+                HttpResponseMessage response = await client.PostAsJsonAsync("", car);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    // Redirect to the Index page after successful creation
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    // Handle API errors
+                    ModelState.AddModelError("", "Failed to create car in the database.");
+                    return View(car);
+                }
+
+
+                /* if (ModelState.IsValid)
+             {
+                 cars.createCar(car);
+                 Console.WriteLine("I made it");
+
+                 return RedirectToAction("Index");
+             }
+
+             if (!ModelState.IsValid)
+             {
+                 foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+                 {
+                     Console.WriteLine(error.ErrorMessage);
+                 }
+             }*/
+
+
+                return View(car);
+
             }
-
-
-            return View(car);
         }
     }
 }

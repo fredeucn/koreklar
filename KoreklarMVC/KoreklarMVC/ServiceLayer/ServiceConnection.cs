@@ -28,6 +28,7 @@
             
             if (UseUrl != null) {
                 await HttpEnabler.PostAsync(UseUrl + "/create", postJson);
+                Console.WriteLine("ServiceConnection Check");
             }
             
         }

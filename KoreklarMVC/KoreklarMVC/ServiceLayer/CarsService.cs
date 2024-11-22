@@ -69,8 +69,9 @@ namespace KoreklarMVC.ServiceLayer {
 
             if (_carServiceConnection != null) {
                 try {
+                    Console.WriteLine(newCar.ToString());
                     _carServiceConnection.CallServicePost(new StringContent(JsonConvert.SerializeObject(newCar), Encoding.UTF8, "application/json"));
-
+                    Console.WriteLine("CarsService Check");
 
                 } catch (HttpRequestException ex) {
                     Console.WriteLine($"HTTP Request error: {ex.Message}");
