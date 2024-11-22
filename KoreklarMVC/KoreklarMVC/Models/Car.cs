@@ -1,4 +1,6 @@
-﻿namespace KoreklarMVC.Models {
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace KoreklarMVC.Models {
     public class Car {
         public int Year { get; set; }
         public int Kilometers_Driven { get; set; }
@@ -7,7 +9,9 @@
         public string Brand { get; set; }
         public string Model { get; set; }
         public string Type { get; set; }
-        public string Image { get; set; }
+        [NotMapped]
+        public IFormFile ImageFile { get; set; }
+        public byte[] Image {  get; set; }
         public string Description { get; set; }
         public string Condition { get; set; }
         public string Vin { get; set; }
@@ -25,7 +29,7 @@
         }
 
         public Car(int Year, int KilometersDriven, int TopSpeed, double Price, string Brand,
-                    string Model, string Type, string Image, string Condition, string Description, string Vin,
+                    string Model, string Type, byte[] Image, string Condition, string Description, string Vin,
                     string Color, string FuelType)
         {
             this.Year = Year;

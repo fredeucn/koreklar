@@ -3,7 +3,14 @@
 <div class="d-flex gap-5 justify-content-between mt-5">
     <div>
         <h2>@Model.Model @Model.Brand @Model.Year</h2>
-        <img src="@Model.Image" style="display: block; height: 300px; width: 900px; object-fit: cover; margin: 5px 0" />
+         @if (Model.Image != null && Model.Image.Length > 0)
+                    {
+            <img src="data:image/jpeg;base64,@Convert.ToBase64String(Model.Image)" style="display: block; height: 300px; width: 900px; object-fit: cover; margin: 5px 0" />
+                    }
+                    else
+                    {
+                        <img src="" style="display: block; height: 250px; width: 300px"></img>
+                    }
         <div class="d-flex gap-2 justify-content-between mt-3">
             <div style="font-size: 22px">
                <p style="border-bottom: 2px solid black; width: 100%;">@Model.Kilometers_Driven km</p>

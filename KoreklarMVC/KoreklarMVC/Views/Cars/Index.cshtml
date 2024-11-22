@@ -6,7 +6,6 @@
 }
 
 
-
 <div class="d-flex justify-content-between">
     <h3>
         Vælg bil
@@ -24,7 +23,14 @@
             
             <div class="col-sm style="width: 100px; height: 200px;">
                 <a asp-action="CarDetails" asp-route-vin="@car.Vin" asp-controller="Cars">
-                    <img src="@car.Image" style="display: block; height: 250px; width: 300px" />
+                    @if (car.Image != null && car.Image.Length > 0)
+                    {
+                        <img src="data:image/jpeg;base64,@Convert.ToBase64String(car.Image)" style="display: block; height: 250px; width: 300px" />
+                    }
+                    else
+                    {
+                        <img src="" style="display: block; height: 250px; width: 300px"></img>
+                    }
                 </a>
                 <p>
                     @car.getName()

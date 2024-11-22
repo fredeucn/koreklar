@@ -146,6 +146,7 @@ namespace koreklarData.DatabaseLayer
                     Brand = newCar.Brand,
                     Model = newCar.Model,
                     Type = newCar.Type
+                    
 
                 });
             }

@@ -1,4 +1,4 @@
-﻿<form asp-controller="Cars" asp-action="Create" method="post">
+﻿<form asp-controller="Cars" asp-action="Create" method="post" enctype="multipart/form-data">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -51,7 +51,7 @@
                 </div>
                 <div class="d-flex justify-content-between mb-2">
                     <p>Image link:</p>
-                    <input type="text" id="Image" name="Image" />
+                    <input type="file" id="ImageFile" name="ImageFile" />
                 </div>
                 <div class="d-flex justify-content-between mb-2">
                     <p>Price:</p>

@@ -49,10 +49,21 @@ namespace KoreklarMVC.Controllers {
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Car car) {
+        public async Task<IActionResult> Create(Car car, [FromForm] IFormFile ImageFile) {
             CarLogic cars = new CarLogic();
+            car.ImageFile = null;
 
             string baseUrl = "https://localhost:7228/api/cars";
+
+            if (ImageFile != null)
+            {
+                using (var memoryStream = new MemoryStream())
+                {
+                    await ImageFile.CopyToAsync(memoryStream);
+                    byte[] imageData = memoryStream.ToArray(); 
+                    car.Image = imageData; 
+                }
+            }
 
             using (HttpClient client = new HttpClient())
             {

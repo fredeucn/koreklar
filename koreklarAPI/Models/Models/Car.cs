@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Models.Models
 {
@@ -11,7 +12,9 @@ namespace Models.Models
         public string Brand { get; set; }
         public string Model { get; set; }
         public string Type { get; set; }
-        public string Image { get; set; }
+        [NotMapped]
+        public IFormFile ImageFile { get; set; }
+        public byte[] Image { get; set; }
         public string Description { get; set; }
         public string Condition { get; set; }
         public string Vin { get; set; }
@@ -29,7 +32,7 @@ namespace Models.Models
         }
 
         public Car(int Year, int KilometersDriven, int TopSpeed, double Price,  
-                     string Image, string Condition, string Description, string Vin, 
+                     byte[] Image, string Condition, string Description, string Vin, 
                     string Color, string FuelType, string Brand, string Model, string Type)
         {
             this.Year = Year;
