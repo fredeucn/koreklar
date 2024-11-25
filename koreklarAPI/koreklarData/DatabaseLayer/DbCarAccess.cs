@@ -14,8 +14,7 @@ namespace koreklarData.DatabaseLayer
 
         public DbCarAccess()
         {
-            ConnectionString = "data source=it-sql02-dmzskn;initial catalog=DMA-CSD-S232_10503078;user id=DMA-CSD-S232_10503078;password=Password1!";
-            //ConnectionString = "Data Source=hildur.ucn.dk:1433;Initial Catalog=DMA-CSD-S232_10503078;Integrated Security=True;Encrypt=False;User=DMA-CSD-S232_10503078;Password=Password1!";
+            ConnectionString = "Data Source=hildur.ucn.dk;Initial Catalog=DMA-CSD-S232_10503078;Encrypt=False;User id=DMA-CSD-S232_10503078;Password=Password1!";
         }
 
         /*

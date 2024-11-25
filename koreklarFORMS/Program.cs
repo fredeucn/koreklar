@@ -14,7 +14,7 @@ namespace koreklarFORMS
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             //Application.Run(new CarsView());
-            Application.Run(new Create());
+            Application.Run(new CarsView());
         }
     }
 }

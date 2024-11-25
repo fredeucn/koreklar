@@ -42,6 +42,7 @@
             picCar.Size = new Size(229, 267);
             picCar.TabIndex = 0;
             picCar.TabStop = false;
+            picCar.Click += PicCar_Click;
             // 
             // lblCarName
             // 

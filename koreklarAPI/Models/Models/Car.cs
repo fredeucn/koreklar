@@ -67,9 +67,17 @@ namespace Models.Models
                    Description == other.Description &&
                    Vin == other.Vin &&
                    Color == other.Color &&
-                   FuelType == other.FuelType
-                   ;
+                   FuelType == other.FuelType;
+        }
 
+        public string getName()
+        {
+            return $"{this.Brand} {this.Model} {this.Year}";
+        }
+
+        public override string ToString()
+        {
+            return Year + Kilometers_Driven + Top_Speed + Brand + Model + Type + Image + Condition + Description + Vin + Color + FuelType;
         }
     }
 }

@@ -11,26 +11,20 @@ using System.Windows.Forms;
 
 namespace koreklarFORMS.GUI
 {
-    public partial class CustomCarListView : UserControl
+    public partial class CarViewDetails : Form
     {
         private Car car;
 
-        public CustomCarListView(Car car)
+        public CarViewDetails(Car car)
         {
             InitializeComponent();
             this.car = car;
         }
 
-        private void CustomCarListView_Load(object sender, EventArgs e)
+        private void CarViewDetails_Load(object sender, EventArgs e)
         {
+            this.CenterToScreen();
             lblCarName.Text = car.getName();
-            lblPrice.Text = car.Price.ToString() + " kr.";
-        }
-
-        private void PicCar_Click(object sender, EventArgs e)
-        {
-            CarViewDetails cvd = new CarViewDetails(car);
-            cvd.Show();
         }
     }
 }
