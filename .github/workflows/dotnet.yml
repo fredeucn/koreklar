@@ -35,6 +35,6 @@ jobs:
     - name: Build
       run: dotnet build koreklarAPI/koreklarAPI.sln --no-restore
 
-    # Test the Solution
+    # Test the Solution 
     - name: Test
       run: dotnet test koreklarAPI/koreklarAPI.sln --no-build --verbosity normal
