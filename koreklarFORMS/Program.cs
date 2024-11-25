@@ -1,3 +1,5 @@
+using koreklarFORMS.GUI;
+
 namespace koreklarFORMS
 {
     internal static class Program
@@ -11,7 +13,8 @@ namespace koreklarFORMS
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new CarsView());
+            //Application.Run(new CarsView());
+            Application.Run(new Create());
         }
     }
 }

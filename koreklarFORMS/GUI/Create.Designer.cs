@@ -39,7 +39,6 @@
             txt_Year = new TextBox();
             txt_FuelType = new TextBox();
             txt_TopSpeed = new TextBox();
-            txt_Image = new TextBox();
             txt_Price = new TextBox();
             lbl_Brand = new Label();
             lbl_Model = new Label();
@@ -57,6 +56,7 @@
             lbl_Description = new Label();
             txt_Description = new TextBox();
             btn_Confirm = new Button();
+            btn_UploadImage = new Button();
             SuspendLayout();
             // 
             // txt_Brand
@@ -121,6 +121,7 @@
             txt_Year.Name = "txt_Year";
             txt_Year.Size = new Size(125, 27);
             txt_Year.TabIndex = 8;
+            txt_Year.KeyDown += txt_Year_KeyDown;
             // 
             // txt_FuelType
             // 
@@ -136,16 +137,9 @@
             txt_TopSpeed.Size = new Size(125, 27);
             txt_TopSpeed.TabIndex = 10;
             // 
-            // txt_Image
-            // 
-            txt_Image.Location = new Point(540, 286);
-            txt_Image.Name = "txt_Image";
-            txt_Image.Size = new Size(125, 27);
-            txt_Image.TabIndex = 11;
-            // 
             // txt_Price
             // 
-            txt_Price.Location = new Point(538, 346);
+            txt_Price.Location = new Point(540, 289);
             txt_Price.Name = "txt_Price";
             txt_Price.Size = new Size(125, 27);
             txt_Price.TabIndex = 12;
@@ -252,7 +246,7 @@
             // lbl_Image
             // 
             lbl_Image.AutoSize = true;
-            lbl_Image.Location = new Point(456, 289);
+            lbl_Image.Location = new Point(472, 417);
             lbl_Image.Name = "lbl_Image";
             lbl_Image.Size = new Size(51, 20);
             lbl_Image.TabIndex = 24;
@@ -261,7 +255,7 @@
             // lbl_Price
             // 
             lbl_Price.AutoSize = true;
-            lbl_Price.Location = new Point(453, 349);
+            lbl_Price.Location = new Point(482, 289);
             lbl_Price.Name = "lbl_Price";
             lbl_Price.Size = new Size(41, 20);
             lbl_Price.TabIndex = 25;
@@ -270,7 +264,7 @@
             // lbl_Description
             // 
             lbl_Description.AutoSize = true;
-            lbl_Description.Location = new Point(438, 408);
+            lbl_Description.Location = new Point(447, 350);
             lbl_Description.Name = "lbl_Description";
             lbl_Description.Size = new Size(85, 20);
             lbl_Description.TabIndex = 26;
@@ -278,25 +272,37 @@
             // 
             // txt_Description
             // 
-            txt_Description.Location = new Point(538, 408);
+            txt_Description.Location = new Point(540, 346);
             txt_Description.Name = "txt_Description";
             txt_Description.Size = new Size(125, 27);
             txt_Description.TabIndex = 27;
             // 
             // btn_Confirm
             // 
-            btn_Confirm.Location = new Point(561, 523);
+            btn_Confirm.Location = new Point(571, 517);
             btn_Confirm.Name = "btn_Confirm";
             btn_Confirm.Size = new Size(94, 29);
             btn_Confirm.TabIndex = 28;
             btn_Confirm.Text = "Confirm";
             btn_Confirm.UseVisualStyleBackColor = true;
+            btn_Confirm.Click += btn_Confirm_Click;
+            // 
+            // btn_UploadImage
+            // 
+            btn_UploadImage.Location = new Point(569, 413);
+            btn_UploadImage.Name = "btn_UploadImage";
+            btn_UploadImage.Size = new Size(94, 29);
+            btn_UploadImage.TabIndex = 29;
+            btn_UploadImage.Text = "Choose Image";
+            btn_UploadImage.UseVisualStyleBackColor = true;
+            btn_UploadImage.Click += btn_UploadImage_Click;
             // 
             // Create
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(785, 571);
+            Controls.Add(btn_UploadImage);
             Controls.Add(btn_Confirm);
             Controls.Add(txt_Description);
             Controls.Add(lbl_Description);
@@ -314,7 +320,6 @@
             Controls.Add(lbl_Model);
             Controls.Add(lbl_Brand);
             Controls.Add(txt_Price);
-            Controls.Add(txt_Image);
             Controls.Add(txt_TopSpeed);
             Controls.Add(txt_FuelType);
             Controls.Add(txt_Year);
@@ -346,7 +351,6 @@
         private TextBox txt_Year;
         private TextBox txt_FuelType;
         private TextBox txt_TopSpeed;
-        private TextBox txt_Image;
         private TextBox txt_Price;
         private Label lbl_Brand;
         private Label lbl_Model;
@@ -364,5 +368,6 @@
         private Label lbl_Description;
         private TextBox txt_Description;
         private Button btn_Confirm;
+        private Button btn_UploadImage;
     }
 }

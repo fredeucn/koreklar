@@ -20,5 +20,12 @@ namespace koreklarFORMS.Controllers
 
             return cars;
         }
+
+        public void CreateCar(Car newCar)
+        {
+            CarService carService = new CarService();
+
+            carService.CreateCar(newCar);
+        }
     }
 }

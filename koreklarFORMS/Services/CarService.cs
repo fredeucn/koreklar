@@ -11,13 +11,38 @@ namespace koreklarFORMS.Services
     public class CarService : ICarService
     {
 
-        readonly IServiceConnection _lineServiceConnection;
+        readonly IServiceConnection _carServiceConnection;
         readonly string? _serviceBaseUrl = "https://localhost:7228/api/cars";
 
         public CarService()
         {
-            _lineServiceConnection = new ServiceConnection(_serviceBaseUrl);
+            _carServiceConnection = new ServiceConnection(_serviceBaseUrl);
         }
+
+        public void CreateCar(Car newCar)
+        {
+            _carServiceConnection.UseUrl = _carServiceConnection.BaseUrl;
+
+            if (_carServiceConnection != null)
+            {
+                try
+                {
+                    Console.WriteLine(newCar.ToString());
+                    _carServiceConnection.CallServicePost(new StringContent(JsonConvert.SerializeObject(newCar), Encoding.UTF8, "application/json"));
+                    System.Diagnostics.Debug.WriteLine("CarsService Check");
+
+                }
+                catch (HttpRequestException ex)
+                {
+                    System.Diagnostics.Debug.WriteLine($"HTTP Request error: {ex.Message}");
+                    if (ex.InnerException != null)
+                    {
+                        System.Diagnostics.Debug.WriteLine($"Inner Exception: {ex.InnerException.Message}");
+                    }
+                }
+            }
+        }
+
         public async Task<List<Car>> GetAllCars()
         {
             List<Car> cars = new List<Car>();
@@ -31,13 +56,13 @@ namespace koreklarFORMS.Services
                 Timeout = TimeSpan.FromSeconds(60)
             };
 
-            _lineServiceConnection.UseUrl = _lineServiceConnection.BaseUrl;
+            _carServiceConnection.UseUrl = _carServiceConnection.BaseUrl;
 
-            if (_lineServiceConnection != null)
+            if (_carServiceConnection != null)
             {
                 try
                 {
-                    var serviceResponse = await _lineServiceConnection.CallServiceGet();
+                    var serviceResponse = await _carServiceConnection.CallServiceGet();
                     bool wasResponse = (serviceResponse != null);
                     if (wasResponse && serviceResponse.IsSuccessStatusCode)
                     {
@@ -52,9 +77,7 @@ namespace koreklarFORMS.Services
                                 cars.Add(foundCar);
                             }*/
 
-
                         }
-
 
                     }
                     else
