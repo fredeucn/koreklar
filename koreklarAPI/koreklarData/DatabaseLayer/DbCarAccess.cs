@@ -14,7 +14,7 @@ namespace koreklarData.DatabaseLayer
 
         public DbCarAccess()
         {
-            ConnectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Koreklar;Integrated Security=True;Encrypt=False";
+            ConnectionString = "data source=it-sql02-dmzskn;initial catalog=DMA-CSD-S232_10503078;user id=DMA-CSD-S232_10503078;password=Password1!";
         }
 
         /*
