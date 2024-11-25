@@ -106,6 +106,11 @@ namespace KoreklarMVC.Controllers {
                 return View(car);
 
             }
+
+        }
+
+        new public ActionResult NotFound() {
+            return View(); 
         }
     }
 }
