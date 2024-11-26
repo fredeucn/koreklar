@@ -75,8 +75,8 @@
             layoutMain.Name = "layoutMain";
             layoutMain.Padding = new Padding(20);
             layoutMain.RowCount = 4;
-            layoutMain.RowStyles.Add(new RowStyle());
-            layoutMain.RowStyles.Add(new RowStyle());
+            layoutMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
+            layoutMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
             layoutMain.RowStyles.Add(new RowStyle());
             layoutMain.RowStyles.Add(new RowStyle());
             layoutMain.Size = new Size(899, 677);
@@ -87,7 +87,7 @@
             lblSelectPlan.AutoSize = true;
             lblSelectPlan.Dock = DockStyle.Bottom;
             lblSelectPlan.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblSelectPlan.Location = new Point(538, 61);
+            lblSelectPlan.Location = new Point(538, 95);
             lblSelectPlan.Name = "lblSelectPlan";
             lblSelectPlan.Size = new Size(338, 25);
             lblSelectPlan.TabIndex = 10;
@@ -102,7 +102,7 @@
             panelTopBar.Dock = DockStyle.Fill;
             panelTopBar.Location = new Point(23, 23);
             panelTopBar.Name = "panelTopBar";
-            panelTopBar.Size = new Size(853, 35);
+            panelTopBar.Size = new Size(853, 44);
             panelTopBar.TabIndex = 6;
             // 
             // layoutTopBar
@@ -118,7 +118,7 @@
             layoutTopBar.Name = "layoutTopBar";
             layoutTopBar.RowCount = 1;
             layoutTopBar.RowStyles.Add(new RowStyle());
-            layoutTopBar.Size = new Size(851, 33);
+            layoutTopBar.Size = new Size(851, 42);
             layoutTopBar.TabIndex = 5;
             // 
             // topBarFlowButtons
@@ -129,15 +129,15 @@
             topBarFlowButtons.Controls.Add(btnContact);
             topBarFlowButtons.Dock = DockStyle.Fill;
             topBarFlowButtons.FlowDirection = FlowDirection.RightToLeft;
-            topBarFlowButtons.Location = new Point(39, 3);
+            topBarFlowButtons.Location = new Point(45, 3);
             topBarFlowButtons.Name = "topBarFlowButtons";
-            topBarFlowButtons.Size = new Size(809, 36);
+            topBarFlowButtons.Size = new Size(803, 36);
             topBarFlowButtons.TabIndex = 1;
             // 
             // btnLogin
             // 
             btnLogin.Font = new Font("Segoe UI", 12F);
-            btnLogin.Location = new Point(731, 3);
+            btnLogin.Location = new Point(725, 3);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(75, 30);
             btnLogin.TabIndex = 4;
@@ -147,7 +147,7 @@
             // btnBiler
             // 
             btnBiler.Font = new Font("Segoe UI", 12F);
-            btnBiler.Location = new Point(650, 3);
+            btnBiler.Location = new Point(644, 3);
             btnBiler.Name = "btnBiler";
             btnBiler.Size = new Size(75, 30);
             btnBiler.TabIndex = 1;
@@ -157,7 +157,7 @@
             // btnContact
             // 
             btnContact.Font = new Font("Segoe UI", 12F);
-            btnContact.Location = new Point(569, 3);
+            btnContact.Location = new Point(563, 3);
             btnContact.Name = "btnContact";
             btnContact.Size = new Size(75, 30);
             btnContact.TabIndex = 3;
@@ -166,10 +166,11 @@
             // 
             // btnBack
             // 
+            btnBack.Dock = DockStyle.Fill;
             btnBack.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnBack.Location = new Point(3, 3);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(30, 27);
+            btnBack.Size = new Size(36, 36);
             btnBack.TabIndex = 0;
             btnBack.Text = "<";
             btnBack.UseVisualStyleBackColor = true;
@@ -178,7 +179,7 @@
             // 
             btnSubscribe.Dock = DockStyle.Top;
             btnSubscribe.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSubscribe.Location = new Point(537, 243);
+            btnSubscribe.Location = new Point(537, 277);
             btnSubscribe.Margin = new Padding(2);
             btnSubscribe.Name = "btnSubscribe";
             btnSubscribe.Size = new Size(340, 40);
@@ -191,7 +192,7 @@
             lblCarName.AutoSize = true;
             lblCarName.Dock = DockStyle.Bottom;
             lblCarName.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblCarName.Location = new Point(23, 61);
+            lblCarName.Location = new Point(23, 95);
             lblCarName.Name = "lblCarName";
             lblCarName.Size = new Size(509, 25);
             lblCarName.TabIndex = 6;
@@ -208,7 +209,7 @@
             PanelSelectPlan.Controls.Add(btn6Months);
             PanelSelectPlan.Dock = DockStyle.Fill;
             PanelSelectPlan.FlowDirection = FlowDirection.TopDown;
-            PanelSelectPlan.Location = new Point(538, 89);
+            PanelSelectPlan.Location = new Point(538, 123);
             PanelSelectPlan.Name = "PanelSelectPlan";
             PanelSelectPlan.Size = new Size(338, 149);
             PanelSelectPlan.TabIndex = 9;
@@ -264,7 +265,7 @@
             tableLayoutPanel1.Controls.Add(lblCarInfoRight, 1, 2);
             tableLayoutPanel1.Controls.Add(lblCarDescriptionDisplay, 0, 3);
             tableLayoutPanel1.Dock = DockStyle.Fill;
-            tableLayoutPanel1.Location = new Point(23, 89);
+            tableLayoutPanel1.Location = new Point(23, 123);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 6;
             layoutMain.SetRowSpan(tableLayoutPanel1, 2);
@@ -298,6 +299,7 @@
             picCar.Location = new Point(3, 3);
             picCar.Name = "picCar";
             picCar.Size = new Size(503, 194);
+            picCar.SizeMode = PictureBoxSizeMode.Zoom;
             picCar.TabIndex = 0;
             picCar.TabStop = false;
             // 

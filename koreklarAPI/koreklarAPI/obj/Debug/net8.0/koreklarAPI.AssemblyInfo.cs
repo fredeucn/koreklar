@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("koreklarAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0979c7c826ddc2b81cd871b43bfc50d7a7eaf6f1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29cfa1987703509810744a2875cf8f276607cd62")]
 [assembly: System.Reflection.AssemblyProductAttribute("koreklarAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("koreklarAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

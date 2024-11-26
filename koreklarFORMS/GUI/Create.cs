@@ -16,6 +16,7 @@ namespace koreklarFORMS.GUI
     {
         CarController carController;
         byte[] image;
+
         public Create()
         {
             InitializeComponent();

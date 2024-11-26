@@ -32,8 +32,8 @@ namespace koreklarFORMS
 
         private void btnCreateCar_Click(object sender, EventArgs e)
         {
-            Create create = new Create();
-            create.Show();
+            CarCreate carCreate = new CarCreate();
+            carCreate.Show();
         }
     }
 }

@@ -23,16 +23,12 @@ namespace koreklarFORMS.Services
         {
             _carServiceConnection.UseUrl = _carServiceConnection.BaseUrl;
 
-            MessageBox.Show("Before checking if car service connection != null");
             if (_carServiceConnection != null)
             {
-                MessageBox.Show("After checking if car service connection != null");
                 try
                 {
-                    Console.WriteLine(newCar.ToString());
                     _carServiceConnection.CallServicePost(new StringContent(JsonConvert.SerializeObject(newCar), Encoding.UTF8, "application/json"));
-                    System.Diagnostics.Debug.WriteLine("CarsService Check");
-
+                    System.Diagnostics.Debug.WriteLine("Cars Service Check");
                 }
                 catch (HttpRequestException ex)
                 {

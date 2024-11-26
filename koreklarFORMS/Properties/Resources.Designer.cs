@@ -59,5 +59,15 @@ namespace koreklarFORMS.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vælg_billede {
+            get {
+                object obj = ResourceManager.GetObject("vælg billede", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
