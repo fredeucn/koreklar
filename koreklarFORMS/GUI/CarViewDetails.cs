@@ -21,8 +21,6 @@ namespace koreklarFORMS.GUI
             this.car = car;
         }
 
-
-
         private void CarViewDetails_Load(object sender, EventArgs e)
         {
             this.CenterToScreen();
@@ -31,6 +29,13 @@ namespace koreklarFORMS.GUI
             lblCarName.Text = car.getName();
 
             // Car picture
+            if (car.Image != null)
+            {
+                using (MemoryStream ms = new MemoryStream(car.Image))
+                {
+                    picCar.Image = Image.FromStream(ms);
+                }
+            }
 
             // Car description
             lblCarDescription.Text = car.Description;

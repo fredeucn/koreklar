@@ -29,5 +29,11 @@ namespace koreklarFORMS
                 PanelCarList.Controls.Add(cclv);
             }
         }
+
+        private void btnCreateCar_Click(object sender, EventArgs e)
+        {
+            Create create = new Create();
+            create.Show();
+        }
     }
 }

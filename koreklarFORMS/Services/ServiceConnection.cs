@@ -33,7 +33,7 @@ namespace koreklarFORMS.Services
         {
             if (UseUrl != null)
             {
-                await HttpEnabler.PostAsync(UseUrl + "/create", postJson);
+                await HttpEnabler.PostAsync(UseUrl, postJson);
                 System.Diagnostics.Debug.WriteLine("ServiceConnection Check");
             }
         }

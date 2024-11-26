@@ -40,6 +40,7 @@
             picCar.Margin = new Padding(4, 5, 4, 5);
             picCar.Name = "picCar";
             picCar.Size = new Size(229, 267);
+            picCar.SizeMode = PictureBoxSizeMode.Zoom;
             picCar.TabIndex = 0;
             picCar.TabStop = false;
             picCar.Click += PicCar_Click;

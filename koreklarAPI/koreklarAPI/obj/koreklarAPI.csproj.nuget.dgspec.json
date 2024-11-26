@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\Cowio\\koreklar\\koreklarAPI\\koreklarAPI\\koreklarAPI.csproj": {}
+    "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\koreklarAPI\\koreklarAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\Cowio\\koreklar\\koreklarAPI\\koreklarAPI\\koreklarAPI.csproj": {
+    "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\koreklarAPI\\koreklarAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\Cowio\\koreklar\\koreklarAPI\\koreklarAPI\\koreklarAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\koreklarAPI\\koreklarAPI.csproj",
         "projectName": "koreklarAPI",
-        "projectPath": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\Cowio\\koreklar\\koreklarAPI\\koreklarAPI\\koreklarAPI.csproj",
+        "projectPath": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\koreklarAPI\\koreklarAPI.csproj",
         "packagesPath": "C:\\Users\\Kaspe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\Cowio\\koreklar\\koreklarAPI\\koreklarAPI\\obj\\",
+        "outputPath": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\koreklarAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kaspe\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,11 +29,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\Cowio\\koreklar\\koreklarAPI\\koreklarData\\koreklarData.csproj": {
-                "projectPath": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\Cowio\\koreklar\\koreklarAPI\\koreklarData\\koreklarData.csproj"
+              "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\koreklarData\\koreklarData.csproj": {
+                "projectPath": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\koreklarData\\koreklarData.csproj"
               },
-              "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\Cowio\\koreklar\\koreklarAPI\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\Cowio\\koreklar\\koreklarAPI\\Models\\Models.csproj"
+              "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\Models\\Models.csproj"
               }
             }
           }
@@ -93,14 +93,14 @@
         }
       }
     },
-    "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\Cowio\\koreklar\\koreklarAPI\\koreklarData\\koreklarData.csproj": {
+    "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\koreklarData\\koreklarData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\Cowio\\koreklar\\koreklarAPI\\koreklarData\\koreklarData.csproj",
+        "projectUniqueName": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\koreklarData\\koreklarData.csproj",
         "projectName": "koreklarData",
-        "projectPath": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\Cowio\\koreklar\\koreklarAPI\\koreklarData\\koreklarData.csproj",
+        "projectPath": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\koreklarData\\koreklarData.csproj",
         "packagesPath": "C:\\Users\\Kaspe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\Cowio\\koreklar\\koreklarAPI\\koreklarData\\obj\\",
+        "outputPath": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\koreklarData\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kaspe\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -118,8 +118,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\Cowio\\koreklar\\koreklarAPI\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\Cowio\\koreklar\\koreklarAPI\\Models\\Models.csproj"
+              "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\Models\\Models.csproj"
               }
             }
           }
@@ -172,14 +172,14 @@
         }
       }
     },
-    "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\Cowio\\koreklar\\koreklarAPI\\Models\\Models.csproj": {
+    "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\Cowio\\koreklar\\koreklarAPI\\Models\\Models.csproj",
+        "projectUniqueName": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\Cowio\\koreklar\\koreklarAPI\\Models\\Models.csproj",
+        "projectPath": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\Models\\Models.csproj",
         "packagesPath": "C:\\Users\\Kaspe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\Cowio\\koreklar\\koreklarAPI\\Models\\obj\\",
+        "outputPath": "C:\\Users\\Kaspe\\Desktop\\Se Skarpt\\koreklar\\koreklarAPI\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kaspe\\AppData\\Roaming\\NuGet\\NuGet.Config",

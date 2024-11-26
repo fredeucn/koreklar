@@ -29,35 +29,37 @@ namespace koreklarFORMS.GUI
 
         private void btn_Confirm_Click(object sender, EventArgs e)
         {
+            
             System.Diagnostics.Debug.WriteLine("Confirm Check 1");
-            if (!int.TryParse(txt_Year.Text, out int year) || year < 1800 || year > DateTime.Now.Year)
+            if (!int.TryParse(txtYear.Text, out int year) || year < 1800 || year > DateTime.Now.Year)
             {
                 MessageBox.Show("Please enter a valid year between 1800 and the current year.");
                 return;
             }
 
-            if (!int.TryParse(txt_Odometer.Text, out int odometer))
+            if (!int.TryParse(txtOdometer.Text, out int odometer))
             {
                 MessageBox.Show("Please enter a positive value for odometer");
                 return;
             }
 
-            if (!int.TryParse(txt_TopSpeed.Text, out int topSpeed))
+            if (!int.TryParse(txtTopSpeed.Text, out int topSpeed))
             {
                 MessageBox.Show("Please enter a positive value for top speed");
                 return;
             }
 
-            if (!double.TryParse(txt_Price.Text, out double price))
+            if (!double.TryParse(txtPrice.Text, out double price))
             {
                 MessageBox.Show("Please enter a positive value for price");
                 return;
             }
+            
 
 
-            Car newCar = new Car(year, odometer, topSpeed, price,
-                image, txt_Condition.Text, txt_Description.Text, txt_Vin.Text, txt_Color.Text,
-                txt_FuelType.Text, txt_Brand.Text, txt_Model.Text, txt_Type.Text);
+            Car newCar = new Car(year, odometer, topSpeed, price, image, txtCondition.Text, txtDescription.Text, txtVin.Text, txtColor.Text, txtFuelType.Text, txtBrand.Text, txtModel.Text, txtType.Text);
+
+            MessageBox.Show("Car Created!" + newCar.ToString());
 
             carController.CreateCar(newCar);
 

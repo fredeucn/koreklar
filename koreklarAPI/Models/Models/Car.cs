@@ -26,11 +26,6 @@ namespace Models.Models
 
         }
 
-        public Car(string Description)
-        {
-            this.Description = Description;
-        }
-
         public Car(int Year, int KilometersDriven, int TopSpeed, double Price,  
                      byte[] Image, string Condition, string Description, string Vin, 
                     string Color, string FuelType, string Brand, string Model, string Type)
@@ -77,7 +72,7 @@ namespace Models.Models
 
         public override string ToString()
         {
-            return Year + Kilometers_Driven + Top_Speed + Brand + Model + Type + Image + Condition + Description + Vin + Color + FuelType;
+            return $"{Year} {Kilometers_Driven} {Top_Speed} {Brand} {Model} {Type} {Image} {Condition} {Description} {Vin} {Color} {FuelType}";
         }
     }
 }

@@ -28,309 +28,329 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txt_Brand = new TextBox();
-            txt_Model = new TextBox();
-            txt_Type = new TextBox();
-            txt_Color = new TextBox();
-            txt_Odometer = new TextBox();
-            txt_LicensePlate = new TextBox();
-            txt_Vin = new TextBox();
-            txt_Condition = new TextBox();
-            txt_Year = new TextBox();
-            txt_FuelType = new TextBox();
-            txt_TopSpeed = new TextBox();
-            txt_Price = new TextBox();
-            lbl_Brand = new Label();
-            lbl_Model = new Label();
-            lbl_Type = new Label();
-            lbl_Color = new Label();
-            lbl_Odometer = new Label();
-            lbl_LicensePlate = new Label();
-            lbl_Vin = new Label();
-            lbl_Condition = new Label();
-            lbl_Year = new Label();
-            lbl_FuelType = new Label();
-            lbl_TopSpeed = new Label();
-            lbl_Image = new Label();
-            lbl_Price = new Label();
-            lbl_Description = new Label();
-            txt_Description = new TextBox();
-            btn_Confirm = new Button();
-            btn_UploadImage = new Button();
+            txtBrand = new TextBox();
+            txtModel = new TextBox();
+            txtType = new TextBox();
+            txtColor = new TextBox();
+            txtOdometer = new TextBox();
+            txtVin = new TextBox();
+            txtCondition = new TextBox();
+            txtYear = new TextBox();
+            txtFuelType = new TextBox();
+            txtTopSpeed = new TextBox();
+            txtPrice = new TextBox();
+            lblBrand = new Label();
+            lblModel = new Label();
+            lblType = new Label();
+            lblColor = new Label();
+            lblOdometer = new Label();
+            lblVin = new Label();
+            lblCondition = new Label();
+            lblYear = new Label();
+            lblFuelType = new Label();
+            lblTopSpeed = new Label();
+            lblImage = new Label();
+            lblPrice = new Label();
+            lblDescription = new Label();
+            txtDescription = new TextBox();
+            btnConfirm = new Button();
+            btnUploadImage = new Button();
             SuspendLayout();
             // 
-            // txt_Brand
+            // txtBrand
             // 
-            txt_Brand.Location = new Point(189, 37);
-            txt_Brand.Name = "txt_Brand";
-            txt_Brand.Size = new Size(125, 27);
-            txt_Brand.TabIndex = 0;
+            txtBrand.Location = new Point(236, 46);
+            txtBrand.Margin = new Padding(4);
+            txtBrand.Name = "txtBrand";
+            txtBrand.Size = new Size(155, 31);
+            txtBrand.TabIndex = 0;
+            txtBrand.Text = "Monster";
             // 
-            // txt_Model
+            // txtModel
             // 
-            txt_Model.Location = new Point(189, 96);
-            txt_Model.Name = "txt_Model";
-            txt_Model.Size = new Size(125, 27);
-            txt_Model.TabIndex = 1;
+            txtModel.Location = new Point(236, 120);
+            txtModel.Margin = new Padding(4);
+            txtModel.Name = "txtModel";
+            txtModel.Size = new Size(155, 31);
+            txtModel.TabIndex = 1;
+            txtModel.Text = "Ultra";
             // 
-            // txt_Type
+            // txtType
             // 
-            txt_Type.Location = new Point(189, 155);
-            txt_Type.Name = "txt_Type";
-            txt_Type.Size = new Size(125, 27);
-            txt_Type.TabIndex = 2;
+            txtType.Location = new Point(236, 194);
+            txtType.Margin = new Padding(4);
+            txtType.Name = "txtType";
+            txtType.Size = new Size(155, 31);
+            txtType.TabIndex = 2;
+            txtType.Text = "Gamer";
             // 
-            // txt_Color
+            // txtColor
             // 
-            txt_Color.Location = new Point(189, 218);
-            txt_Color.Name = "txt_Color";
-            txt_Color.Size = new Size(125, 27);
-            txt_Color.TabIndex = 3;
+            txtColor.Location = new Point(236, 272);
+            txtColor.Margin = new Padding(4);
+            txtColor.Name = "txtColor";
+            txtColor.Size = new Size(155, 31);
+            txtColor.TabIndex = 3;
+            txtColor.Text = "Hvid";
             // 
-            // txt_Odometer
+            // txtOdometer
             // 
-            txt_Odometer.Location = new Point(189, 282);
-            txt_Odometer.Name = "txt_Odometer";
-            txt_Odometer.Size = new Size(125, 27);
-            txt_Odometer.TabIndex = 4;
+            txtOdometer.Location = new Point(236, 352);
+            txtOdometer.Margin = new Padding(4);
+            txtOdometer.Name = "txtOdometer";
+            txtOdometer.Size = new Size(155, 31);
+            txtOdometer.TabIndex = 4;
+            txtOdometer.Text = "1500";
             // 
-            // txt_LicensePlate
+            // txtVin
             // 
-            txt_LicensePlate.Location = new Point(189, 343);
-            txt_LicensePlate.Name = "txt_LicensePlate";
-            txt_LicensePlate.Size = new Size(125, 27);
-            txt_LicensePlate.TabIndex = 5;
+            txtVin.Location = new Point(236, 435);
+            txtVin.Margin = new Padding(4);
+            txtVin.Name = "txtVin";
+            txtVin.Size = new Size(155, 31);
+            txtVin.TabIndex = 6;
+            txtVin.Text = "Rose";
             // 
-            // txt_Vin
+            // txtCondition
             // 
-            txt_Vin.Location = new Point(189, 408);
-            txt_Vin.Name = "txt_Vin";
-            txt_Vin.Size = new Size(125, 27);
-            txt_Vin.TabIndex = 6;
+            txtCondition.Location = new Point(675, 42);
+            txtCondition.Margin = new Padding(4);
+            txtCondition.Name = "txtCondition";
+            txtCondition.Size = new Size(155, 31);
+            txtCondition.TabIndex = 7;
+            txtCondition.Text = "Bad";
             // 
-            // txt_Condition
+            // txtYear
             // 
-            txt_Condition.Location = new Point(540, 34);
-            txt_Condition.Name = "txt_Condition";
-            txt_Condition.Size = new Size(125, 27);
-            txt_Condition.TabIndex = 7;
+            txtYear.Location = new Point(672, 120);
+            txtYear.Margin = new Padding(4);
+            txtYear.Name = "txtYear";
+            txtYear.Size = new Size(155, 31);
+            txtYear.TabIndex = 8;
+            txtYear.Text = "2001";
+            txtYear.KeyDown += txt_Year_KeyDown;
             // 
-            // txt_Year
+            // txtFuelType
             // 
-            txt_Year.Location = new Point(538, 96);
-            txt_Year.Name = "txt_Year";
-            txt_Year.Size = new Size(125, 27);
-            txt_Year.TabIndex = 8;
-            txt_Year.KeyDown += txt_Year_KeyDown;
+            txtFuelType.Location = new Point(672, 194);
+            txtFuelType.Margin = new Padding(4);
+            txtFuelType.Name = "txtFuelType";
+            txtFuelType.Size = new Size(155, 31);
+            txtFuelType.TabIndex = 9;
+            txtFuelType.Text = "Diesel";
             // 
-            // txt_FuelType
+            // txtTopSpeed
             // 
-            txt_FuelType.Location = new Point(538, 155);
-            txt_FuelType.Name = "txt_FuelType";
-            txt_FuelType.Size = new Size(125, 27);
-            txt_FuelType.TabIndex = 9;
+            txtTopSpeed.Location = new Point(672, 272);
+            txtTopSpeed.Margin = new Padding(4);
+            txtTopSpeed.Name = "txtTopSpeed";
+            txtTopSpeed.Size = new Size(155, 31);
+            txtTopSpeed.TabIndex = 10;
+            txtTopSpeed.Text = "200";
             // 
-            // txt_TopSpeed
+            // txtPrice
             // 
-            txt_TopSpeed.Location = new Point(538, 218);
-            txt_TopSpeed.Name = "txt_TopSpeed";
-            txt_TopSpeed.Size = new Size(125, 27);
-            txt_TopSpeed.TabIndex = 10;
+            txtPrice.Location = new Point(675, 361);
+            txtPrice.Margin = new Padding(4);
+            txtPrice.Name = "txtPrice";
+            txtPrice.Size = new Size(155, 31);
+            txtPrice.TabIndex = 12;
+            txtPrice.Text = "5000";
             // 
-            // txt_Price
+            // lblBrand
             // 
-            txt_Price.Location = new Point(540, 289);
-            txt_Price.Name = "txt_Price";
-            txt_Price.Size = new Size(125, 27);
-            txt_Price.TabIndex = 12;
+            lblBrand.AutoSize = true;
+            lblBrand.Location = new Point(111, 46);
+            lblBrand.Margin = new Padding(4, 0, 4, 0);
+            lblBrand.Name = "lblBrand";
+            lblBrand.Size = new Size(58, 25);
+            lblBrand.TabIndex = 13;
+            lblBrand.Text = "Brand";
             // 
-            // lbl_Brand
+            // lblModel
             // 
-            lbl_Brand.AutoSize = true;
-            lbl_Brand.Location = new Point(89, 37);
-            lbl_Brand.Name = "lbl_Brand";
-            lbl_Brand.Size = new Size(48, 20);
-            lbl_Brand.TabIndex = 13;
-            lbl_Brand.Text = "Brand";
+            lblModel.AutoSize = true;
+            lblModel.Location = new Point(111, 120);
+            lblModel.Margin = new Padding(4, 0, 4, 0);
+            lblModel.Name = "lblModel";
+            lblModel.Size = new Size(63, 25);
+            lblModel.TabIndex = 14;
+            lblModel.Text = "Model";
             // 
-            // lbl_Model
+            // lblType
             // 
-            lbl_Model.AutoSize = true;
-            lbl_Model.Location = new Point(89, 96);
-            lbl_Model.Name = "lbl_Model";
-            lbl_Model.Size = new Size(52, 20);
-            lbl_Model.TabIndex = 14;
-            lbl_Model.Text = "Model";
+            lblType.AutoSize = true;
+            lblType.Location = new Point(104, 194);
+            lblType.Margin = new Padding(4, 0, 4, 0);
+            lblType.Name = "lblType";
+            lblType.Size = new Size(49, 25);
+            lblType.TabIndex = 15;
+            lblType.Text = "Type";
             // 
-            // lbl_Type
+            // lblColor
             // 
-            lbl_Type.AutoSize = true;
-            lbl_Type.Location = new Point(83, 155);
-            lbl_Type.Name = "lbl_Type";
-            lbl_Type.Size = new Size(40, 20);
-            lbl_Type.TabIndex = 15;
-            lbl_Type.Text = "Type";
+            lblColor.AutoSize = true;
+            lblColor.Location = new Point(104, 272);
+            lblColor.Margin = new Padding(4, 0, 4, 0);
+            lblColor.Name = "lblColor";
+            lblColor.Size = new Size(55, 25);
+            lblColor.TabIndex = 16;
+            lblColor.Text = "Color";
             // 
-            // lbl_Color
+            // lblOdometer
             // 
-            lbl_Color.AutoSize = true;
-            lbl_Color.Location = new Point(83, 218);
-            lbl_Color.Name = "lbl_Color";
-            lbl_Color.Size = new Size(45, 20);
-            lbl_Color.TabIndex = 16;
-            lbl_Color.Text = "Color";
+            lblOdometer.AutoSize = true;
+            lblOdometer.Location = new Point(104, 352);
+            lblOdometer.Margin = new Padding(4, 0, 4, 0);
+            lblOdometer.Name = "lblOdometer";
+            lblOdometer.Size = new Size(94, 25);
+            lblOdometer.TabIndex = 17;
+            lblOdometer.Text = "Odometer";
             // 
-            // lbl_Odometer
+            // lblVin
             // 
-            lbl_Odometer.AutoSize = true;
-            lbl_Odometer.Location = new Point(83, 282);
-            lbl_Odometer.Name = "lbl_Odometer";
-            lbl_Odometer.Size = new Size(77, 20);
-            lbl_Odometer.TabIndex = 17;
-            lbl_Odometer.Text = "Odometer";
+            lblVin.AutoSize = true;
+            lblVin.Location = new Point(104, 439);
+            lblVin.Margin = new Padding(4, 0, 4, 0);
+            lblVin.Name = "lblVin";
+            lblVin.Size = new Size(37, 25);
+            lblVin.TabIndex = 19;
+            lblVin.Text = "Vin";
             // 
-            // lbl_LicensePlate
+            // lblCondition
             // 
-            lbl_LicensePlate.AutoSize = true;
-            lbl_LicensePlate.Location = new Point(83, 346);
-            lbl_LicensePlate.Name = "lbl_LicensePlate";
-            lbl_LicensePlate.Size = new Size(90, 20);
-            lbl_LicensePlate.TabIndex = 18;
-            lbl_LicensePlate.Text = "LicensePlate";
+            lblCondition.AutoSize = true;
+            lblCondition.Location = new Point(576, 50);
+            lblCondition.Margin = new Padding(4, 0, 4, 0);
+            lblCondition.Name = "lblCondition";
+            lblCondition.Size = new Size(90, 25);
+            lblCondition.TabIndex = 20;
+            lblCondition.Text = "Condition";
             // 
-            // lbl_Vin
+            // lblYear
             // 
-            lbl_Vin.AutoSize = true;
-            lbl_Vin.Location = new Point(83, 411);
-            lbl_Vin.Name = "lbl_Vin";
-            lbl_Vin.Size = new Size(30, 20);
-            lbl_Vin.TabIndex = 19;
-            lbl_Vin.Text = "Vin";
+            lblYear.AutoSize = true;
+            lblYear.Location = new Point(576, 120);
+            lblYear.Margin = new Padding(4, 0, 4, 0);
+            lblYear.Name = "lblYear";
+            lblYear.Size = new Size(44, 25);
+            lblYear.TabIndex = 21;
+            lblYear.Text = "Year";
             // 
-            // lbl_Condition
+            // lblFuelType
             // 
-            lbl_Condition.AutoSize = true;
-            lbl_Condition.Location = new Point(461, 40);
-            lbl_Condition.Name = "lbl_Condition";
-            lbl_Condition.Size = new Size(74, 20);
-            lbl_Condition.TabIndex = 20;
-            lbl_Condition.Text = "Condition";
+            lblFuelType.AutoSize = true;
+            lblFuelType.Location = new Point(570, 194);
+            lblFuelType.Margin = new Padding(4, 0, 4, 0);
+            lblFuelType.Name = "lblFuelType";
+            lblFuelType.Size = new Size(81, 25);
+            lblFuelType.TabIndex = 22;
+            lblFuelType.Text = "FuelType";
             // 
-            // lbl_Year
+            // lblTopSpeed
             // 
-            lbl_Year.AutoSize = true;
-            lbl_Year.Location = new Point(461, 96);
-            lbl_Year.Name = "lbl_Year";
-            lbl_Year.Size = new Size(37, 20);
-            lbl_Year.TabIndex = 21;
-            lbl_Year.Text = "Year";
+            lblTopSpeed.AutoSize = true;
+            lblTopSpeed.Location = new Point(570, 276);
+            lblTopSpeed.Margin = new Padding(4, 0, 4, 0);
+            lblTopSpeed.Name = "lblTopSpeed";
+            lblTopSpeed.Size = new Size(91, 25);
+            lblTopSpeed.TabIndex = 23;
+            lblTopSpeed.Text = "TopSpeed";
             // 
-            // lbl_FuelType
+            // lblImage
             // 
-            lbl_FuelType.AutoSize = true;
-            lbl_FuelType.Location = new Point(456, 155);
-            lbl_FuelType.Name = "lbl_FuelType";
-            lbl_FuelType.Size = new Size(67, 20);
-            lbl_FuelType.TabIndex = 22;
-            lbl_FuelType.Text = "FuelType";
+            lblImage.AutoSize = true;
+            lblImage.Location = new Point(590, 521);
+            lblImage.Margin = new Padding(4, 0, 4, 0);
+            lblImage.Name = "lblImage";
+            lblImage.Size = new Size(62, 25);
+            lblImage.TabIndex = 24;
+            lblImage.Text = "Image";
             // 
-            // lbl_TopSpeed
+            // lblPrice
             // 
-            lbl_TopSpeed.AutoSize = true;
-            lbl_TopSpeed.Location = new Point(456, 221);
-            lbl_TopSpeed.Name = "lbl_TopSpeed";
-            lbl_TopSpeed.Size = new Size(76, 20);
-            lbl_TopSpeed.TabIndex = 23;
-            lbl_TopSpeed.Text = "TopSpeed";
+            lblPrice.AutoSize = true;
+            lblPrice.Location = new Point(602, 361);
+            lblPrice.Margin = new Padding(4, 0, 4, 0);
+            lblPrice.Name = "lblPrice";
+            lblPrice.Size = new Size(49, 25);
+            lblPrice.TabIndex = 25;
+            lblPrice.Text = "Price";
             // 
-            // lbl_Image
+            // lblDescription
             // 
-            lbl_Image.AutoSize = true;
-            lbl_Image.Location = new Point(472, 417);
-            lbl_Image.Name = "lbl_Image";
-            lbl_Image.Size = new Size(51, 20);
-            lbl_Image.TabIndex = 24;
-            lbl_Image.Text = "Image";
+            lblDescription.AutoSize = true;
+            lblDescription.Location = new Point(559, 438);
+            lblDescription.Margin = new Padding(4, 0, 4, 0);
+            lblDescription.Name = "lblDescription";
+            lblDescription.Size = new Size(102, 25);
+            lblDescription.TabIndex = 26;
+            lblDescription.Text = "Description";
             // 
-            // lbl_Price
+            // txtDescription
             // 
-            lbl_Price.AutoSize = true;
-            lbl_Price.Location = new Point(482, 289);
-            lbl_Price.Name = "lbl_Price";
-            lbl_Price.Size = new Size(41, 20);
-            lbl_Price.TabIndex = 25;
-            lbl_Price.Text = "Price";
+            txtDescription.Location = new Point(675, 432);
+            txtDescription.Margin = new Padding(4);
+            txtDescription.Name = "txtDescription";
+            txtDescription.Size = new Size(155, 31);
+            txtDescription.TabIndex = 27;
+            txtDescription.Text = "This is just a test!";
             // 
-            // lbl_Description
+            // btnConfirm
             // 
-            lbl_Description.AutoSize = true;
-            lbl_Description.Location = new Point(447, 350);
-            lbl_Description.Name = "lbl_Description";
-            lbl_Description.Size = new Size(85, 20);
-            lbl_Description.TabIndex = 26;
-            lbl_Description.Text = "Description";
+            btnConfirm.Location = new Point(714, 646);
+            btnConfirm.Margin = new Padding(4);
+            btnConfirm.Name = "btnConfirm";
+            btnConfirm.Size = new Size(118, 36);
+            btnConfirm.TabIndex = 28;
+            btnConfirm.Text = "Confirm";
+            btnConfirm.UseVisualStyleBackColor = true;
+            btnConfirm.Click += btn_Confirm_Click;
             // 
-            // txt_Description
+            // btnUploadImage
             // 
-            txt_Description.Location = new Point(540, 346);
-            txt_Description.Name = "txt_Description";
-            txt_Description.Size = new Size(125, 27);
-            txt_Description.TabIndex = 27;
-            // 
-            // btn_Confirm
-            // 
-            btn_Confirm.Location = new Point(571, 517);
-            btn_Confirm.Name = "btn_Confirm";
-            btn_Confirm.Size = new Size(94, 29);
-            btn_Confirm.TabIndex = 28;
-            btn_Confirm.Text = "Confirm";
-            btn_Confirm.UseVisualStyleBackColor = true;
-            btn_Confirm.Click += btn_Confirm_Click;
-            // 
-            // btn_UploadImage
-            // 
-            btn_UploadImage.Location = new Point(569, 413);
-            btn_UploadImage.Name = "btn_UploadImage";
-            btn_UploadImage.Size = new Size(94, 29);
-            btn_UploadImage.TabIndex = 29;
-            btn_UploadImage.Text = "Choose Image";
-            btn_UploadImage.UseVisualStyleBackColor = true;
-            btn_UploadImage.Click += btn_UploadImage_Click;
+            btnUploadImage.Location = new Point(711, 516);
+            btnUploadImage.Margin = new Padding(4);
+            btnUploadImage.Name = "btnUploadImage";
+            btnUploadImage.Size = new Size(118, 36);
+            btnUploadImage.TabIndex = 29;
+            btnUploadImage.Text = "Choose Image";
+            btnUploadImage.UseVisualStyleBackColor = true;
+            btnUploadImage.Click += btn_UploadImage_Click;
             // 
             // Create
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(785, 571);
-            Controls.Add(btn_UploadImage);
-            Controls.Add(btn_Confirm);
-            Controls.Add(txt_Description);
-            Controls.Add(lbl_Description);
-            Controls.Add(lbl_Price);
-            Controls.Add(lbl_Image);
-            Controls.Add(lbl_TopSpeed);
-            Controls.Add(lbl_FuelType);
-            Controls.Add(lbl_Year);
-            Controls.Add(lbl_Condition);
-            Controls.Add(lbl_Vin);
-            Controls.Add(lbl_LicensePlate);
-            Controls.Add(lbl_Odometer);
-            Controls.Add(lbl_Color);
-            Controls.Add(lbl_Type);
-            Controls.Add(lbl_Model);
-            Controls.Add(lbl_Brand);
-            Controls.Add(txt_Price);
-            Controls.Add(txt_TopSpeed);
-            Controls.Add(txt_FuelType);
-            Controls.Add(txt_Year);
-            Controls.Add(txt_Condition);
-            Controls.Add(txt_Vin);
-            Controls.Add(txt_LicensePlate);
-            Controls.Add(txt_Odometer);
-            Controls.Add(txt_Color);
-            Controls.Add(txt_Type);
-            Controls.Add(txt_Model);
-            Controls.Add(txt_Brand);
+            ClientSize = new Size(981, 714);
+            Controls.Add(btnUploadImage);
+            Controls.Add(btnConfirm);
+            Controls.Add(txtDescription);
+            Controls.Add(lblDescription);
+            Controls.Add(lblPrice);
+            Controls.Add(lblImage);
+            Controls.Add(lblTopSpeed);
+            Controls.Add(lblFuelType);
+            Controls.Add(lblYear);
+            Controls.Add(lblCondition);
+            Controls.Add(lblVin);
+            Controls.Add(lblOdometer);
+            Controls.Add(lblColor);
+            Controls.Add(lblType);
+            Controls.Add(lblModel);
+            Controls.Add(lblBrand);
+            Controls.Add(txtPrice);
+            Controls.Add(txtTopSpeed);
+            Controls.Add(txtFuelType);
+            Controls.Add(txtYear);
+            Controls.Add(txtCondition);
+            Controls.Add(txtVin);
+            Controls.Add(txtOdometer);
+            Controls.Add(txtColor);
+            Controls.Add(txtType);
+            Controls.Add(txtModel);
+            Controls.Add(txtBrand);
+            Margin = new Padding(4);
             Name = "Create";
             Text = "Form1";
             Load += Create_Load;
@@ -340,34 +360,32 @@
 
         #endregion
 
-        private TextBox txt_Brand;
-        private TextBox txt_Model;
-        private TextBox txt_Type;
-        private TextBox txt_Color;
-        private TextBox txt_Odometer;
-        private TextBox txt_LicensePlate;
-        private TextBox txt_Vin;
-        private TextBox txt_Condition;
-        private TextBox txt_Year;
-        private TextBox txt_FuelType;
-        private TextBox txt_TopSpeed;
-        private TextBox txt_Price;
-        private Label lbl_Brand;
-        private Label lbl_Model;
-        private Label lbl_Type;
-        private Label lbl_Color;
-        private Label lbl_Odometer;
-        private Label lbl_LicensePlate;
-        private Label lbl_Vin;
-        private Label lbl_Condition;
-        private Label lbl_Year;
-        private Label lbl_FuelType;
-        private Label lbl_TopSpeed;
-        private Label lbl_Image;
-        private Label lbl_Price;
-        private Label lbl_Description;
-        private TextBox txt_Description;
-        private Button btn_Confirm;
-        private Button btn_UploadImage;
+        private TextBox txtBrand;
+        private TextBox txtModel;
+        private TextBox txtType;
+        private TextBox txtColor;
+        private TextBox txtOdometer;
+        private TextBox txtVin;
+        private TextBox txtCondition;
+        private TextBox txtYear;
+        private TextBox txtFuelType;
+        private TextBox txtTopSpeed;
+        private TextBox txtPrice;
+        private Label lblBrand;
+        private Label lblModel;
+        private Label lblType;
+        private Label lblColor;
+        private Label lblOdometer;
+        private Label lblVin;
+        private Label lblCondition;
+        private Label lblYear;
+        private Label lblFuelType;
+        private Label lblTopSpeed;
+        private Label lblImage;
+        private Label lblPrice;
+        private Label lblDescription;
+        private TextBox txtDescription;
+        private Button btnConfirm;
+        private Button btnUploadImage;
     }
 }

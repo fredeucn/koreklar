@@ -23,8 +23,10 @@ namespace koreklarFORMS.Services
         {
             _carServiceConnection.UseUrl = _carServiceConnection.BaseUrl;
 
+            MessageBox.Show("Before checking if car service connection != null");
             if (_carServiceConnection != null)
             {
+                MessageBox.Show("After checking if car service connection != null");
                 try
                 {
                     Console.WriteLine(newCar.ToString());
