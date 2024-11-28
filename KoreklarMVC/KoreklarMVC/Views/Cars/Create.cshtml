@@ -4,62 +4,75 @@
             <div class="col">
                 <div class="d-flex justify-content-between mb-2">
                     <p>Brand:</p>
-                    <input type="text" id="Brand" name="Brand" />
+                    <input required type="text" id="Brand" name="Brand" />
                 </div>
                 <div class="d-flex justify-content-between mb-2">
                     <p>Model:</p>
-                    <input type="text" id="Model" name="Model" />
+                    <input required type="text" id="Model" name="Model" />
                 </div>
                 <div class="d-flex justify-content-between mb-2">
                     <p>Color:</p>
-                    <input type="text" id="Color" name="Color" />
+                    <input required type="text" id="Color" name="Color" />
                 </div>
                 <div class="d-flex justify-content-between mb-2">
                     <p>Odometer:</p>
-                    <input type="text" id="Kilometers_Driven" name="Kilometers_Driven" />
+                    <input required type="text" id="Kilometers_Driven" name="Kilometers_Driven" />
                 </div>
 
                 <div class="d-flex justify-content-between mb-2">
                     <p>License plate:</p>
-                    <input type="text" id="License_Plate" name="License_Plate" />
+                    <input required type="text" id="License_Plate" name="License_Plate" />
                 </div>
                 <div class="d-flex justify-content-between mb-2">
                     <p>Vin:</p>
-                    <input type="text" id="Vin" name="Vin" />
+                    <input required type="text" id="Vin" name="Vin" />
                 </div>
                 <div class="d-flex justify-content-between mb-2">
                     <p>Condition:</p>
-                    <input type="text" id="Condition" name="Condition" />
+                    <select required id="Condition" name="Condition">
+                        <option>Excellent</option>
+                        <option>Great</option>
+                        <option>Good</option>
+                        <option>Bad</option>
+                        <option>Terrible</option>
+                    </select>
                 </div>
             </div>
             <div class="col gap-2">
                 <div class="d-flex justify-content-between mb-2">
                     <p>Type:</p>
-                    <input type="text" id="Type" name="Type" />
+                    <input required type="text" id="Type" name="Type" />
                 </div>
                 <div class="d-flex justify-content-between mb-2">
                     <p>Year:</p>
-                    <input type="text" id="Year" name="Year" />
+                    <input required type="text" id="Year" name="Year" />
                 </div>
                 <div class="d-flex justify-content-between mb-2">
                     <p>Fuel type:</p>
-                    <input type="text" id="Fuel_Type" name="Fuel_Type" />
+                    <select required id="Fuel_Type" name="Fuel_Type">
+                        <option>Petrol</option>
+                        <option>Diesel</option>
+                        <option>Electric</option>
+                        <option>Petrol Hybrid</option>
+                        <option>Diesel Hybrid</option>
+                        <option>Mild Hybrid</option>
+                    </select>
                 </div>
                 <div class="d-flex justify-content-between mb-2">
                     <p>Top speed:</p>
-                    <input type="text" id="Top_Speed" name="Top_Speed" />
+                    <input required type="text" id="Top_Speed" name="Top_Speed" />
                 </div>
                 <div class="d-flex justify-content-between mb-2">
                     <p>Image link:</p>
-                    <input type="file" id="ImageFile" name="ImageFile" />
+                    <input required type="file" id="ImageFile" name="ImageFile" />
                 </div>
                 <div class="d-flex justify-content-between mb-2">
                     <p>Price:</p>
-                    <input type="text" id="Price" name="Price" />
+                    <input required type="text" id="Price" name="Price" />
                 </div>
                 <div class="d-flex justify-content-between mb-2">
                     <p>Description:</p>
-                    <input type="text" id="Description" name="Description" />
+                    <input required type="text" id="Description" name="Description" />
                 </div>
             </div>
         </div>
