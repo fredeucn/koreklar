@@ -17,52 +17,13 @@ namespace koreklarData.DatabaseLayer
             ConnectionString = "Data Source=hildur.ucn.dk;Initial Catalog=DMA-CSD-S232_10503078;Encrypt=False;User id=DMA-CSD-S232_10503078;Password=Password1!";
         }
 
-        /*
-        public Car? GetCar(string Vin)
-        {
-
-            Car? foundCar = null;
-
-            // Prepare command
-            string queryString = "SELECT * FROM cars WHERE vin = @Vin";
-
-            // Get connection
-            using (SqlConnection conn = new SqlConnection(ConnectionString))
-            using (SqlCommand readCommand = new SqlCommand(queryString, conn))
-            {
-
-                readCommand.Parameters.AddWithValue("Vin", Vin);
-
-                if (conn != null)
-                {
-                    conn.Open();
-
-                    SqlDataReader lineReader = readCommand.ExecuteReader();
-                    List<Car> foundCar1 = GetCarObjects(lineReader);
-                    if (foundCar1 != null)
-                    {
-                        if (foundCar1.Count > 0)
-                        {
-                            foundCar = foundCar1[0];
-                        }
-                        else
-                        {
-                            //foundLine = new Line { LineId = int.MinValue };
-                        }
-                    }
-                }
-            }
-            return foundCar;
-        }
-        */
-
         public Car GetCarByVin(string vin)
         {
             Car foundCar = null;
 
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
-                foundCar = connection.QueryFirst<Car>("SELECT * FROM cars WHERE vin = @Vin", new { Vin = vin });
+                foundCar = connection.QueryFirst<Car>("SELECT * FROM carIdentities FULL OUTER JOIN cars ON cars.id=carIdentities.car_id WHERE vin = @Vin", new { Vin = vin });
             }
 
             return foundCar;
@@ -75,7 +36,7 @@ namespace koreklarData.DatabaseLayer
 
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
-                using (SqlMapper.GridReader reader = connection.QueryMultiple("SELECT * FROM cars"))
+                using (SqlMapper.GridReader reader = connection.QueryMultiple("SELECT * FROM carIdentities FULL OUTER JOIN cars ON cars.id=carIdentities.car_id"))
                 {
                     List<Car> cars = reader.Read<Car>().ToList();
                     foundCars.AddRange(cars); 
@@ -84,55 +45,31 @@ namespace koreklarData.DatabaseLayer
 
             return foundCars;
         }
-
-        /*
-        private List<Car> GetCarObjects(SqlDataReader lineReader)
-        {
-            List<Car> foundCars = new List<Car>();
-            Car tempCar;
-
-            int tempId; int tempYear; int tempKilometersDriven; int tempTopSpeed;
-            double tempPrice; decimal priceToConvert; string tempBrand; string tempModel; string tempType;
-            string tempImage; string tempCondition; string tempDescription;
-            string tempVin; string tempColor; string tempFuelType;
-
-            while (lineReader.Read())
-            {
-                //tempId = lineReader.GetInt32(lineReader.GetOrdinal("id"));
-                tempYear = lineReader.GetInt32(lineReader.GetOrdinal("year"));
-                tempKilometersDriven = lineReader.GetInt32(lineReader.GetOrdinal("kilometers_driven"));
-                tempTopSpeed = lineReader.GetInt32(lineReader.GetOrdinal("top_speed"));
-                priceToConvert = lineReader.GetDecimal(lineReader.GetOrdinal("price"));
-                tempPrice = Convert.ToDouble(priceToConvert);
-                tempBrand = lineReader.GetString(lineReader.GetOrdinal("brand"));
-                tempModel = lineReader.GetString(lineReader.GetOrdinal("model"));
-                tempType = lineReader.GetString(lineReader.GetOrdinal("type"));
-                tempImage = lineReader.GetString(lineReader.GetOrdinal("image"));
-                tempCondition = lineReader.GetString(lineReader.GetOrdinal("condition"));
-                tempDescription = lineReader.GetString(lineReader.GetOrdinal("description"));
-                tempVin = lineReader.GetString(lineReader.GetOrdinal("vin"));
-                tempColor = lineReader.GetString(lineReader.GetOrdinal("color"));
-                tempFuelType = lineReader.GetString(lineReader.GetOrdinal("fueltype"));
-
-                Car tempCar2 = new Car(tempYear, tempKilometersDriven, tempTopSpeed, tempPrice,
-                    tempBrand, tempModel, tempType, tempImage, tempCondition, tempDescription, tempVin,
-                    tempColor, tempFuelType);
-                
-
-
-                foundCars.Add(tempCar2);
-            }
-            return foundCars;
-        }
-        */
         
-        public void CreateCar(Car newCar) {
+        public void CreateCar(Car newCar)
+        {
 
             
+
+                //string query = "INSERT INTO cars (year, kilometers_driven, top_speed, price, image, condition, description, vin, color, fueltype, brand, model, type) " +
+               //"VALUES (@Year, @KilometersDriven, @TopSpeed, @Price, @Image, @Condition, @Description, @Vin, @Color, @FuelType, @Brand, @Model, @Type)";
+
             using (SqlConnection connection = new SqlConnection(ConnectionString)) {
-            string query = "INSERT INTO cars (year, kilometers_driven, top_speed, price, image, condition, description, vin, color, fueltype, brand, model, type) " +
-               "VALUES (@Year, @KilometersDriven, @TopSpeed, @Price, @Image, @Condition, @Description, @Vin, @Color, @FuelType, @Brand, @Model, @Type)";
-                connection.Execute(query, new {
+                string query = @"
+                    BEGIN TRANSACTION;
+                    INSERT INTO cars (brand, model, type)
+                    VALUES (@Brand, @Model, @Type);
+
+                    DECLARE @CarId INT;
+                    SET @CarId = SCOPE_IDENTITY();
+
+                    INSERT INTO carIdentities (year, color, fuel_type, kilometers_driven, top_speed, condition, vin, price, image, description, license_plate, availability, car_id)
+                    VALUES (@Year, @Color, @FuelType, @KilometersDriven, @TopSpeed, @Condition, @Vin, @Price, @Image, @Description, @LicensePlate, @Availability, @CarId);
+
+                    COMMIT TRANSACTION;
+                ";
+                connection.Execute(query, new
+                {
                     Year = newCar.Year,
                     KilometersDriven = newCar.Kilometers_Driven,
                     TopSpeed = newCar.Top_Speed,
@@ -142,11 +79,13 @@ namespace koreklarData.DatabaseLayer
                     Description = newCar.Description,
                     Vin = newCar.Vin,
                     Color = newCar.Color,
-                    FuelType = newCar.FuelType,
+                    FuelType = newCar.Fuel_Type,
                     Brand = newCar.Brand,
                     Model = newCar.Model,
-                    Type = newCar.Type
-                    
+                    Type = newCar.Type,
+                    LicensePlate = newCar.License_Plate,
+                    Availability = 1
+
 
                 });
             }

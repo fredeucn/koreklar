@@ -51,7 +51,7 @@ namespace KoreklarMVC.Controllers {
         [HttpPost]
         public async Task<IActionResult> Create(Car car, [FromForm] IFormFile ImageFile) {
             CarLogic cars = new CarLogic();
-            car.ImageFile = null;
+           // car.ImageFile = null;
 
             string baseUrl = "https://localhost:7228/api/cars";
 
@@ -103,7 +103,7 @@ namespace KoreklarMVC.Controllers {
              }*/
 
 
-                return View(car);
+                //return View(car);
 
             }
 

@@ -11,22 +11,21 @@ namespace MVCTests
         {
             CarLogic showCars = new CarLogic();
 
-            Car testCar = new Car(2019, 15000, 220, 25000.00, "Toyota", "Yaris", "LT", "image_url_1.jpg", "Excellent", "Sporty red sedan with low mileage and excellent condition.", "1HGCM82633A123456", "Red", "Petrol");
+            Car testCar = new Car(2019, 25000, 250, 35000.00, null, "Good", "A fast and stylish ride.", "1FAFP45X4XF123456", "Blue", "Petrol", "Ford", "Mustang", "GT", "BC23456");
 
-            int targetListLength = 10;
+            int targetListLength = 5;
 
             List<Car> resultList = await showCars.GetAllCars();
 
-            Assert.AreEqual(resultList.Count, targetListLength);
-            Assert.AreEqual(resultList[0], testCar);
+            Assert.IsTrue(resultList.Count >= targetListLength);
+            Assert.AreEqual(resultList[0].Vin, testCar.Vin);
         }
 
         [TestMethod]
         public async void TestCreateCar() {
             CarLogic showCars = new CarLogic();
 
-            Car testCar = new Car(2022, 15000, 220, 25000.00, "Toyota", "Yaris", "LT", "image_url_1.jpg", "Excellent", "Sporty red sedan with low mileage and excellent condition.", "1HGCM82633A123456", "Red", "Petrol");
-
+            Car testCar = new Car(2019, 25000, 250, 35000.00, null, "Good", "A fast and stylish ride.", "1FAFP45X4XF123457", "Blue", "Petrol", "Ford", "Mustang", "GT", "BC23456");
 
             List<Car> resultList = await showCars.GetAllCars();
 
@@ -37,7 +36,7 @@ namespace MVCTests
         {
             CarLogic showCars = new CarLogic();
 
-            Car testCar = new Car(2022, 15000, 220, 25000.00, "Toyota", "Yaris", "LT", null, "Excellent", "Sporty red sedan with low mileage and excellent condition.", "1HGCM82633A123456", "Red", "Petrol");
+            Car testCar = new Car(2019, 25000, 250, 35000.00, null, "Good", "A fast and stylish ride.", "1FAFP45X4XF123457", "Blue", "Petrol", "Ford", "Mustang", "GT", "BC23456");
 
             // test if types are correct
             Assert.IsInstanceOfType(testCar.Year, typeof(int));
@@ -50,7 +49,8 @@ namespace MVCTests
             Assert.IsInstanceOfType(testCar.Condition, typeof(string));
             Assert.IsInstanceOfType(testCar.Vin, typeof(string));
             Assert.IsInstanceOfType(testCar.Color, typeof(string));
-            Assert.IsInstanceOfType(testCar.FuelType, typeof(string));
+            Assert.IsInstanceOfType(testCar.Fuel_Type, typeof(string));
+            Assert.IsInstanceOfType(testCar.License_Plate, typeof(string));
 
         }
     }

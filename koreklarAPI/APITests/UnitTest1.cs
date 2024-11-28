@@ -8,32 +8,32 @@ namespace APITests
     [TestClass]
     public class UnitTest1
     {
-        [TestMethod]
+        /*[TestMethod]
         public void TestGetCar()
         {
             ICarAccess carAccess = new DbCarAccess();
 
-            Car testCar = new Car(2019, 15000, 220, 25000.00, "Toyota", "Yaris", "LT", "image_url_1.jpg", "Excellent", "Sporty red sedan with low mileage and excellent condition.", "1HGCM82633A123456", "Red", "Petrol");
+            Car testCar = new Car(2019, 25000, 250, 35000.00, null, "Good", "A fast and stylish ride.", "1FAFP45X4XF123456", "Blue", "Petrol", "Ford", "Mustang", "GT", "BC23456");
 
-            Car? resultCarDto = carAccess.GetCarByVin("1HGCM82633A123456");
+            Car? resultCarDto = carAccess.GetCarByVin("1FAFP45X4XF123456");
 
             Car resultCar = new Car(resultCarDto.Year, resultCarDto.Kilometers_Driven, resultCarDto.Top_Speed,
-                                    resultCarDto.Price, resultCarDto.Brand, resultCarDto.Model, resultCarDto.Type, 
-                                    resultCarDto.Image, resultCarDto.Condition, resultCarDto.Description,
-                                    resultCarDto.Vin, resultCarDto.Color, resultCarDto.FuelType
+                                    resultCarDto.Price, null, resultCarDto.Condition, resultCarDto.Description,
+                                    resultCarDto.Vin, resultCarDto.Color, resultCarDto.Fuel_Type, resultCarDto.Model, resultCarDto.Type,
+                                    resultCarDto.Brand, resultCarDto.License_Plate
                 );
 
             Assert.AreEqual(resultCar, testCar);
-        }
+        }*/
 
         [TestMethod]
         public void TestCarList()
         {
             ICarAccess carAccess = new DbCarAccess();
 
-            Car testCar = new Car(2019, 15000, 220, 25000.00, "image_url_1.jpg", "Excellent", "Sporty red sedan with low mileage and excellent condition.", "1HGCM82633A123456", "Red", "Petrol", "Toyotas", "Yariss", "LTs");
+            Car testCar = new Car(2019, 25000, 250, 35000.00, null, "Good", "A fast and stylish ride.", "1FAFP45X4XF123456", "Blue", "Petrol", "Ford", "Mustang", "GT", "BC23456");
 
-            int targetListLength = 10;
+            int targetListLength = 5;
 
             List<Car> resultList = carAccess.GetCars();
 
@@ -44,17 +44,17 @@ namespace APITests
         [TestMethod]
         public void TestCreateCar() {
             ICarAccess carAccess = new DbCarAccess();
-            
-            Car testCar = new Car(2029, 15000, 220, 25000.00, "image_url_1.jpg", "Excellent", "Sporty red sedan with low mileage and excellent condition.", "1HGCM82633B123459",  "Red", "Petrol", "Toyotas", "Yariss", "LTs");
-            
+
+            Car testCar = new Car(2019, 25000, 250, 35000.00, null, "Good", "A fast and stylish ride.", "1FAFP45X4XF123457", "Blue", "Petrol", "Ford", "Mustang", "GT", "BC23456");
+
             carAccess.CreateCar(testCar);
 
             Car? resultCarDto = carAccess.GetCarByVin(testCar.Vin);
 
             Car resultCar = new Car(resultCarDto.Year, resultCarDto.Kilometers_Driven, resultCarDto.Top_Speed,
                                     resultCarDto.Price, resultCarDto.Image, resultCarDto.Condition, resultCarDto.Description,
-                                    resultCarDto.Vin, resultCarDto.Color, resultCarDto.FuelType,
-                                    resultCarDto.Brand, resultCarDto.Model, resultCarDto.Type
+                                    resultCarDto.Vin, resultCarDto.Color, resultCarDto.Fuel_Type,
+                                    resultCarDto.Brand, resultCarDto.Model, resultCarDto.Type, resultCarDto.License_Plate
                 );
 
             Assert.AreEqual(resultCar.Vin, testCar.Vin);

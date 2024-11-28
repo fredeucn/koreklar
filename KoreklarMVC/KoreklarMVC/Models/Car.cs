@@ -1,7 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace KoreklarMVC.Models {
-    public class Car {
+    public class Car
+    {
         public int Year { get; set; }
         public int Kilometers_Driven { get; set; }
         public int Top_Speed { get; set; }
@@ -9,42 +10,39 @@ namespace KoreklarMVC.Models {
         public string Brand { get; set; }
         public string Model { get; set; }
         public string Type { get; set; }
-        [NotMapped]
-        public IFormFile ImageFile { get; set; }
-        public byte[] Image {  get; set; }
+        //[NotMapped]
+        //public IFormFile ImageFile { get; set; }
+        public byte[] Image { get; set; }
         public string Description { get; set; }
         public string Condition { get; set; }
         public string Vin { get; set; }
         public string Color { get; set; }
-        public string FuelType { get; set; }
+        public string Fuel_Type { get; set; }
+        public string License_Plate { get; set; }
 
         public Car()
         {
 
         }
 
-        public Car(string Description)
-        {
-            this.Description = Description;
-        }
-
-        public Car(int Year, int KilometersDriven, int TopSpeed, double Price, string Brand,
-                    string Model, string Type, byte[] Image, string Condition, string Description, string Vin,
-                    string Color, string FuelType)
+        public Car(int Year, int KilometersDriven, int TopSpeed, double Price,
+                     byte[] Image, string Condition, string Description, string Vin,
+                    string Color, string FuelType, string Brand, string Model, string Type, string LicensePlate)
         {
             this.Year = Year;
             this.Kilometers_Driven = KilometersDriven;
             this.Top_Speed = TopSpeed;
             this.Price = Price;
-            this.Brand = Brand;
-            this.Model = Model;
-            this.Type = Type;
             this.Image = Image;
             this.Condition = Condition;
             this.Description = Description;
             this.Vin = Vin;
             this.Color = Color;
-            this.FuelType = FuelType;
+            this.Fuel_Type = FuelType;
+            this.Brand = Brand;
+            this.Model = Model;
+            this.Type = Type;
+            this.License_Plate = LicensePlate;
         }
 
         public override bool Equals(object? obj)
@@ -63,17 +61,17 @@ namespace KoreklarMVC.Models {
                    Description == other.Description &&
                    Vin == other.Vin &&
                    Color == other.Color &&
-                   FuelType == other.FuelType;
+                   Fuel_Type == other.Fuel_Type;
         }
 
-        public string getName() {
+        public string getName()
+        {
             return $"{this.Brand} {this.Model} {this.Year}";
         }
 
         public override string ToString()
         {
-            return Year + Kilometers_Driven + Top_Speed + Brand + Model + Type + Image + Condition + Description + Vin + Color + FuelType;
+            return $"{Year} {Kilometers_Driven} {Top_Speed} {Type} {Brand} {Model} {Image} {Condition} {Description} {Vin} {Color} {Fuel_Type} {License_Plate}";
         }
-
     }
 }
