@@ -1,0 +1,45 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Models.Models
+{
+    public class Booking
+    {
+        public string Status { get; set; }
+        public double Total_Price { get; set; }
+        public Car RegisteredCar { get; set; }
+        public Subscription ChosenSubscription { get; set; }
+        public string Customer {  get; set; }
+
+        public Booking(string status, Car car, Subscription subscription, string customer)
+        {
+            this.ChosenSubscription = subscription;
+            this.RegisteredCar = car;
+            this.Status = status;
+            this.Customer = customer;
+            this.Total_Price = 4;
+        }
+        
+        public double GetTotalPrice()
+        {
+            if(ChosenSubscription.Discount > 0)
+            {
+                double discountValue = ChosenSubscription.Discount / 100;
+
+                double price = Math.Round((RegisteredCar.Price + ChosenSubscription.Price) - (RegisteredCar.Price + ChosenSubscription.Price) * discountValue, 2);
+                System.Diagnostics.Debug.WriteLine(price);
+                return price;
+            } else
+            {
+                double price = RegisteredCar.Price + ChosenSubscription.Price;
+                price = Math.Round(price, 2);
+                Debug.WriteLine(price);
+                return price;
+            }
+        }
+    }
+}

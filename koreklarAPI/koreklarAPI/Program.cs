@@ -9,6 +9,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ICarAccess, DbCarAccess>();
+builder.Services.AddScoped<IBookingAccess, DbBookingAccess>();
 
 var app = builder.Build();
 

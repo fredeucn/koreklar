@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|c:\\users\\lille\\desktop\\datamatiker\\k\u00F8reklar\\koreklar\\koreklarmvc\\koreklarmvc\\views\\cars\\cardetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|solutionrelative:koreklarmvc\\views\\cars\\cardetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|c:\\users\\lille\\desktop\\datamatiker\\k\u00F8reklar\\koreklar\\koreklarmvc\\koreklarmvc\\views\\cars\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|solutionrelative:koreklarmvc\\views\\cars\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|c:\\users\\lille\\desktop\\datamatiker\\k\u00F8reklar\\koreklar\\koreklarmvc\\koreklarmvc\\servicelayer\\carsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|solutionrelative:koreklarmvc\\servicelayer\\carsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|c:\\users\\lille\\desktop\\datamatiker\\k\u00F8reklar\\koreklar\\koreklarmvc\\koreklarmvc\\views\\cars\\cardetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|solutionrelative:koreklarmvc\\views\\cars\\cardetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|c:\\users\\lille\\desktop\\datamatiker\\k\u00F8reklar\\koreklar\\koreklarmvc\\koreklarmvc\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,7 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "KoreklarMVC\\Views\\Shared\\_Layout.cshtml",
@@ -118,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CarsService.cs",
               "DocumentMoniker": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\ServiceLayer\\CarsService.cs",
               "RelativeDocumentMoniker": "KoreklarMVC\\ServiceLayer\\CarsService.cs",
@@ -131,13 +131,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\Views\\Cars\\Create.cshtml",
               "RelativeDocumentMoniker": "KoreklarMVC\\Views\\Cars\\Create.cshtml",
               "ToolTip": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\Views\\Cars\\Create.cshtml",
               "RelativeToolTip": "KoreklarMVC\\Views\\Cars\\Create.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADAAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADAAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-21T09:51:18.343Z",
               "EditorCaption": ""
@@ -157,7 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\Views\\Cars\\Index.cshtml",
               "RelativeDocumentMoniker": "KoreklarMVC\\Views\\Cars\\Index.cshtml",
@@ -182,13 +182,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "CarDetails.cshtml",
               "DocumentMoniker": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\Views\\Cars\\CarDetails.cshtml",
               "RelativeDocumentMoniker": "KoreklarMVC\\Views\\Cars\\CarDetails.cshtml",
               "ToolTip": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\Views\\Cars\\CarDetails.cshtml",
               "RelativeToolTip": "KoreklarMVC\\Views\\Cars\\CarDetails.cshtml",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAiwBQAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACAAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-21T08:52:34.176Z",
               "EditorCaption": ""

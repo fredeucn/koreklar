@@ -59,5 +59,19 @@ namespace APITests
 
             Assert.AreEqual(resultCar.Vin, testCar.Vin);
         }
+
+        [TestMethod]
+        public void TestCreateBooking()
+        {
+            IBookingAccess bookingAccess = new DbBookingAccess();
+
+            Car testCar = new Car(2019, 25000, 250, 35000.00, null, "Good", "A fast and stylish ride.", "1FAFP45X4XF123457", "Blue", "Petrol", "Ford", "Mustang", "GT", "BC23456");
+
+            Subscription testSubscription = new Subscription(DateTime.Now, DateTime.Now.AddMonths(3), 300, 5);
+            
+            Booking testBooking = new Booking("Ongoing", testCar, testSubscription, "Lars");
+
+            bookingAccess.CreateBooking(testBooking);
+        }
     }
 }
