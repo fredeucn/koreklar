@@ -21,7 +21,7 @@ namespace Models.Models
             this.RegisteredCar = car;
             this.Status = status;
             this.Customer = customer;
-            this.Total_Price = 4;
+            this.Total_Price = GetTotalPrice();
         }
         
         public double GetTotalPrice()
