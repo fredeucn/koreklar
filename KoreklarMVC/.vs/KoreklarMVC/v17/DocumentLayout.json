@@ -1,50 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\",
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\UCN\\3. Semester projekt\\Koreklar\\KoreklarMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|c:\\users\\lille\\desktop\\datamatiker\\k\u00F8reklar\\koreklar\\koreklarmvc\\koreklarmvc\\views\\cars\\cardetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|solutionrelative:koreklarmvc\\views\\cars\\cardetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|c:\\users\\administrator\\desktop\\ucn\\3. semester projekt\\koreklar\\koreklarmvc\\koreklarmvc\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|solutionrelative:koreklarmvc\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|c:\\users\\lille\\desktop\\datamatiker\\k\u00F8reklar\\koreklar\\koreklarmvc\\koreklarmvc\\views\\cars\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|solutionrelative:koreklarmvc\\views\\cars\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|c:\\users\\lille\\desktop\\datamatiker\\k\u00F8reklar\\koreklar\\koreklarmvc\\koreklarmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|solutionrelative:koreklarmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|c:\\users\\lille\\desktop\\datamatiker\\k\u00F8reklar\\koreklar\\koreklarmvc\\koreklarmvc\\views\\cars\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|solutionrelative:koreklarmvc\\views\\cars\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|c:\\users\\lille\\desktop\\datamatiker\\k\u00F8reklar\\koreklar\\koreklarmvc\\koreklarmvc\\servicelayer\\carsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|solutionrelative:koreklarmvc\\servicelayer\\carsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|c:\\users\\lille\\desktop\\datamatiker\\k\u00F8reklar\\koreklar\\koreklarmvc\\koreklarmvc\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|c:\\users\\administrator\\desktop\\ucn\\3. semester projekt\\koreklar\\koreklarmvc\\koreklarmvc\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|solutionrelative:koreklarmvc\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F7B9184-E446-4DCE-9D18-7ECC95DBD46B}|MVCTests\\MVCTests.csproj|c:\\users\\lille\\desktop\\datamatiker\\k\u00F8reklar\\koreklar\\koreklarmvc\\mvctests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F7B9184-E446-4DCE-9D18-7ECC95DBD46B}|MVCTests\\MVCTests.csproj|solutionrelative:mvctests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|c:\\users\\administrator\\desktop\\ucn\\3. semester projekt\\koreklar\\koreklarmvc\\koreklarmvc\\views\\cars\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|solutionrelative:koreklarmvc\\views\\cars\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|c:\\users\\lille\\desktop\\datamatiker\\k\u00F8reklar\\koreklar\\koreklarmvc\\koreklarmvc\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|solutionrelative:koreklarmvc\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|c:\\users\\administrator\\desktop\\ucn\\3. semester projekt\\koreklar\\koreklarmvc\\koreklarmvc\\views\\cars\\cardetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|solutionrelative:koreklarmvc\\views\\cars\\cardetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|c:\\users\\lille\\desktop\\datamatiker\\k\u00F8reklar\\koreklar\\koreklarmvc\\koreklarmvc\\servicelayer\\serviceconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|solutionrelative:koreklarmvc\\servicelayer\\serviceconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|c:\\users\\administrator\\desktop\\ucn\\3. semester projekt\\koreklar\\koreklarmvc\\koreklarmvc\\views\\booking\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|solutionrelative:koreklarmvc\\views\\booking\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|c:\\users\\lille\\desktop\\datamatiker\\k\u00F8reklar\\koreklar\\koreklarmvc\\koreklarmvc\\businesslogiclayer\\carlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|solutionrelative:koreklarmvc\\businesslogiclayer\\carlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|c:\\users\\administrator\\desktop\\ucn\\3. semester projekt\\koreklar\\koreklarmvc\\koreklarmvc\\views\\booking\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|solutionrelative:koreklarmvc\\views\\booking\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|c:\\users\\lille\\desktop\\datamatiker\\k\u00F8reklar\\koreklar\\koreklarmvc\\koreklarmvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|solutionrelative:koreklarmvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|c:\\users\\administrator\\desktop\\ucn\\3. semester projekt\\koreklar\\koreklarmvc\\koreklarmvc\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|solutionrelative:koreklarmvc\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|c:\\users\\administrator\\desktop\\ucn\\3. semester projekt\\koreklar\\koreklarmvc\\koreklarmvc\\models\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB9EEA58-F9B6-4B86-8E44-D97310F4838D}|KoreklarMVC\\KoreklarMVC.csproj|solutionrelative:koreklarmvc\\models\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,148 +50,109 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "KoreklarMVC\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "KoreklarMVC\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAwCEAAAAZAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\UCN\\3. Semester projekt\\Koreklar\\KoreklarMVC\\KoreklarMVC\\Views\\Booking\\Create.cshtml",
+              "RelativeDocumentMoniker": "KoreklarMVC\\Views\\Booking\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\UCN\\3. Semester projekt\\Koreklar\\KoreklarMVC\\KoreklarMVC\\Views\\Booking\\Create.cshtml",
+              "RelativeToolTip": "KoreklarMVC\\Views\\Booking\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-28T11:05:50.805Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\MVCTests\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "MVCTests\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\MVCTests\\UnitTest1.cs",
-              "RelativeToolTip": "MVCTests\\UnitTest1.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAIAwwDAAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T10:43:47.274Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Car.cs",
-              "DocumentMoniker": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\Models\\Car.cs",
-              "RelativeDocumentMoniker": "KoreklarMVC\\Models\\Car.cs",
-              "ToolTip": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\Models\\Car.cs",
-              "RelativeToolTip": "KoreklarMVC\\Models\\Car.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T11:12:02.914Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ServiceConnection.cs",
-              "DocumentMoniker": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\ServiceLayer\\ServiceConnection.cs",
-              "RelativeDocumentMoniker": "KoreklarMVC\\ServiceLayer\\ServiceConnection.cs",
-              "ToolTip": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\ServiceLayer\\ServiceConnection.cs",
-              "RelativeToolTip": "KoreklarMVC\\ServiceLayer\\ServiceConnection.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAkwB8AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T10:55:35.423Z",
+              "WhenOpened": "2024-12-02T11:28:32.428Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CarsService.cs",
-              "DocumentMoniker": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\ServiceLayer\\CarsService.cs",
-              "RelativeDocumentMoniker": "KoreklarMVC\\ServiceLayer\\CarsService.cs",
-              "ToolTip": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\ServiceLayer\\CarsService.cs",
-              "RelativeToolTip": "KoreklarMVC\\ServiceLayer\\CarsService.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAYwEEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T10:07:13.148Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\UCN\\3. Semester projekt\\Koreklar\\KoreklarMVC\\KoreklarMVC\\Views\\Booking\\Index.cshtml",
+              "RelativeDocumentMoniker": "KoreklarMVC\\Views\\Booking\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\UCN\\3. Semester projekt\\Koreklar\\KoreklarMVC\\KoreklarMVC\\Views\\Booking\\Index.cshtml",
+              "RelativeToolTip": "KoreklarMVC\\Views\\Booking\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-02T11:26:39.924Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\UCN\\3. Semester projekt\\Koreklar\\KoreklarMVC\\KoreklarMVC\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "KoreklarMVC\\Models\\Booking.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\UCN\\3. Semester projekt\\Koreklar\\KoreklarMVC\\KoreklarMVC\\Models\\Booking.cs",
+              "RelativeToolTip": "KoreklarMVC\\Models\\Booking.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAowBoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T10:59:18.253Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\Views\\Cars\\Create.cshtml",
-              "RelativeDocumentMoniker": "KoreklarMVC\\Views\\Cars\\Create.cshtml",
-              "ToolTip": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\Views\\Cars\\Create.cshtml",
-              "RelativeToolTip": "KoreklarMVC\\Views\\Cars\\Create.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAADAAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-21T09:51:18.343Z",
+              "Title": "CarsController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\UCN\\3. Semester projekt\\Koreklar\\KoreklarMVC\\KoreklarMVC\\Controllers\\CarsController.cs",
+              "RelativeDocumentMoniker": "KoreklarMVC\\Controllers\\CarsController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\UCN\\3. Semester projekt\\Koreklar\\KoreklarMVC\\KoreklarMVC\\Controllers\\CarsController.cs",
+              "RelativeToolTip": "KoreklarMVC\\Controllers\\CarsController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAqwEMAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T10:42:59.942Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CarsController.cs",
-              "DocumentMoniker": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\Controllers\\CarsController.cs",
-              "RelativeDocumentMoniker": "KoreklarMVC\\Controllers\\CarsController.cs",
-              "ToolTip": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\Controllers\\CarsController.cs",
-              "RelativeToolTip": "KoreklarMVC\\Controllers\\CarsController.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAD4v2gAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\UCN\\3. Semester projekt\\Koreklar\\KoreklarMVC\\KoreklarMVC\\Views\\Cars\\Create.cshtml",
+              "RelativeDocumentMoniker": "KoreklarMVC\\Views\\Cars\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\UCN\\3. Semester projekt\\Koreklar\\KoreklarMVC\\KoreklarMVC\\Views\\Cars\\Create.cshtml",
+              "RelativeToolTip": "KoreklarMVC\\Views\\Cars\\Create.cshtml",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-02T10:41:31.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\UCN\\3. Semester projekt\\Koreklar\\KoreklarMVC\\KoreklarMVC\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "KoreklarMVC\\Controllers\\BookingController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\UCN\\3. Semester projekt\\Koreklar\\KoreklarMVC\\KoreklarMVC\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "KoreklarMVC\\Controllers\\BookingController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAcwCQAAAB3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T08:58:43.433Z",
+              "WhenOpened": "2024-12-02T10:42:50.97Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\Views\\Cars\\Index.cshtml",
-              "RelativeDocumentMoniker": "KoreklarMVC\\Views\\Cars\\Index.cshtml",
-              "ToolTip": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\Views\\Cars\\Index.cshtml",
-              "RelativeToolTip": "KoreklarMVC\\Views\\Cars\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-21T09:19:53.836Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CarLogic.cs",
-              "DocumentMoniker": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\BusinessLogicLayer\\CarLogic.cs",
-              "RelativeDocumentMoniker": "KoreklarMVC\\BusinessLogicLayer\\CarLogic.cs",
-              "ToolTip": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\BusinessLogicLayer\\CarLogic.cs",
-              "RelativeToolTip": "KoreklarMVC\\BusinessLogicLayer\\CarLogic.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T08:59:26.083Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "CarDetails.cshtml",
-              "DocumentMoniker": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\Views\\Cars\\CarDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\UCN\\3. Semester projekt\\Koreklar\\KoreklarMVC\\KoreklarMVC\\Views\\Cars\\CarDetails.cshtml",
               "RelativeDocumentMoniker": "KoreklarMVC\\Views\\Cars\\CarDetails.cshtml",
-              "ToolTip": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\Views\\Cars\\CarDetails.cshtml",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\UCN\\3. Semester projekt\\Koreklar\\KoreklarMVC\\KoreklarMVC\\Views\\Cars\\CarDetails.cshtml",
               "RelativeToolTip": "KoreklarMVC\\Views\\Cars\\CarDetails.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACAAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAABsAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-21T08:52:34.176Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "KoreklarMVC\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\lille\\Desktop\\Datamatiker\\K\u00F8reklar\\koreklar\\KoreklarMVC\\KoreklarMVC\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "KoreklarMVC\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAgAAAA/AAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "Subscription.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\UCN\\3. Semester projekt\\Koreklar\\KoreklarMVC\\KoreklarMVC\\Models\\Subscription.cs",
+              "RelativeDocumentMoniker": "KoreklarMVC\\Models\\Subscription.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\UCN\\3. Semester projekt\\Koreklar\\KoreklarMVC\\KoreklarMVC\\Models\\Subscription.cs",
+              "RelativeToolTip": "KoreklarMVC\\Models\\Subscription.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T11:07:05.606Z"
+              "WhenOpened": "2024-12-02T11:00:47.867Z"
             }
           ]
         }
