@@ -23,10 +23,15 @@ namespace koreklarData.DatabaseLayer
 
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
-                foundCar = connection.QueryFirst<Car>("SELECT * FROM carIdentities FULL OUTER JOIN cars ON cars.id=carIdentities.car_id WHERE vin = @Vin", new { Vin = vin });
+                using (SqlTransaction transaction = connection.BeginTransaction())
+                {
+                    foundCar = connection.QueryFirst<Car>("SELECT * FROM carIdentities FULL OUTER JOIN cars ON cars.id=carIdentities.car_id WHERE vin = @Vin", new { Vin = vin });
+                    connection.Query("UPDATE carIdentities SET availability = 0 WHERE vin = @Vin");
+                    Thread.Sleep(300000);
+                    transaction.Rollback();
+                }
             }
-
-            return foundCar;
+                return foundCar;
         }
 
         public List<Car> GetCars()

@@ -15,12 +15,12 @@ namespace Models.Models
         public Subscription ChosenSubscription { get; set; }
         public string Customer {  get; set; }
 
-        public Booking(string status, Car car, Subscription subscription, string customer)
+        public Booking(string Status, Car RegisteredCar, Subscription ChosenSubscription, string Customer)
         {
-            this.ChosenSubscription = subscription;
-            this.RegisteredCar = car;
-            this.Status = status;
-            this.Customer = customer;
+            this.ChosenSubscription = ChosenSubscription;
+            this.RegisteredCar = RegisteredCar;
+            this.Status = Status;
+            this.Customer = Customer;
             this.Total_Price = GetTotalPrice();
         }
         
