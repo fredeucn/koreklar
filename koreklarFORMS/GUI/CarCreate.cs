@@ -1,4 +1,4 @@
-﻿using koreklarFORMS.Controllers;
+﻿using koreklarFORMS.ControllerLayer;
 using Models.Models;
 using System;
 using System.Collections.Generic;
@@ -85,7 +85,7 @@ namespace koreklarFORMS.GUI
                 return;
             }
 
-            Car newCar = new Car(year, distance, topSpeed, price, image, txtCondition.Text, txtDescription.Text, txtVin.Text, txtColor.Text, txtFuelType.Text, txtBrand.Text, txtModel.Text, txtType.Text);
+            Car newCar = new Car(year, distance, topSpeed, price, image, txtCondition.Text, txtDescription.Text, txtVin.Text, txtColor.Text, txtFuelType.Text, txtBrand.Text, txtModel.Text, txtType.Text, txtLicensePlate.Text);
 
             carController.CreateCar(newCar);
         }

@@ -43,7 +43,7 @@ namespace koreklarFORMS.GUI
             // Car info
             lblCarInfoLeft.Text =
                 $"Kilometertal: {car.Kilometers_Driven}\n" +
-                $"Drivmiddel: {car.FuelType}\n" +
+                $"Drivmiddel: {car.Fuel_Type}\n" +
                 $"Tophastighed: {car.Top_Speed}\n" +
                 $"Farve: {car.Color}";
 

@@ -47,7 +47,7 @@ namespace koreklarAPI.Controllers
             // Get data and convert
             List<Car> publicCars = _carAccess.GetCars();
             // Evaluate
-            if (publicCars != null)
+            if (publicCars.Count > 0 && publicCars != null)
             {
                 if (publicCars[0].Year > 0)
                 {

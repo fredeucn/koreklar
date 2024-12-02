@@ -24,17 +24,24 @@ namespace koreklarFORMS.GUI
         private void CustomCarListView_Load(object sender, EventArgs e)
         {
             // Car picture
-            if (car.Image != null)
+            try
             {
-                using (MemoryStream ms = new MemoryStream(car.Image))
+                if (car.Image != null)
                 {
-                    picCar.Image = Image.FromStream(ms);
+                    using (MemoryStream ms = new MemoryStream(car.Image))
+                    {
+                        picCar.Image = Image.FromStream(ms);
+                    }
                 }
+            } catch 
+            {
+
             }
+            
 
             // Car Name and Price
             lblCarName.Text = car.getName();
-            lblPrice.Text = car.Price.ToString() + " kr.";
+            lblPrice.Text = "Fra: " + (200 + car.Price).ToString() + " kr.";
         }
 
         private void PicCar_Click(object sender, EventArgs e)
