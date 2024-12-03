@@ -49,7 +49,6 @@
             // 
             // layoutMain
             // 
-            layoutMain.AutoSize = true;
             layoutMain.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             layoutMain.ColumnCount = 2;
             layoutMain.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60F));
@@ -60,14 +59,14 @@
             layoutMain.Controls.Add(PanelCarList, 0, 2);
             layoutMain.Dock = DockStyle.Fill;
             layoutMain.Location = new Point(0, 0);
-            layoutMain.Margin = new Padding(4, 5, 4, 5);
             layoutMain.Name = "layoutMain";
-            layoutMain.Padding = new Padding(29, 33, 29, 33);
+            layoutMain.Padding = new Padding(20);
             layoutMain.RowCount = 3;
-            layoutMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 83F));
-            layoutMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 83F));
+            layoutMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
+            layoutMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
             layoutMain.RowStyles.Add(new RowStyle());
-            layoutMain.Size = new Size(1093, 1238);
+            layoutMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            layoutMain.Size = new Size(777, 745);
             layoutMain.TabIndex = 2;
             // 
             // panelTopBar
@@ -76,10 +75,9 @@
             layoutMain.SetColumnSpan(panelTopBar, 2);
             panelTopBar.Controls.Add(layoutTopBar);
             panelTopBar.Dock = DockStyle.Fill;
-            panelTopBar.Location = new Point(33, 38);
-            panelTopBar.Margin = new Padding(4, 5, 4, 5);
+            panelTopBar.Location = new Point(23, 23);
             panelTopBar.Name = "panelTopBar";
-            panelTopBar.Size = new Size(1027, 73);
+            panelTopBar.Size = new Size(731, 44);
             panelTopBar.TabIndex = 6;
             // 
             // layoutTopBar
@@ -91,12 +89,11 @@
             layoutTopBar.Controls.Add(btnBack, 0, 0);
             layoutTopBar.Dock = DockStyle.Fill;
             layoutTopBar.Location = new Point(0, 0);
-            layoutTopBar.Margin = new Padding(4, 5, 4, 5);
             layoutTopBar.Name = "layoutTopBar";
             layoutTopBar.RowCount = 1;
             layoutTopBar.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             layoutTopBar.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            layoutTopBar.Size = new Size(1025, 71);
+            layoutTopBar.Size = new Size(729, 42);
             layoutTopBar.TabIndex = 5;
             // 
             // topBarFlowButtons
@@ -107,19 +104,17 @@
             topBarFlowButtons.Controls.Add(btnCreateCar);
             topBarFlowButtons.Dock = DockStyle.Fill;
             topBarFlowButtons.FlowDirection = FlowDirection.RightToLeft;
-            topBarFlowButtons.Location = new Point(73, 5);
-            topBarFlowButtons.Margin = new Padding(4, 5, 4, 5);
+            topBarFlowButtons.Location = new Point(52, 3);
             topBarFlowButtons.Name = "topBarFlowButtons";
-            topBarFlowButtons.Size = new Size(948, 61);
+            topBarFlowButtons.Size = new Size(674, 36);
             topBarFlowButtons.TabIndex = 1;
             // 
             // btnProfile
             // 
             btnProfile.Font = new Font("Segoe UI", 12F);
-            btnProfile.Location = new Point(804, 5);
-            btnProfile.Margin = new Padding(4, 5, 4, 5);
+            btnProfile.Location = new Point(573, 3);
             btnProfile.Name = "btnProfile";
-            btnProfile.Size = new Size(140, 50);
+            btnProfile.Size = new Size(98, 30);
             btnProfile.TabIndex = 4;
             btnProfile.Text = "Min Side";
             btnProfile.UseVisualStyleBackColor = true;
@@ -127,10 +122,9 @@
             // btnBiler
             // 
             btnBiler.Font = new Font("Segoe UI", 12F);
-            btnBiler.Location = new Point(689, 5);
-            btnBiler.Margin = new Padding(4, 5, 4, 5);
+            btnBiler.Location = new Point(492, 3);
             btnBiler.Name = "btnBiler";
-            btnBiler.Size = new Size(107, 50);
+            btnBiler.Size = new Size(75, 30);
             btnBiler.TabIndex = 1;
             btnBiler.Text = "Biler";
             btnBiler.UseVisualStyleBackColor = true;
@@ -138,10 +132,9 @@
             // btnContact
             // 
             btnContact.Font = new Font("Segoe UI", 12F);
-            btnContact.Location = new Point(560, 5);
-            btnContact.Margin = new Padding(4, 5, 4, 5);
+            btnContact.Location = new Point(401, 3);
             btnContact.Name = "btnContact";
-            btnContact.Size = new Size(121, 50);
+            btnContact.Size = new Size(85, 30);
             btnContact.TabIndex = 3;
             btnContact.Text = "Kontakt";
             btnContact.UseVisualStyleBackColor = true;
@@ -149,10 +142,9 @@
             // btnCreateCar
             // 
             btnCreateCar.Font = new Font("Segoe UI", 12F);
-            btnCreateCar.Location = new Point(403, 5);
-            btnCreateCar.Margin = new Padding(4, 5, 4, 5);
+            btnCreateCar.Location = new Point(291, 3);
             btnCreateCar.Name = "btnCreateCar";
-            btnCreateCar.Size = new Size(149, 50);
+            btnCreateCar.Size = new Size(104, 30);
             btnCreateCar.TabIndex = 5;
             btnCreateCar.Text = "Opret Bil";
             btnCreateCar.UseVisualStyleBackColor = true;
@@ -162,10 +154,9 @@
             // 
             btnBack.Dock = DockStyle.Fill;
             btnBack.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            btnBack.Location = new Point(4, 5);
-            btnBack.Margin = new Padding(4, 5, 4, 5);
+            btnBack.Location = new Point(3, 3);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(61, 61);
+            btnBack.Size = new Size(43, 36);
             btnBack.TabIndex = 0;
             btnBack.Text = "<";
             btnBack.UseVisualStyleBackColor = true;
@@ -175,10 +166,9 @@
             lblSelectCar.AutoSize = true;
             lblSelectCar.Dock = DockStyle.Bottom;
             lblSelectCar.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblSelectCar.Location = new Point(33, 159);
-            lblSelectCar.Margin = new Padding(4, 0, 4, 0);
+            lblSelectCar.Location = new Point(23, 95);
             lblSelectCar.Name = "lblSelectCar";
-            lblSelectCar.Size = new Size(613, 40);
+            lblSelectCar.Size = new Size(436, 25);
             lblSelectCar.TabIndex = 6;
             lblSelectCar.Text = "Vælg Bil";
             lblSelectCar.TextAlign = ContentAlignment.BottomLeft;
@@ -188,11 +178,10 @@
             txtSearch.Dock = DockStyle.Bottom;
             txtSearch.Enabled = false;
             txtSearch.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtSearch.Location = new Point(654, 155);
-            txtSearch.Margin = new Padding(4, 5, 4, 5);
+            txtSearch.Location = new Point(465, 88);
             txtSearch.Name = "txtSearch";
             txtSearch.PlaceholderText = "Søg efter bil...";
-            txtSearch.Size = new Size(406, 39);
+            txtSearch.Size = new Size(289, 29);
             txtSearch.TabIndex = 7;
             // 
             // PanelCarList
@@ -202,10 +191,9 @@
             PanelCarList.BorderStyle = BorderStyle.FixedSingle;
             layoutMain.SetColumnSpan(PanelCarList, 2);
             PanelCarList.Dock = DockStyle.Fill;
-            PanelCarList.Location = new Point(33, 204);
-            PanelCarList.Margin = new Padding(4, 5, 4, 5);
+            PanelCarList.Location = new Point(23, 123);
             PanelCarList.Name = "PanelCarList";
-            PanelCarList.Size = new Size(1027, 996);
+            PanelCarList.Size = new Size(731, 599);
             PanelCarList.TabIndex = 8;
             // 
             // flowLayoutPanel1
@@ -222,12 +210,12 @@
             // 
             // CarsView
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1093, 1238);
+            AutoSize = true;
+            ClientSize = new Size(777, 745);
             Controls.Add(layoutMain);
-            Margin = new Padding(4, 5, 4, 5);
-            MinimumSize = new Size(842, 606);
+            MinimumSize = new Size(600, 400);
             Name = "CarsView";
             Text = "Køreklar";
             Load += CarsView_Load;
@@ -237,7 +225,6 @@
             layoutTopBar.ResumeLayout(false);
             topBarFlowButtons.ResumeLayout(false);
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion

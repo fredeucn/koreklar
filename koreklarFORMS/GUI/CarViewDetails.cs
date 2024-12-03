@@ -37,9 +37,6 @@ namespace koreklarFORMS.GUI
                 }
             }
 
-            // Car description
-            lblCarDescription.Text = car.Description;
-
             // Car info
             lblCarInfoLeft.Text =
                 $"Kilometertal: {car.Kilometers_Driven}\n" +
@@ -52,6 +49,33 @@ namespace koreklarFORMS.GUI
                 $"Mærke: {car.Brand}\n" +
                 $"Model: {car.Model}\n" +
                 $"Type: {car.Type}";
+
+            // Car description
+            lblCarDescription.Text = car.Description;
+
+            // Car subscriptions
+            btnSubscription1.Checked = true;
+            btnSubscription1_Clicked(sender, e);
+
+
+            // Car price description
+        }
+
+
+        // Subscription buttons
+        private void btnSubscription1_Clicked(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnSubscription2_Clicked(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnSubscription3_Clicked(object sender, EventArgs e)
+        {
+            
         }
     }
 }

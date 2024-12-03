@@ -90,16 +90,15 @@
             layoutMain.Controls.Add(btnConfirm, 1, 3);
             layoutMain.Dock = DockStyle.Fill;
             layoutMain.Location = new Point(0, 0);
-            layoutMain.Margin = new Padding(4, 5, 4, 5);
             layoutMain.Name = "layoutMain";
-            layoutMain.Padding = new Padding(29, 33, 29, 33);
+            layoutMain.Padding = new Padding(20);
             layoutMain.RowCount = 4;
-            layoutMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 83F));
-            layoutMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 83F));
-            layoutMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 333F));
+            layoutMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
+            layoutMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
+            layoutMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 200F));
             layoutMain.RowStyles.Add(new RowStyle());
-            layoutMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 33F));
-            layoutMain.Size = new Size(1199, 1120);
+            layoutMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            layoutMain.Size = new Size(839, 672);
             layoutMain.TabIndex = 4;
             // 
             // panelTopBar
@@ -108,10 +107,9 @@
             layoutMain.SetColumnSpan(panelTopBar, 2);
             panelTopBar.Controls.Add(layoutTopBar);
             panelTopBar.Dock = DockStyle.Fill;
-            panelTopBar.Location = new Point(33, 38);
-            panelTopBar.Margin = new Padding(4, 5, 4, 5);
+            panelTopBar.Location = new Point(23, 23);
             panelTopBar.Name = "panelTopBar";
-            panelTopBar.Size = new Size(1133, 73);
+            panelTopBar.Size = new Size(793, 44);
             panelTopBar.TabIndex = 6;
             // 
             // layoutTopBar
@@ -124,11 +122,10 @@
             layoutTopBar.Controls.Add(btnBack, 0, 0);
             layoutTopBar.Dock = DockStyle.Fill;
             layoutTopBar.Location = new Point(0, 0);
-            layoutTopBar.Margin = new Padding(4, 5, 4, 5);
             layoutTopBar.Name = "layoutTopBar";
             layoutTopBar.RowCount = 1;
             layoutTopBar.RowStyles.Add(new RowStyle());
-            layoutTopBar.Size = new Size(1131, 71);
+            layoutTopBar.Size = new Size(791, 42);
             layoutTopBar.TabIndex = 5;
             // 
             // topBarFlowButtons
@@ -139,19 +136,17 @@
             topBarFlowButtons.Controls.Add(btnContact);
             topBarFlowButtons.Dock = DockStyle.Fill;
             topBarFlowButtons.FlowDirection = FlowDirection.RightToLeft;
-            topBarFlowButtons.Location = new Point(73, 5);
-            topBarFlowButtons.Margin = new Padding(4, 5, 4, 5);
+            topBarFlowButtons.Location = new Point(52, 3);
             topBarFlowButtons.Name = "topBarFlowButtons";
-            topBarFlowButtons.Size = new Size(1054, 61);
+            topBarFlowButtons.Size = new Size(736, 37);
             topBarFlowButtons.TabIndex = 1;
             // 
             // btnProfile
             // 
             btnProfile.Font = new Font("Segoe UI", 12F);
-            btnProfile.Location = new Point(910, 5);
-            btnProfile.Margin = new Padding(4, 5, 4, 5);
+            btnProfile.Location = new Point(635, 3);
             btnProfile.Name = "btnProfile";
-            btnProfile.Size = new Size(140, 50);
+            btnProfile.Size = new Size(98, 30);
             btnProfile.TabIndex = 4;
             btnProfile.Text = "Min Side";
             btnProfile.UseVisualStyleBackColor = true;
@@ -159,10 +154,9 @@
             // btnBiler
             // 
             btnBiler.Font = new Font("Segoe UI", 12F);
-            btnBiler.Location = new Point(795, 5);
-            btnBiler.Margin = new Padding(4, 5, 4, 5);
+            btnBiler.Location = new Point(554, 3);
             btnBiler.Name = "btnBiler";
-            btnBiler.Size = new Size(107, 50);
+            btnBiler.Size = new Size(75, 30);
             btnBiler.TabIndex = 1;
             btnBiler.Text = "Biler";
             btnBiler.UseVisualStyleBackColor = true;
@@ -170,10 +164,9 @@
             // btnContact
             // 
             btnContact.Font = new Font("Segoe UI", 12F);
-            btnContact.Location = new Point(680, 5);
-            btnContact.Margin = new Padding(4, 5, 4, 5);
+            btnContact.Location = new Point(473, 3);
             btnContact.Name = "btnContact";
-            btnContact.Size = new Size(107, 50);
+            btnContact.Size = new Size(75, 30);
             btnContact.TabIndex = 3;
             btnContact.Text = "Kontakt";
             btnContact.UseVisualStyleBackColor = true;
@@ -182,10 +175,9 @@
             // 
             btnBack.Dock = DockStyle.Fill;
             btnBack.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            btnBack.Location = new Point(4, 5);
-            btnBack.Margin = new Padding(4, 5, 4, 5);
+            btnBack.Location = new Point(3, 3);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(61, 61);
+            btnBack.Size = new Size(43, 37);
             btnBack.TabIndex = 0;
             btnBack.Text = "<";
             btnBack.UseVisualStyleBackColor = true;
@@ -195,10 +187,9 @@
             lblCreateCar.AutoSize = true;
             lblCreateCar.Dock = DockStyle.Bottom;
             lblCreateCar.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblCreateCar.Location = new Point(33, 159);
-            lblCreateCar.Margin = new Padding(4, 0, 4, 0);
+            lblCreateCar.Location = new Point(23, 95);
             lblCreateCar.Name = "lblCreateCar";
-            lblCreateCar.Size = new Size(790, 40);
+            lblCreateCar.Size = new Size(553, 25);
             lblCreateCar.TabIndex = 6;
             lblCreateCar.Text = "Opret Bil";
             lblCreateCar.TextAlign = ContentAlignment.BottomLeft;
@@ -239,39 +230,37 @@
             tableLayoutPanel1.Controls.Add(txtFuelType, 3, 1);
             tableLayoutPanel1.Controls.Add(txtCondition, 3, 4);
             tableLayoutPanel1.Dock = DockStyle.Fill;
-            tableLayoutPanel1.Location = new Point(33, 204);
-            tableLayoutPanel1.Margin = new Padding(4, 5, 4, 5);
+            tableLayoutPanel1.Location = new Point(23, 123);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 8;
             layoutMain.SetRowSpan(tableLayoutPanel1, 2);
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle());
-            tableLayoutPanel1.Size = new Size(790, 878);
+            tableLayoutPanel1.Size = new Size(553, 528);
             tableLayoutPanel1.TabIndex = 11;
             // 
             // txtLicensePlate
             // 
             txtLicensePlate.Dock = DockStyle.Fill;
-            txtLicensePlate.Location = new Point(527, 255);
-            txtLicensePlate.Margin = new Padding(4, 5, 4, 5);
+            txtLicensePlate.Location = new Point(366, 153);
             txtLicensePlate.Name = "txtLicensePlate";
-            txtLicensePlate.Size = new Size(259, 31);
+            txtLicensePlate.Size = new Size(184, 23);
             txtLicensePlate.TabIndex = 45;
             // 
             // lblDisplayLicensePlate
             // 
             lblDisplayLicensePlate.AutoSize = true;
             lblDisplayLicensePlate.Dock = DockStyle.Fill;
-            lblDisplayLicensePlate.Location = new Point(389, 255);
-            lblDisplayLicensePlate.Margin = new Padding(4, 5, 4, 5);
+            lblDisplayLicensePlate.Location = new Point(273, 153);
+            lblDisplayLicensePlate.Margin = new Padding(3);
             lblDisplayLicensePlate.Name = "lblDisplayLicensePlate";
-            lblDisplayLicensePlate.Size = new Size(130, 40);
+            lblDisplayLicensePlate.Size = new Size(87, 24);
             lblDisplayLicensePlate.TabIndex = 44;
             lblDisplayLicensePlate.Text = "Nummerplade:";
             lblDisplayLicensePlate.TextAlign = ContentAlignment.MiddleLeft;
@@ -279,22 +268,20 @@
             // txtTopSpeed
             // 
             txtTopSpeed.Dock = DockStyle.Fill;
-            txtTopSpeed.Location = new Point(527, 105);
-            txtTopSpeed.Margin = new Padding(4, 5, 4, 5);
+            txtTopSpeed.Location = new Point(366, 63);
             txtTopSpeed.Maximum = new decimal(new int[] { 10000, 0, 0, 0 });
             txtTopSpeed.Name = "txtTopSpeed";
-            txtTopSpeed.Size = new Size(259, 31);
+            txtTopSpeed.Size = new Size(184, 23);
             txtTopSpeed.TabIndex = 41;
             txtTopSpeed.Value = new decimal(new int[] { 300, 0, 0, 0 });
             // 
             // txtDistance
             // 
             txtDistance.Dock = DockStyle.Fill;
-            txtDistance.Location = new Point(527, 5);
-            txtDistance.Margin = new Padding(4, 5, 4, 5);
+            txtDistance.Location = new Point(366, 3);
             txtDistance.Maximum = new decimal(new int[] { 10000000, 0, 0, 0 });
             txtDistance.Name = "txtDistance";
-            txtDistance.Size = new Size(259, 31);
+            txtDistance.Size = new Size(184, 23);
             txtDistance.TabIndex = 40;
             txtDistance.ThousandsSeparator = true;
             // 
@@ -303,11 +290,10 @@
             txtPrice.DecimalPlaces = 2;
             txtPrice.Dock = DockStyle.Fill;
             txtPrice.Increment = new decimal(new int[] { 50, 0, 0, 0 });
-            txtPrice.Location = new Point(123, 255);
-            txtPrice.Margin = new Padding(4, 5, 4, 5);
+            txtPrice.Location = new Point(84, 153);
             txtPrice.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
             txtPrice.Name = "txtPrice";
-            txtPrice.Size = new Size(258, 31);
+            txtPrice.Size = new Size(183, 23);
             txtPrice.TabIndex = 39;
             txtPrice.ThousandsSeparator = true;
             txtPrice.Value = new decimal(new int[] { 1000, 0, 0, 0 });
@@ -316,10 +302,10 @@
             // 
             lblDisplayDescription.AutoSize = true;
             lblDisplayDescription.Dock = DockStyle.Fill;
-            lblDisplayDescription.Location = new Point(4, 305);
-            lblDisplayDescription.Margin = new Padding(4, 5, 4, 5);
+            lblDisplayDescription.Location = new Point(3, 183);
+            lblDisplayDescription.Margin = new Padding(3);
             lblDisplayDescription.Name = "lblDisplayDescription";
-            lblDisplayDescription.Size = new Size(111, 40);
+            lblDisplayDescription.Size = new Size(75, 24);
             lblDisplayDescription.TabIndex = 36;
             lblDisplayDescription.Text = "Beskrivelse:";
             lblDisplayDescription.TextAlign = ContentAlignment.MiddleLeft;
@@ -328,10 +314,10 @@
             // 
             lblDisplayCondition.AutoSize = true;
             lblDisplayCondition.Dock = DockStyle.Fill;
-            lblDisplayCondition.Location = new Point(389, 205);
-            lblDisplayCondition.Margin = new Padding(4, 5, 4, 5);
+            lblDisplayCondition.Location = new Point(273, 123);
+            lblDisplayCondition.Margin = new Padding(3);
             lblDisplayCondition.Name = "lblDisplayCondition";
-            lblDisplayCondition.Size = new Size(130, 40);
+            lblDisplayCondition.Size = new Size(87, 24);
             lblDisplayCondition.TabIndex = 33;
             lblDisplayCondition.Text = "Stand:";
             lblDisplayCondition.TextAlign = ContentAlignment.MiddleLeft;
@@ -340,10 +326,10 @@
             // 
             lblDisplayVin.AutoSize = true;
             lblDisplayVin.Dock = DockStyle.Fill;
-            lblDisplayVin.Location = new Point(4, 205);
-            lblDisplayVin.Margin = new Padding(4, 5, 4, 5);
+            lblDisplayVin.Location = new Point(3, 123);
+            lblDisplayVin.Margin = new Padding(3);
             lblDisplayVin.Name = "lblDisplayVin";
-            lblDisplayVin.Size = new Size(111, 40);
+            lblDisplayVin.Size = new Size(75, 24);
             lblDisplayVin.TabIndex = 32;
             lblDisplayVin.Text = "Stelnummer:";
             lblDisplayVin.TextAlign = ContentAlignment.MiddleLeft;
@@ -352,10 +338,10 @@
             // 
             lblDisplayColor.AutoSize = true;
             lblDisplayColor.Dock = DockStyle.Fill;
-            lblDisplayColor.Location = new Point(389, 155);
-            lblDisplayColor.Margin = new Padding(4, 5, 4, 5);
+            lblDisplayColor.Location = new Point(273, 93);
+            lblDisplayColor.Margin = new Padding(3);
             lblDisplayColor.Name = "lblDisplayColor";
-            lblDisplayColor.Size = new Size(130, 40);
+            lblDisplayColor.Size = new Size(87, 24);
             lblDisplayColor.TabIndex = 31;
             lblDisplayColor.Text = "Farve:";
             lblDisplayColor.TextAlign = ContentAlignment.MiddleLeft;
@@ -364,10 +350,10 @@
             // 
             lblDisplayType.AutoSize = true;
             lblDisplayType.Dock = DockStyle.Fill;
-            lblDisplayType.Location = new Point(4, 155);
-            lblDisplayType.Margin = new Padding(4, 5, 4, 5);
+            lblDisplayType.Location = new Point(3, 93);
+            lblDisplayType.Margin = new Padding(3);
             lblDisplayType.Name = "lblDisplayType";
-            lblDisplayType.Size = new Size(111, 40);
+            lblDisplayType.Size = new Size(75, 24);
             lblDisplayType.TabIndex = 30;
             lblDisplayType.Text = "Type:";
             lblDisplayType.TextAlign = ContentAlignment.MiddleLeft;
@@ -375,38 +361,35 @@
             // txtVin
             // 
             txtVin.Dock = DockStyle.Fill;
-            txtVin.Location = new Point(123, 205);
-            txtVin.Margin = new Padding(4, 5, 4, 5);
+            txtVin.Location = new Point(84, 123);
             txtVin.Name = "txtVin";
-            txtVin.Size = new Size(258, 31);
+            txtVin.Size = new Size(183, 23);
             txtVin.TabIndex = 27;
             // 
             // txtColor
             // 
             txtColor.Dock = DockStyle.Fill;
-            txtColor.Location = new Point(527, 155);
-            txtColor.Margin = new Padding(4, 5, 4, 5);
+            txtColor.Location = new Point(366, 93);
             txtColor.Name = "txtColor";
-            txtColor.Size = new Size(259, 31);
+            txtColor.Size = new Size(184, 23);
             txtColor.TabIndex = 25;
             // 
             // txtType
             // 
             txtType.Dock = DockStyle.Fill;
-            txtType.Location = new Point(123, 155);
-            txtType.Margin = new Padding(4, 5, 4, 5);
+            txtType.Location = new Point(84, 93);
             txtType.Name = "txtType";
-            txtType.Size = new Size(258, 31);
+            txtType.Size = new Size(183, 23);
             txtType.TabIndex = 23;
             // 
             // lblDisplayPrice
             // 
             lblDisplayPrice.AutoSize = true;
             lblDisplayPrice.Dock = DockStyle.Fill;
-            lblDisplayPrice.Location = new Point(4, 255);
-            lblDisplayPrice.Margin = new Padding(4, 5, 4, 5);
+            lblDisplayPrice.Location = new Point(3, 153);
+            lblDisplayPrice.Margin = new Padding(3);
             lblDisplayPrice.Name = "lblDisplayPrice";
-            lblDisplayPrice.Size = new Size(111, 40);
+            lblDisplayPrice.Size = new Size(75, 24);
             lblDisplayPrice.TabIndex = 20;
             lblDisplayPrice.Text = "Pris:";
             lblDisplayPrice.TextAlign = ContentAlignment.MiddleLeft;
@@ -415,10 +398,10 @@
             // 
             lblDisplayTopSpeed.AutoSize = true;
             lblDisplayTopSpeed.Dock = DockStyle.Fill;
-            lblDisplayTopSpeed.Location = new Point(389, 105);
-            lblDisplayTopSpeed.Margin = new Padding(4, 5, 4, 5);
+            lblDisplayTopSpeed.Location = new Point(273, 63);
+            lblDisplayTopSpeed.Margin = new Padding(3);
             lblDisplayTopSpeed.Name = "lblDisplayTopSpeed";
-            lblDisplayTopSpeed.Size = new Size(130, 40);
+            lblDisplayTopSpeed.Size = new Size(87, 24);
             lblDisplayTopSpeed.TabIndex = 19;
             lblDisplayTopSpeed.Text = "Tophastighed:";
             lblDisplayTopSpeed.TextAlign = ContentAlignment.MiddleLeft;
@@ -427,10 +410,10 @@
             // 
             lblDisplayModel.AutoSize = true;
             lblDisplayModel.Dock = DockStyle.Fill;
-            lblDisplayModel.Location = new Point(4, 105);
-            lblDisplayModel.Margin = new Padding(4, 5, 4, 5);
+            lblDisplayModel.Location = new Point(3, 63);
+            lblDisplayModel.Margin = new Padding(3);
             lblDisplayModel.Name = "lblDisplayModel";
-            lblDisplayModel.Size = new Size(111, 40);
+            lblDisplayModel.Size = new Size(75, 24);
             lblDisplayModel.TabIndex = 18;
             lblDisplayModel.Text = "Model:";
             lblDisplayModel.TextAlign = ContentAlignment.MiddleLeft;
@@ -439,10 +422,10 @@
             // 
             lblDisplayFuelType.AutoSize = true;
             lblDisplayFuelType.Dock = DockStyle.Fill;
-            lblDisplayFuelType.Location = new Point(389, 55);
-            lblDisplayFuelType.Margin = new Padding(4, 5, 4, 5);
+            lblDisplayFuelType.Location = new Point(273, 33);
+            lblDisplayFuelType.Margin = new Padding(3);
             lblDisplayFuelType.Name = "lblDisplayFuelType";
-            lblDisplayFuelType.Size = new Size(130, 40);
+            lblDisplayFuelType.Size = new Size(87, 24);
             lblDisplayFuelType.TabIndex = 17;
             lblDisplayFuelType.Text = "Drivmiddel:";
             lblDisplayFuelType.TextAlign = ContentAlignment.MiddleLeft;
@@ -451,10 +434,10 @@
             // 
             lblDisplayDistance.AutoSize = true;
             lblDisplayDistance.Dock = DockStyle.Fill;
-            lblDisplayDistance.Location = new Point(389, 5);
-            lblDisplayDistance.Margin = new Padding(4, 5, 4, 5);
+            lblDisplayDistance.Location = new Point(273, 3);
+            lblDisplayDistance.Margin = new Padding(3);
             lblDisplayDistance.Name = "lblDisplayDistance";
-            lblDisplayDistance.Size = new Size(130, 40);
+            lblDisplayDistance.Size = new Size(87, 24);
             lblDisplayDistance.TabIndex = 16;
             lblDisplayDistance.Text = "Kilometertal:";
             lblDisplayDistance.TextAlign = ContentAlignment.MiddleLeft;
@@ -462,29 +445,27 @@
             // txtModel
             // 
             txtModel.Dock = DockStyle.Fill;
-            txtModel.Location = new Point(123, 105);
-            txtModel.Margin = new Padding(4, 5, 4, 5);
+            txtModel.Location = new Point(84, 63);
             txtModel.Name = "txtModel";
-            txtModel.Size = new Size(258, 31);
+            txtModel.Size = new Size(183, 23);
             txtModel.TabIndex = 9;
             // 
             // txtBrand
             // 
             txtBrand.Dock = DockStyle.Fill;
-            txtBrand.Location = new Point(123, 55);
-            txtBrand.Margin = new Padding(4, 5, 4, 5);
+            txtBrand.Location = new Point(84, 33);
             txtBrand.Name = "txtBrand";
-            txtBrand.Size = new Size(258, 31);
+            txtBrand.Size = new Size(183, 23);
             txtBrand.TabIndex = 5;
             // 
             // lblDisplayYear
             // 
             lblDisplayYear.AutoSize = true;
             lblDisplayYear.Dock = DockStyle.Fill;
-            lblDisplayYear.Location = new Point(4, 5);
-            lblDisplayYear.Margin = new Padding(4, 5, 4, 5);
+            lblDisplayYear.Location = new Point(3, 3);
+            lblDisplayYear.Margin = new Padding(3);
             lblDisplayYear.Name = "lblDisplayYear";
-            lblDisplayYear.Size = new Size(111, 40);
+            lblDisplayYear.Size = new Size(75, 24);
             lblDisplayYear.TabIndex = 0;
             lblDisplayYear.Text = "Modelår:";
             lblDisplayYear.TextAlign = ContentAlignment.MiddleLeft;
@@ -493,10 +474,10 @@
             // 
             lblDisplayBrand.AutoSize = true;
             lblDisplayBrand.Dock = DockStyle.Fill;
-            lblDisplayBrand.Location = new Point(4, 55);
-            lblDisplayBrand.Margin = new Padding(4, 5, 4, 5);
+            lblDisplayBrand.Location = new Point(3, 33);
+            lblDisplayBrand.Margin = new Padding(3);
             lblDisplayBrand.Name = "lblDisplayBrand";
-            lblDisplayBrand.Size = new Size(111, 40);
+            lblDisplayBrand.Size = new Size(75, 24);
             lblDisplayBrand.TabIndex = 2;
             lblDisplayBrand.Text = "Mærke:";
             lblDisplayBrand.TextAlign = ContentAlignment.MiddleLeft;
@@ -505,23 +486,21 @@
             // 
             tableLayoutPanel1.SetColumnSpan(txtDescription, 4);
             txtDescription.Dock = DockStyle.Fill;
-            txtDescription.Location = new Point(4, 355);
-            txtDescription.Margin = new Padding(4, 5, 4, 5);
+            txtDescription.Location = new Point(3, 213);
             txtDescription.Multiline = true;
             txtDescription.Name = "txtDescription";
             txtDescription.ScrollBars = ScrollBars.Vertical;
-            txtDescription.Size = new Size(782, 518);
+            txtDescription.Size = new Size(547, 312);
             txtDescription.TabIndex = 37;
             // 
             // txtYear
             // 
             txtYear.Dock = DockStyle.Fill;
-            txtYear.Location = new Point(123, 5);
-            txtYear.Margin = new Padding(4, 5, 4, 5);
+            txtYear.Location = new Point(84, 3);
             txtYear.Maximum = new decimal(new int[] { 5000, 0, 0, 0 });
             txtYear.Minimum = new decimal(new int[] { 1800, 0, 0, 0 });
             txtYear.Name = "txtYear";
-            txtYear.Size = new Size(258, 31);
+            txtYear.Size = new Size(183, 23);
             txtYear.TabIndex = 38;
             txtYear.Value = new decimal(new int[] { 2000, 0, 0, 0 });
             // 
@@ -531,10 +510,9 @@
             txtFuelType.DropDownStyle = ComboBoxStyle.DropDownList;
             txtFuelType.FormattingEnabled = true;
             txtFuelType.Items.AddRange(new object[] { "El", "Benzin", "Diesel", "Hybrid - Benzin", "Hybrid - Diesel", "Plug-in - Benzin", "Plug-in Diesel" });
-            txtFuelType.Location = new Point(527, 55);
-            txtFuelType.Margin = new Padding(4, 5, 4, 5);
+            txtFuelType.Location = new Point(366, 33);
             txtFuelType.Name = "txtFuelType";
-            txtFuelType.Size = new Size(259, 33);
+            txtFuelType.Size = new Size(184, 23);
             txtFuelType.TabIndex = 42;
             // 
             // txtCondition
@@ -543,20 +521,18 @@
             txtCondition.DropDownStyle = ComboBoxStyle.DropDownList;
             txtCondition.FormattingEnabled = true;
             txtCondition.Items.AddRange(new object[] { "Perfekt", "God", "Dårlig" });
-            txtCondition.Location = new Point(527, 205);
-            txtCondition.Margin = new Padding(4, 5, 4, 5);
+            txtCondition.Location = new Point(366, 123);
             txtCondition.Name = "txtCondition";
-            txtCondition.Size = new Size(259, 33);
+            txtCondition.Size = new Size(184, 23);
             txtCondition.TabIndex = 43;
             // 
             // imgUpload
             // 
             imgUpload.Dock = DockStyle.Fill;
             imgUpload.Image = Properties.Resources.vælg_billede;
-            imgUpload.Location = new Point(831, 204);
-            imgUpload.Margin = new Padding(4, 5, 4, 5);
+            imgUpload.Location = new Point(582, 123);
             imgUpload.Name = "imgUpload";
-            imgUpload.Size = new Size(335, 323);
+            imgUpload.Size = new Size(234, 194);
             imgUpload.SizeMode = PictureBoxSizeMode.Zoom;
             imgUpload.TabIndex = 12;
             imgUpload.TabStop = false;
@@ -566,9 +542,10 @@
             // 
             btnConfirm.Dock = DockStyle.Bottom;
             btnConfirm.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            btnConfirm.Location = new Point(830, 1017);
+            btnConfirm.Location = new Point(581, 612);
+            btnConfirm.Margin = new Padding(2);
             btnConfirm.Name = "btnConfirm";
-            btnConfirm.Size = new Size(337, 67);
+            btnConfirm.Size = new Size(236, 40);
             btnConfirm.TabIndex = 13;
             btnConfirm.Text = "Opret Bil";
             btnConfirm.UseVisualStyleBackColor = true;
@@ -576,12 +553,11 @@
             // 
             // CarCreate
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1199, 1120);
+            ClientSize = new Size(839, 672);
             Controls.Add(layoutMain);
-            Margin = new Padding(4, 5, 4, 5);
-            MinimumSize = new Size(919, 713);
+            MinimumSize = new Size(648, 443);
             Name = "CarCreate";
             Text = "Køreklar";
             Load += CarCreate_Load;
