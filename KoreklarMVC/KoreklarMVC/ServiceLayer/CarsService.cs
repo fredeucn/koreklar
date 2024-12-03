@@ -64,6 +64,53 @@ namespace KoreklarMVC.ServiceLayer {
             return cars;
         }
 
+        public async Task<Car> GetCarByVin(string vin)
+        {
+            Car newCar = null;
+
+            var handler = new HttpClientHandler
+            {
+                ServerCertificateCustomValidationCallback = (message, cert, chain, sslErrors) => true
+            };
+            var httpClient = new HttpClient(handler)
+            {
+                Timeout = TimeSpan.FromSeconds(60)
+            };
+
+            _carServiceConnection.UseUrl = $"{_carServiceConnection.BaseUrl.TrimEnd('/')}/{vin}";
+
+
+            if (_carServiceConnection != null)
+            {
+                try
+                {
+                    var serviceResponse = await _carServiceConnection.CallServiceGet();
+
+                    var content = await serviceResponse.Content.ReadAsStringAsync();
+
+                    if (!string.IsNullOrEmpty(content))
+                    {
+                        newCar = JsonConvert.DeserializeObject<Car>(content) ?? new Car();
+
+                    }
+
+                    
+                }
+                catch (HttpRequestException ex)
+                {
+                    Console.WriteLine($"HTTP Request error: {ex.Message}");
+                    if (ex.InnerException != null)
+                    {
+                        Console.WriteLine($"Inner Exception: {ex.InnerException.Message}");
+                    }
+                    
+                }
+            }
+
+            return newCar;
+        }
+    
+
         public async void CreateCar(Car newCar) {
             _carServiceConnection.UseUrl = _carServiceConnection.BaseUrl;
 

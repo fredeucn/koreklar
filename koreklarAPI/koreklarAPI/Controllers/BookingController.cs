@@ -15,9 +15,15 @@ namespace koreklarAPI.Controllers
         }
 
         [HttpPost, Route("api/bookings")]
-        public void Create([FromBody] Booking newBooking) // Ændres til ReadCarDTO i refactoring
+        public IActionResult Create([FromBody] Booking newBooking) // Ændres til ReadCarDTO i refactoring
         {
+            if (newBooking == null)
+            {
+                return BadRequest("Booking object is null.");
+            }
+
             _bookingAccess.CreateBooking(newBooking);
+            return Ok();
         }
     }
 }

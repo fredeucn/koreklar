@@ -3,7 +3,16 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddControllersWithViews()
+    .AddJsonOptions(options =>
+    {
+        // Preserve original casing of property names (PascalCase)
+        options.JsonSerializerOptions.PropertyNamingPolicy = null;
+    });
+
 var app = builder.Build();
+
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment()) {

@@ -18,5 +18,12 @@ namespace KoreklarMVC.BusinessLogicLayer {
             Console.WriteLine("CarLogic Check");
         }
 
+        public async Task<Car> GetCarByVin(string vin)
+        {
+            CarsService carsService = new CarsService();
+            Car car = await carsService.GetCarByVin(vin);
+            return car;
+        }
+
     }
 }

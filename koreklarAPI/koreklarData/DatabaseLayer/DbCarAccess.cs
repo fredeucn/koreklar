@@ -28,7 +28,7 @@ namespace koreklarData.DatabaseLayer
                     foundCar = connection.QueryFirst<Car>("SELECT * FROM carIdentities FULL OUTER JOIN cars ON cars.id=carIdentities.car_id WHERE vin = @Vin", new { Vin = vin });
                     connection.Query("UPDATE carIdentities SET availability = 0 WHERE vin = @Vin");
                     Thread.Sleep(300000);
-                    transaction.Rollback();
+                    //transaction.Rollback();
                 }
             }
                 return foundCar;

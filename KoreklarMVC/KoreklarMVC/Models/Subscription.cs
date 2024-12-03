@@ -7,6 +7,8 @@
             public double Discount { get; set; }
 
 
+            public Subscription() { }
+
             public Subscription(double discount, int choice) {
                 this.Discount = discount;
                 this.Price = CalculatePrice(choice);

@@ -1,4 +1,7 @@
 using koreklarData.DatabaseLayer;
+using Microsoft.Extensions.DependencyInjection;
+using Newtonsoft.Json.Serialization;
+using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +13,14 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ICarAccess, DbCarAccess>();
 builder.Services.AddScoped<IBookingAccess, DbBookingAccess>();
+
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        // Ensure the property names are preserved exactly as defined in the model
+        options.JsonSerializerOptions.PropertyNamingPolicy = null;
+    });
+
 
 var app = builder.Build();
 

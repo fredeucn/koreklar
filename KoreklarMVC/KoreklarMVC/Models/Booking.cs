@@ -8,6 +8,10 @@ namespace KoreklarMVC.Models {
         public Subscription ChosenSubscription { get; set; }
         public string Customer { get; set; }
 
+        public Booking() { 
+        
+        }
+
         public Booking(string Status, Car RegisteredCar, Subscription ChosenSubscription, string Customer) {
             this.ChosenSubscription = ChosenSubscription;
             this.RegisteredCar = RegisteredCar;

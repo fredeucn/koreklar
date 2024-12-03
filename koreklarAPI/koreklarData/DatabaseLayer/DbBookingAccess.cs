@@ -26,32 +26,31 @@ namespace koreklarData.DatabaseLayer
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
-                using (SqlTransaction transaction = connection.BeginTransaction())
-                {
-                    try
-                    {
+                //using (SqlTransaction transaction = connection.BeginTransaction())
+                //{
+                    
+                        
+                    string updateQuery = @"BEGIN TRANSACTION 
+                    SET NOCOUNT OFF
 
-                        string updateQuery = @" BEGIN TRANSACTION
+                    SELECT * FROM carIdentities WITH (XLOCK)
+                    WHERE vin = @Vin
 
-                        SELECT * FROM carIdentities WITH (XLOCK)
-                        WHERE vin = @Vin
+                    INSERT INTO subscriptions (start_date, end_date, price, discount)
+                    VALUES (@StartDate, @EndDate, @Price, @Discount);
 
-                        INSERT INTO subscriptions (start_date, end_date, price, discount)
-                        VALUES (@StartDate, @EndDate, @Price, @Discount);
+                    DECLARE @SubscriptionId INT;
+                    SET @SubscriptionId = SCOPE_IDENTITY();
 
-                        DECLARE @SubscriptionId INT;
-                        SET @SubscriptionId = SCOPE_IDENTITY();
+                    INSERT INTO bookings (status, total_Price, subscription_Id, vin)
+                    VALUES (@Status, @TotalPrice, @SubscriptionId, @Vin);
 
-                        INSERT INTO bookings (status, total_Price, subscription_Id, vin)
-                        VALUES (@Status, @TotalPrice, @SubscriptionId, @Vin);
+                    UPDATE carIdentities SET availability = @Availability WHERE vin = @Vin
+                    COMMIT TRANSACTION"
+                    ;
+                    //try {
 
-                        UPDATE carIdentities SET availability = @Availability WHERE vin = @Vin
-        
-                        COMMIT TRANSACTION;
-                                            "
-                        ;
-
-                        connection.Execute(updateQuery, new
+                        var rowsAffected = connection.Execute(updateQuery, new
                         {
                             Status = newBooking.Status,
                             TotalPrice = newBooking.Total_Price,
@@ -61,8 +60,22 @@ namespace koreklarData.DatabaseLayer
                             Price = newBooking.ChosenSubscription.Price,
                             Discount = newBooking.ChosenSubscription.Discount,
                             Availability = 0
-                        }, transaction: transaction);
-                    }
+                        });
+
+                        Console.WriteLine($"Rows affected: {rowsAffected}");
+
+                        /*connection.Execute(updateQuery, new
+                        {
+                            Status = newBooking.Status,
+                            TotalPrice = newBooking.Total_Price,
+                            Vin = newBooking.RegisteredCar.Vin,
+                            StartDate = newBooking.ChosenSubscription.Start_Date,
+                            EndDate = newBooking.ChosenSubscription.End_Date,
+                            Price = newBooking.ChosenSubscription.Price,
+                            Discount = newBooking.ChosenSubscription.Discount,
+                            Availability = 0
+                        }, transaction: transaction*/
+                    //}
 
                     /*using (SqlCommand updateCommand = new SqlCommand(updateQuery, connection, transaction))
                     {
@@ -80,12 +93,13 @@ namespace koreklarData.DatabaseLayer
                     }*/
 
 
-                    catch (Exception ex)
+                    /*catch (Exception ex)
                     {
                         transaction.Rollback();
                         Console.WriteLine("Transaction rolled back. " + ex.Message);
-                    }
-                }
+                        throw;
+                    }*/
+                //}
             }
                 
         }

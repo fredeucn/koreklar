@@ -13,6 +13,7 @@ namespace Models.Models
         public double Price { get; set; }
         public double Discount { get; set; }
        
+        public Subscription() { }
 
         public Subscription(double discount, int choice)
         {

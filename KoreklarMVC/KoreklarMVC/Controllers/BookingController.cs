@@ -10,11 +10,18 @@ namespace KoreklarMVC.Controllers {
             return View();
         }
 
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
         [HttpPost]
         public async Task<IActionResult> Create(string CarVin, string SelectedPeriod) {
             CarLogic cars = new CarLogic();
             var allCars = await cars.GetAllCars();
             Car foundCar = null;
+            
             if(allCars != null && allCars.Count > 0) {
                 foreach (var car in allCars) {
                     if (CarVin == car.Vin) {
@@ -34,11 +41,11 @@ namespace KoreklarMVC.Controllers {
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
                 // Send the car object as a POST request to the API
-                HttpResponseMessage response = await client.PostAsJsonAsync("", JsonConvert.SerializeObject(newBooking));
+                HttpResponseMessage response = await client.PostAsJsonAsync("", newBooking);
 
                 if (response.IsSuccessStatusCode) {
                     // Redirect to the Index page after successful creation
-                    return RedirectToAction("Index");
+                    return RedirectToAction("Index", "Cars");
                 } else {
                     // Handle API errors
                     ModelState.AddModelError("", "Failed to create booking");
