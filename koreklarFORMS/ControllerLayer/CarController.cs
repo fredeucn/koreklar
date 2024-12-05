@@ -11,21 +11,25 @@ namespace koreklarFORMS.ControllerLayer
     public class CarController
     {
 
+        readonly ICarService _carService;
+
+        public CarController()
+        {
+            _carService = new CarService();
+        }
+
         public async Task<List<Car>> GetAllCars()
         {
-            CarService carService = new CarService();
             List<Car> cars = new List<Car>();
 
-            cars = await carService.GetAllCars();
+            cars = await _carService.GetAllCars();
 
             return cars;
         }
 
         public void CreateCar(Car newCar)
         {
-            CarService carService = new CarService();
-
-            carService.CreateCar(newCar);
+            _carService.CreateCar(newCar);
         }
     }
 }

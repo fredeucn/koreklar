@@ -31,20 +31,15 @@ namespace Models.Models
         
         public double GetTotalPrice()
         {
+            double price = RegisteredCar.Price * ChosenSubscription.months + ChosenSubscription.Price;
+
             if(ChosenSubscription.Discount > 0)
             {
                 double discountValue = ChosenSubscription.Discount / 100;
-
-                double price = Math.Round((RegisteredCar.Price + ChosenSubscription.Price) - (RegisteredCar.Price + ChosenSubscription.Price) * discountValue, 2);
-                System.Diagnostics.Debug.WriteLine(price);
-                return price;
-            } else
-            {
-                double price = RegisteredCar.Price + ChosenSubscription.Price;
-                price = Math.Round(price, 2);
-                Debug.WriteLine(price);
-                return price;
+                price = price * discountValue;
             }
+
+            return Math.Ceiling(price);
         }
     }
 }

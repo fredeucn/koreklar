@@ -8,6 +8,7 @@ namespace Models.Models
 {
     public class Subscription
     {
+        public int months { get; set; }
         public DateTime Start_Date { get; set; }
         public DateTime End_Date { get; set; }
         public double Price { get; set; }
@@ -15,42 +16,33 @@ namespace Models.Models
        
         public Subscription() { }
 
-        public Subscription(double discount, int choice)
+        public Subscription(double discount, int months)
         {
+            this.months = months;
             this.Discount = discount;
-            this.Price = CalculatePrice(choice);
+            this.Price = CalculatePrice(months);
             this.Start_Date = DateTime.Now;
-            this.End_Date = CalculateEndDate(choice);
+            this.End_Date = CalculateEndDate(months);
             
         }
 
-        public double CalculatePrice(int choice)
+        public double CalculatePrice(int months)
         {
-            switch (choice) { 
+            switch (months) { 
                 case 1:
                     return 200;
-                case 2:
-                    return 500;
                 case 3:
+                    return 500;
+                case 6:
                     return 800;
             }
 
             return 0;
         }
 
-        public DateTime CalculateEndDate(int choice)
+        public DateTime CalculateEndDate(int months)
         {
-            switch (choice)
-            {
-                case 1:
-                    return DateTime.Now.AddMonths(1);
-                case 2:
-                    return DateTime.Now.AddMonths(3);
-                case 3:
-                    return DateTime.Now.AddMonths(6);
-            }
-
-            return DateTime.Now;
+            return DateTime.Now.AddMonths(months);
         }
 
     }
