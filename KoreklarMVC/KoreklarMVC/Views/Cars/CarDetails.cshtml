@@ -1,50 +1,51 @@
 ﻿@model KoreklarMVC.Models.Car
+<div>
+    <div class="d-flex gap-5 justify-content-between mt-5">
+        <div>
+            <h2>@Model.Model @Model.Brand @Model.Year</h2>
+             @if (Model.Image != null && Model.Image.Length > 0)
+                        {
+                <img src="data:image/jpeg;base64,@Convert.ToBase64String(Model.Image)" style="display: block; height: 300px; width: 100%; object-fit: cover; margin: 5px 0;" />
+                        }
+                        else
+                        {
+                            <img src="" style="display: block; height: 250px; width: 100%;"/>
+                        }
+            <div class="d-flex gap-2 justify-content-between mt-3">
+                <div style="font-size: 22px">
+                   <p style="border-bottom: 2px solid black; width: 100%;">Kilometer kørt: @Model.Kilometers_Driven km</p>
+                    <p style="border-bottom: 2px solid black; width: 100%;">Farve: @Model.Color</p>
+                    <p style="border-bottom: 2px solid black; width: 100%;">Topfart: @Model.Top_Speed km/t</p>
+                </div>
+                <div style="font-size: 22px">
+                    <p style="border-bottom: 2px solid black; width: 100%;">Brændstof: @Model.Fuel_Type</p>
+                    <p style="border-bottom: 2px solid black; width: 100%;">Stand: @Model.Condition</p>                
+                </div>
+            </div>
+        </div>
+        <form asp-controller="Booking" asp-action="Create" method="post" enctype="multipart/form-data" class="d-flex flex-column justify-content-between">
+            <h2>Vælg abonnement</h2>
+            <div class="d-flex flex-column gap-2" style="padding: 10px; border: 2px solid black; height: 400px; width: 100%">
+                <div class="d-flex gap-5">
+                    <input type="radio" name="SelectedPeriod" value="1Month" />
+                    <h4> 1 månede / 200 kr.</h4>
+                </div>
+                <div class="d-flex gap-5">
+                    <input type="radio" name="SelectedPeriod" value="3Month"/>
+                    <h4> 3 måneder / 500 kr.</h4>
+                </div>
+                <div class="d-flex gap-5">
+                    <input type="radio" name="SelectedPeriod" value="6Month"/>
+                    <h4> 6 måneder / 800 kr.</h4>
+                </div>
+            </div>
+            <input type="hidden" name="CarVin" value=@Model.Vin />
+            <button type="submit" class="p-2">
+                Opret abonnement
+            </button>
+        </form>
 
-<div class="d-flex gap-5 justify-content-between mt-5">
-    <div>
-        <h2>@Model.Model @Model.Brand @Model.Year</h2>
-         @if (Model.Image != null && Model.Image.Length > 0)
-                    {
-            <img src="data:image/jpeg;base64,@Convert.ToBase64String(Model.Image)" style="display: block; height: 300px; width: 900px; object-fit: cover; margin: 5px 0" />
-                    }
-                    else
-                    {
-                        <img src="" style="display: block; height: 250px; width: 300px"></img>
-                    }
-        <div class="d-flex gap-2 justify-content-between mt-3">
-            <div style="font-size: 22px">
-               <p style="border-bottom: 2px solid black; width: 100%;">@Model.Kilometers_Driven km</p>
-                <p style="border-bottom: 2px solid black; width: 100%;">@Model.Color</p>
-                <p style="border-bottom: 2px solid black; width: 100%;">@Model.Top_Speed km/t</p>
-                <p style="border-bottom: 2px solid black; width: 100%;">@Model.Fuel_Type</p>
-            </div>
-            <div style="font-size: 22px">
-                <p style="border-bottom: 2px solid black; width: 100%;">Stand: @Model.Condition</p>
-                <p style="border-bottom: 2px solid black; width: 100%;">@Model.Description</p>
-                
-            </div>
-        </div>
-    </div>
-    <form asp-controller="Booking" asp-action="Create" method="post" enctype="multipart/form-data"  class="d-flex flex-column justify-content-between">
-        <h2>Vælg abonnement</h2>
-        <div class="d-flex flex-column gap-2" style="padding: 10px; border: 2px solid black; height: 400px">
-            <div class="d-flex gap-5">
-                <input type="radio" name="SelectedPeriod" value="1Month" />
-                <h4> 1 månede / 200 kr.</h4>
-            </div>
-            <div class="d-flex gap-5">
-                <input type="radio" name="SelectedPeriod" value="3Month"/>
-                <h4> 3 måneder / 500 kr.</h4>
-            </div>
-            <div class="d-flex gap-5">
-                <input type="radio" name="SelectedPeriod" value="6Month"/>
-                <h4> 6 måneder / 800 kr.</h4>
-            </div>
-        </div>
-        <input type="hidden" name="CarVin" value=@Model.Vin />
-        <button type="submit" class="p-2">
-            Opret abonnement
-        </button>
-    </form>
+       </div>
+       <p style="width: 100%; margin-top: 100px;">@Model.Description</p>
 
 </div>
