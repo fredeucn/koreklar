@@ -16,6 +16,11 @@ namespace KoreklarMVC.Controllers {
             return View();
         }
 
+        [HttpGet]
+        public IActionResult Confirmation() {
+            return View();
+        }
+
         [HttpPost]
         public async Task<IActionResult> Create(string CarVin, string SelectedPeriod) {
             CarLogic cars = new CarLogic();
@@ -29,29 +34,13 @@ namespace KoreklarMVC.Controllers {
                     }
                 }
             }
-            // car.ImageFile = null;
+            
+            BookingLogic bookingLogic = new BookingLogic();
 
-            Subscription newSubscription = new Subscription(0, 1);
-            Booking newBooking = new Booking("Active", foundCar, newSubscription, "Børge");  
-            string baseUrl = "https://localhost:7228/api/bookings";
+            bookingLogic.createBooking(foundCar);
 
-
-            using (HttpClient client = new HttpClient()) {
-                client.BaseAddress = new Uri(baseUrl);
-                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
-                // Send the car object as a POST request to the API
-                HttpResponseMessage response = await client.PostAsJsonAsync("", newBooking);
-
-                if (response.IsSuccessStatusCode) {
-                    // Redirect to the Index page after successful creation
-                    return RedirectToAction("Index", "Cars");
-                } else {
-                    // Handle API errors
-                    ModelState.AddModelError("", "Failed to create booking");
-                    return RedirectToAction("Index");
-                }
-            }
+            return RedirectToAction("Confirmation");
+            
         }
     }
 }

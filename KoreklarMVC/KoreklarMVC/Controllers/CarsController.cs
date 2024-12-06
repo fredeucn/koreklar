@@ -51,61 +51,11 @@ namespace KoreklarMVC.Controllers {
         [HttpPost]
         public async Task<IActionResult> Create(Car car, [FromForm] IFormFile ImageFile) {
             CarLogic cars = new CarLogic();
-           // car.ImageFile = null;
 
-            string baseUrl = "https://localhost:7228/api/cars";
+            cars.createCar(car, ImageFile);
 
-            if (ImageFile != null)
-            {
-                using (var memoryStream = new MemoryStream())
-                {
-                    await ImageFile.CopyToAsync(memoryStream);
-                    byte[] imageData = memoryStream.ToArray(); 
-                    car.Image = imageData; 
-                }
-            }
-
-            using (HttpClient client = new HttpClient())
-            {
-                client.BaseAddress = new Uri(baseUrl);
-                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
-                // Send the car object as a POST request to the API
-                HttpResponseMessage response = await client.PostAsJsonAsync("", car);
-
-                if (response.IsSuccessStatusCode)
-                {
-                    // Redirect to the Index page after successful creation
-                    return RedirectToAction("Index");
-                }
-                else
-                {
-                    // Handle API errors
-                    ModelState.AddModelError("", "Failed to create car in the database.");
-                    return View(car);
-                }
-
-
-                /* if (ModelState.IsValid)
-             {
-                 cars.createCar(car);
-                 Console.WriteLine("I made it");
-
-                 return RedirectToAction("Index");
-             }
-
-             if (!ModelState.IsValid)
-             {
-                 foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
-                 {
-                     Console.WriteLine(error.ErrorMessage);
-                 }
-             }*/
-
-
-                //return View(car);
-
-            }
+            
+            return RedirectToAction("Index");
 
         }
 

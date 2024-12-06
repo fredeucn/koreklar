@@ -11,11 +11,10 @@ namespace KoreklarMVC.BusinessLogicLayer {
             return cars;
         }
 
-        public void createCar(Car newCar) {
+        public void createCar(Car newCar, IFormFile ImageFile) {
             CarsService carsService = new CarsService();
 
-            carsService.CreateCar(newCar);
-            Console.WriteLine("CarLogic Check");
+            carsService.CreateCar(newCar, ImageFile);
         }
 
         public async Task<Car> GetCarByVin(string vin)

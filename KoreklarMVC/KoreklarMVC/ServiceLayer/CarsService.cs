@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using static System.Net.WebRequestMethods;
 using Newtonsoft.Json;
 using System.Text;
+using System.Net.Http.Headers;
 
 namespace KoreklarMVC.ServiceLayer {
     public class CarsService : ICarService {
@@ -35,11 +36,7 @@ namespace KoreklarMVC.ServiceLayer {
 
                         if (!string.IsNullOrEmpty(content)) {
                             cars = JsonConvert.DeserializeObject<List<Car>>(content) ?? new List<Car>();
-                            /*Car? foundCar = JsonConvert.DeserializeObject<Car>(content);
-                            if (foundCar != null)
-                            {
-                                cars.Add(foundCar);
-                            }*/
+                           
 
 
                         }
@@ -111,8 +108,24 @@ namespace KoreklarMVC.ServiceLayer {
         }
     
 
-        public async void CreateCar(Car newCar) {
+        public async void CreateCar(Car newCar, IFormFile ImageFile) {
             _carServiceConnection.UseUrl = _carServiceConnection.BaseUrl;
+
+            if (ImageFile != null) {
+                using (var memoryStream = new MemoryStream()) {
+                    await ImageFile.CopyToAsync(memoryStream);
+                    byte[] imageData = memoryStream.ToArray();
+                    newCar.Image = imageData;
+                }
+            }
+
+            using (HttpClient client = new HttpClient()) {
+                client.BaseAddress = new Uri(_carServiceConnection.UseUrl);
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                // Send the car object as a POST request to the API
+                HttpResponseMessage response = await client.PostAsJsonAsync("", newCar);
+            }
 
             if (_carServiceConnection != null) {
                 try {

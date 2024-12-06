@@ -6,6 +6,6 @@ namespace KoreklarMVC.ServiceLayer
     {
         Task<List<Car>?> GetAllCars();
 
-        void CreateCar(Car newCar);
+        void CreateCar(Car newCar, IFormFile ImageFile);
     }
 }
