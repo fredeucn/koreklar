@@ -25,7 +25,6 @@ namespace KoreklarMVC.Models {
                 double discountValue = ChosenSubscription.Discount / 100;
 
                 double price = Math.Round((RegisteredCar.Price + ChosenSubscription.Price) - (RegisteredCar.Price + ChosenSubscription.Price) * discountValue, 2);
-                System.Diagnostics.Debug.WriteLine(price);
                 return price;
             } else {
                 double price = RegisteredCar.Price + ChosenSubscription.Price;

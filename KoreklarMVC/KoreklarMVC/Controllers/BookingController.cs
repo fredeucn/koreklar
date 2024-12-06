@@ -37,7 +37,7 @@ namespace KoreklarMVC.Controllers {
             
             BookingLogic bookingLogic = new BookingLogic();
 
-            bookingLogic.createBooking(foundCar);
+            bookingLogic.createBooking(foundCar, SelectedPeriod);
 
             return RedirectToAction("Confirmation");
             

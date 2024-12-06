@@ -2,6 +2,6 @@
 
 namespace KoreklarMVC.ServiceLayer {
     public interface IBookingService {
-        void CreateBooking(Car car);
+        void CreateBooking(Car car, string selectedPeriod);
     }
 }
