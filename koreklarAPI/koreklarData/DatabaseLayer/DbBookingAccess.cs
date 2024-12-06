@@ -30,11 +30,19 @@ namespace koreklarData.DatabaseLayer
                 //{
                     
                         
-                    string updateQuery = @"BEGIN TRANSACTION 
+                    string updateQuery = @"
+                    SET TRANSACTION ISOLATION LEVEL REPEATABLE READ;
+                    BEGIN TRANSACTION
                     SET NOCOUNT OFF
 
-                    SELECT * FROM carIdentities WITH (XLOCK)
-                    WHERE vin = @Vin
+                    SELECT * FROM carIdentities WITH (ROWLOCK)
+                    WHERE availability = 1 AND vin = @Vin
+
+                    IF @@ROWCOUNT = 0
+                    BEGIN
+                        ROLLBACK TRANSACTION;
+                        RETURN;
+                    END
 
                     INSERT INTO subscriptions (start_date, end_date, price, discount)
                     VALUES (@StartDate, @EndDate, @Price, @Discount);
@@ -45,7 +53,7 @@ namespace koreklarData.DatabaseLayer
                     INSERT INTO bookings (status, total_Price, subscription_Id, vin)
                     VALUES (@Status, @TotalPrice, @SubscriptionId, @Vin);
 
-                    UPDATE carIdentities SET availability = @Availability WHERE vin = @Vin
+                    UPDATE carIdentities SET availability = 0 WHERE vin = @Vin
                     COMMIT TRANSACTION"
                     ;
                     //try {
@@ -59,7 +67,6 @@ namespace koreklarData.DatabaseLayer
                             EndDate = newBooking.ChosenSubscription.End_Date,
                             Price = newBooking.ChosenSubscription.Price,
                             Discount = newBooking.ChosenSubscription.Discount,
-                            Availability = 0
                         });
 
                         Console.WriteLine($"Rows affected: {rowsAffected}");

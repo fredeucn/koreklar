@@ -31,7 +31,7 @@ namespace APITests
         {
             ICarAccess carAccess = new DbCarAccess();
 
-            Car testCar = new Car(2019, 25000, 250, 35000.00, null, "Good", "A fast and stylish ride.", "1FAFP45X4XF123456", "Blue", "Petrol", "Ford", "Mustang", "GT", "BC23456");
+            Car testCar = new Car(2019, 25000, 250, 35000.00, null, "Good", "A fast and stylish ride.", "1FAFP45X4XF123456", "Blue", "Petrol", "Ford", "Mustang", "GT", "BC23456", true);
 
             int targetListLength = 5;
 
@@ -45,7 +45,7 @@ namespace APITests
         public void TestCreateCar() {
             ICarAccess carAccess = new DbCarAccess();
 
-            Car testCar = new Car(2019, 25000, 250, 35000.00, null, "Good", "A fast and stylish ride.", "1FAFP45X4XF123457", "Blue", "Petrol", "Ford", "Mustang", "GT", "BC23456");
+            Car testCar = new Car(2019, 25000, 250, 35000.00, null, "Good", "A fast and stylish ride.", "1FAFP45X4XF123457", "Blue", "Petrol", "Ford", "Mustang", "GT", "BC23456", true);
 
             carAccess.CreateCar(testCar);
 
@@ -54,7 +54,7 @@ namespace APITests
             Car resultCar = new Car(resultCarDto.Year, resultCarDto.Kilometers_Driven, resultCarDto.Top_Speed,
                                     resultCarDto.Price, resultCarDto.Image, resultCarDto.Condition, resultCarDto.Description,
                                     resultCarDto.Vin, resultCarDto.Color, resultCarDto.Fuel_Type,
-                                    resultCarDto.Brand, resultCarDto.Model, resultCarDto.Type, resultCarDto.License_Plate
+                                    resultCarDto.Brand, resultCarDto.Model, resultCarDto.Type, resultCarDto.License_Plate, true
                 );
 
             Assert.AreEqual(resultCar.Vin, testCar.Vin);
@@ -65,13 +65,41 @@ namespace APITests
         {
             IBookingAccess bookingAccess = new DbBookingAccess();
 
-            Car testCar = new Car(2019, 25000, 250, 35000.00, null, "Good", "A fast and stylish ride.", "1FAFP45X4XF123457", "Blue", "Petrol", "Ford", "Mustang", "GT", "BC23456");
+            Car testCar = new Car(2019, 25000, 250, 35000.00, null, "Good", "A fast and stylish ride.", "1FAFP45X4XF123457", "Blue", "Petrol", "Ford", "Mustang", "GT", "BC23456", true);
 
             Subscription testSubscription = new Subscription(5, 2);
             
             Booking testBooking = new Booking("Ongoing", testCar, testSubscription, "Lars");
 
             bookingAccess.CreateBooking(testBooking);
+        }
+
+        [TestMethod]
+        public async Task TestCreateMultipleBooking()
+        {
+            // Initialize the booking access layer (use dependency injection or mock if needed)
+            IBookingAccess bookingAccess = new DbBookingAccess();
+
+            // Test data setup
+            Car testCar = new Car(2019, 25000, 250, 3500.00, null, "Good", "A fast and stylish ride.", "WBS3C9C07MD58234", "Blue", "Petrol", "Ford", "Mustang", "GT", "BC23456", true);
+            Subscription testSubscription = new Subscription(5, 3);
+            Booking testBooking = new Booking("Ongoing", testCar, testSubscription, "Lars");
+
+            // Create a list to hold the tasks
+            var tasks = new List<Task>();
+
+            // Launch 10 tasks to create bookings concurrently
+            for (int i = 0; i < 100; i++)
+            {
+                tasks.Add(Task.Run(async () => bookingAccess.CreateBooking(testBooking)));
+            }
+
+            // Wait for all tasks to complete
+            await Task.WhenAll(tasks);
+
+            // Assert or validate any required outcome
+            // In this case, we validate that 10 tasks were created and awaited
+            Assert.AreEqual(100, tasks.Count);
         }
     }
 }

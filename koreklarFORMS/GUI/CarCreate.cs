@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,6 +30,18 @@ namespace koreklarFORMS.GUI
 
             txtFuelType.SelectedIndex = 0;
             txtCondition.SelectedIndex = 0;
+        }
+
+        private void txtAvailable_CheckedChanged(object sender, EventArgs e)
+        {
+            if (txtAvailable.Checked)
+            {
+                txtAvailable.Text = "Ja";
+            }
+            else
+            {
+                txtAvailable.Text = "Nej";
+            }
         }
 
         private void imgUpload_Click(object sender, EventArgs e)
@@ -85,7 +98,7 @@ namespace koreklarFORMS.GUI
                 return;
             }
 
-            Car newCar = new Car(year, distance, topSpeed, price, image, txtCondition.Text, txtDescription.Text, txtVin.Text, txtColor.Text, txtFuelType.Text, txtBrand.Text, txtModel.Text, txtType.Text, txtLicensePlate.Text);
+            Car newCar = new Car(year, distance, topSpeed, price, image, txtCondition.Text, txtDescription.Text, txtVin.Text, txtColor.Text, txtFuelType.Text, txtBrand.Text, txtModel.Text, txtType.Text, txtLicensePlate.Text, txtAvailable.Checked);
 
             carController.CreateCar(newCar);
         }

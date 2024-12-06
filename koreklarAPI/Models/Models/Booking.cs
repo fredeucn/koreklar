@@ -35,7 +35,7 @@ namespace Models.Models
 
             if(ChosenSubscription.Discount > 0)
             {
-                double discountValue = ChosenSubscription.Discount / 100;
+                double discountValue = 1 - (ChosenSubscription.Discount / 100);
                 price = price * discountValue;
             }
 
