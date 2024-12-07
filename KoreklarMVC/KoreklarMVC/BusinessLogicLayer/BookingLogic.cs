@@ -7,8 +7,7 @@ namespace KoreklarMVC.BusinessLogicLayer {
             BookingService bookingService = new BookingService();
 
             bookingService.CreateBooking(foundCar, selectedPeriod);
-           
-           
+
         }
     }
 }

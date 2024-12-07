@@ -17,8 +17,18 @@ namespace KoreklarMVC.Controllers {
         }
 
         [HttpGet]
-        public IActionResult Confirmation() {
+        public IActionResult Confirmation()
+        {
             return View();
+            
+            /*if (TempData["Booking"] != null)
+            {
+                var bookingJson = TempData["Booking"].ToString();
+                var booking = JsonConvert.DeserializeObject<Booking>(bookingJson);
+                return View(booking);
+            }
+
+            return RedirectToAction("ErrorPage"); // Handle the case where TempData is empty*/
         }
 
         [HttpPost]

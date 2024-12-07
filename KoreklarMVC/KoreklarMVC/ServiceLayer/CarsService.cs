@@ -119,13 +119,13 @@ namespace KoreklarMVC.ServiceLayer {
                 }
             }
 
-            using (HttpClient client = new HttpClient()) {
+            /*using (HttpClient client = new HttpClient()) {
                 client.BaseAddress = new Uri(_carServiceConnection.UseUrl);
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
                 // Send the car object as a POST request to the API
-                HttpResponseMessage response = await client.PostAsJsonAsync("", newCar);
-            }
+                //HttpResponseMessage response = await client.PostAsJsonAsync("", newCar);
+            */
 
             if (_carServiceConnection != null) {
                 try {
