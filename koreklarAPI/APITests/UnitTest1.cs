@@ -86,9 +86,9 @@ namespace APITests
             Booking testBooking = new Booking("Ongoing", testCar, testSubscription, "Lars");
 
             // Create a list to hold the tasks
-            var tasks = new List<Task>();
+            List<Task> tasks = new List<Task>();
 
-            // Launch 10 tasks to create bookings concurrently
+            // Launch 100 tasks to create bookings concurrently
             for (int i = 0; i < 100; i++)
             {
                 tasks.Add(Task.Run(async () => bookingAccess.CreateBooking(testBooking)));
@@ -98,7 +98,7 @@ namespace APITests
             await Task.WhenAll(tasks);
 
             // Assert or validate any required outcome
-            // In this case, we validate that 10 tasks were created and awaited
+            // In this case, we validate that 100 tasks were created and awaited
             Assert.AreEqual(100, tasks.Count);
         }
     }
