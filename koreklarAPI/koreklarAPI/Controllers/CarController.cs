@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using koreklarData.DatabaseLayer;
-using koreklarAPI.Dtos;
 using Models.Models;
-using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace koreklarAPI.Controllers
 {
@@ -17,7 +15,7 @@ namespace koreklarAPI.Controllers
         }
 
         [HttpGet, Route("cars/{vin}")]
-        public ActionResult<Car> Get(string vin) // Ændres til ReadCarDTO i refactoring
+        public ActionResult<Car> Get(string vin) 
         {
             ActionResult<Car> foundReturn;
             // Get data and convert
@@ -34,14 +32,14 @@ namespace koreklarAPI.Controllers
             }
             else
             {
-                foundReturn = NotFound("Car not found.");    // Internal server error
+                foundReturn = NotFound("Car not found.");   
             }
             // Return result
             return foundReturn;
         }
 
         [HttpGet, Route("api/cars")]
-        public ActionResult<List<Car>> Get() // Ændres til ReadCarDTO i refactoring
+        public ActionResult<List<Car>> Get() 
         {
             ActionResult<List<Car>> foundReturn;
             // Get data and convert
@@ -60,16 +58,21 @@ namespace koreklarAPI.Controllers
             }
             else
             {
-                foundReturn = NotFound("Car not found.");    // Internal server error
+                foundReturn = NotFound("Car not found.");  
             }
             // Return result
             return foundReturn;
         }
 
         [HttpPost, Route("api/cars")]
-        public void Create([FromBody] Car car) // Ændres til ReadCarDTO i refactoring
+        public IActionResult Create([FromBody] Car car) 
         {
+            if (!ModelState.IsValid) {
+                return BadRequest(ModelState);
+            } else {
             _carAccess.CreateCar(car);
+                return Ok("Car created successfully.");
+            }
         }
 
         

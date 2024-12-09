@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using koreklarData.DatabaseLayer;
-using koreklarAPI.Dtos;
 using Models.Models;
 using Microsoft.AspNetCore.Http.HttpResults;
 

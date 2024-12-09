@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
-using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace Models.Models
 {
@@ -16,12 +16,14 @@ namespace Models.Models
         public byte[] Image { get; set; }
         public string Description { get; set; }
         public string Condition { get; set; }
+        [Required(ErrorMessage = "VIN is required.")]
+        [RegularExpression("^[A-HJ-NPR-Z0-9]{17}$", ErrorMessage = "VIN must be a 17-character mix of numbers and letters, excluding I, O, and Q.")]
         public string Vin { get; set; }
         public string Color { get; set; }
         public string Fuel_Type { get; set; }
         public string License_Plate { get; set; }
 
-        public bool availability { get; set; }
+        public bool Availability { get; set; }
 
         public Car() { 
 
@@ -45,7 +47,7 @@ namespace Models.Models
             this.Model = Model;
             this.Type = Type;
             this.License_Plate = LicensePlate;
-            this.availability = Availability;
+            this.Availability = Availability;
         }
 
         public override bool Equals(object? obj)
@@ -67,7 +69,7 @@ namespace Models.Models
                    Fuel_Type == other.Fuel_Type;
         }
 
-        public string getName()
+        public string GetName()
         {
             return $"{this.Brand} {this.Model} {this.Year}";
         }
