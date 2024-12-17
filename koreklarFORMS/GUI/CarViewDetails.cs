@@ -30,7 +30,7 @@ namespace koreklarFORMS.GUI
             this.CenterToScreen();
 
             // Car title
-            lblCarName.Text = car.getName();
+            lblCarName.Text = car.GetName();
 
             // Car picture
             if (car.Image != null)
