@@ -40,7 +40,7 @@ namespace koreklarFORMS.GUI
             
 
             // Car Name and Price
-            lblCarName.Text = car.getName();
+            lblCarName.Text = car.GetName();
             lblPrice.Text = "Fra: " + (200 + car.Price).ToString() + " kr.";
         }
 
