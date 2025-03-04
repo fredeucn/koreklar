@@ -10,7 +10,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  buildMVC:
 
     runs-on: ubuntu-latest
 
@@ -25,6 +25,16 @@ jobs:
     - name: Build
       run: dotnet build --no-restore ./koreklarAPI
 
+  buildAPI:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
     - name: Restore dependencies
       run: dotnet restore ./koreklarMVC
     - name: Build
