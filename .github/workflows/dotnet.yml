@@ -24,3 +24,8 @@ jobs:
       run: dotnet restore ./koreklarAPI
     - name: Build
       run: dotnet build --no-restore ./koreklarAPI
+
+    - name: Restore dependencies
+      run: dotnet restore ./koreklarMVC
+    - name: Build
+      run: dotnet build --no-restore ./koreklarMVC
